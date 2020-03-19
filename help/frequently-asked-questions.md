@@ -1,21 +1,21 @@
 ---
-title: Preguntas más frecuentes
-seo-title: Preguntas más frecuentes
+title: Preguntas frecuentes
+seo-title: Preguntas frecuentes
 description: Consultas comunes o preguntas más frecuentes
 seo-description: preguntas más frecuentes sobre el servicio de conversión automatizada de formularios
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: 1e22587a832ca8d09f33141a9ba4e4b1748e0312
+source-git-commit: 022b86b77c4a524f320cbcbcd6bad4403ddf57d8
 
 ---
 
 
-# Frequently asked questions{#frequently-asked-questions}
+# Preguntas frecuentes{#frequently-asked-questions}
 
 1. **¿Qué versión de AEM Forms admite el servicio Conversión automatizada de formularios?**
-   <p>El servicio Conversión automatizada de formularios es compatible con AEM 6.5 Forms. Funciona con AEM Forms en formularios OSGi y AEM en JEE. Para utilizar el servicio, se necesita el paquete de complementos de AEM Forms más reciente que se encuentra en la instancia de creación de AEM. Para obtener instrucciones detalladas, consulte <a href="configure-service.md">Configurar el servicio Conversión</a> automatizada de formularios.</p> 
+   <p>El servicio Conversión automatizada de formularios es compatible con AEM 6.4 Forms y AEM 6.5 Forms. Funciona con AEM Forms en formularios OSGi y AEM en JEE. Para utilizar el servicio, se necesita el paquete de complementos de AEM Forms más reciente que se encuentra en la instancia de creación de AEM. Para obtener instrucciones detalladas, consulte <a href="configure-service.md">Configurar el servicio Conversión</a> automatizada de formularios.</p> 
     <br>
 
 1. **¿Puede instalarse el servicio in situ?**
@@ -26,7 +26,7 @@ source-git-commit: 1e22587a832ca8d09f33141a9ba4e4b1748e0312
    <p>El servicio puede convertir formularios PDF no interactivos, formularios XDP y PDF basados en XFA y AcroForms en formularios adaptables. El servicio no admite formularios escaneados o rellenados. Para ver otras limitaciones, consulte el artículo sobre problemas <a href="known-issues.md"></a> conocidos.<br /> </p> 
     <p>Generalmente agregamos compatibilidad con otros tipos de fuentes. Mantenga la sección de formularios <a href="introduction.md">PDF</a> admitidos en la lista de observación para obtener una actualización periódica de las funciones y funciones recientemente agregadas.</p>
 
-   El servicio solo puede convertir formularios en inglés en formularios adaptables. Puede traducir los formularios adaptables generados a otro idioma mediante el flujo de trabajo de traducción de [AEM.](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+   El servicio solo puede convertir formularios en inglés a formularios adaptables. Puede traducir los formularios adaptables que se generan a otro idioma mediante el [flujo de trabajo de traducción de AEM.](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **¿Puede el servicio producir un XDP en lugar de un formulario adaptable?**
    <p>El servicio no produce una salida XDP. Estamos añadiendo funciones y servicios con regularidad. Mantenga la sección de idiomas <a href="introduction.md">admitidos y formularios</a> PDF en la lista de observación para obtener una actualización periódica de las funciones y funciones recientemente agregadas.</p> <br>
@@ -97,7 +97,7 @@ El servicio solo admite formularios en blanco o sin rellenar. No cargue formular
 1. **¿Cuánto tiempo ahorra el servicio en comparación con el proceso manual de planificación, creación de recursos (temas, plantillas), creación y publicación de un formulario adaptable?**
    <p>La cantidad de tiempo depende del tamaño y la complejidad de los formularios de entrada y del número de solicitudes. El servicio tiene la intención de reducir significativamente el tiempo de respuesta al valor convirtiendo los formularios PDF en formularios adaptables a un ritmo mucho más rápido que el proceso manual de conversión de formularios. </p> <br />
 
-1. **¿Qué hacer si se produce un error relacionado con las bibliotecas RSA?** El mensaje de error es similar al que se indica a continuación: <br/>
+1. **¿Qué hacer si se produce un error relacionado con las bibliotecas RSA? El mensaje de error es similar al que se indica a continuación:** <br/>
    `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>El error mencionado se produce cuando la delegación de inicio no está configurada para bibliotecas RSA/BouncyCastle. Siga los pasos a continuación para resolver el problema:
    <p> </p>
 
