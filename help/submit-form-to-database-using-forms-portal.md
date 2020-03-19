@@ -5,7 +5,7 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: 040b0ddb489b5bdfd640a93b22cd7bc512a39aea
+source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 ---
 
@@ -26,10 +26,11 @@ El ejemplo, que se describe en este artículo, es una implementación de referen
 
 ## Requisitos previos {#pre-requisites}
 
-* Instancia de autor de AEM 6.5 con el último Service Pack de AEM 6.5
+* Configuración de una instancia de autor de AEM 6.4 o 6.5
+* Instale el Service Pack [](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) más reciente para su instancia de AEM
 * Última versión del paquete del complemento AEM Forms
-* [Servicio de conversión automatizada de formularios](configure-service.md)
-* Base de datos con la que realizar la integración. La base de datos utilizada en la implementación de muestra es MySQL 5.6.24. Sin embargo, puede integrar Forms Portal con cualquier base de datos que desee.
+* Configure [Automated Forms Conversion service](configure-service.md)
+* Configure una base de datos. La base de datos utilizada en la implementación de muestra es MySQL 5.6.24. Sin embargo, puede integrar el formulario adaptable convertido con cualquier base de datos que desee.
 
 ## Configurar la conexión entre la instancia de AEM y la base de datos {#set-up-connection-aem-instance-database}
 
