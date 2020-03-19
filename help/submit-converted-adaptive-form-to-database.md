@@ -5,12 +5,12 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: b879a0ddecd5370c754dfe9e1bf33121dd5ecc97
+source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 ---
 
 
-# Integración de formularios adaptables con la base de datos mediante el flujo de trabajo de AEM {#submit-forms-to-database-using-forms-portal}
+# Integrar el formulario adaptable con la base de datos mediante el flujo de trabajo de AEM {#submit-forms-to-database-using-forms-portal}
 
 El servicio Conversión automatizada de formularios le permite convertir un formulario PDF no interactivo, un formulario Acro o un formulario PDF basado en XFA en un formulario adaptable. Al iniciar el proceso de conversión, tiene la opción de generar un formulario adaptable con o sin enlaces de datos.
 
@@ -24,10 +24,11 @@ En este artículo se describen las instrucciones paso a paso para ejecutar corre
 
 ## Requisitos previos {#pre-requisites}
 
-* Instancia de autor de AEM 6.5 con el último Service Pack de AEM 6.5
+* Configuración de una instancia de autor de AEM 6.4 o 6.5
+* Instale el Service Pack [](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) más reciente para su instancia de AEM
 * Última versión del paquete del complemento AEM Forms
-* [Servicio de conversión automatizada de formularios](configure-service.md)
-* Base de datos con la que realizar la integración. La base de datos utilizada en la implementación de muestra es MySQL 5.6.24. Sin embargo, puede integrar el formulario adaptable convertido con cualquier base de datos que desee.
+* Configure [Automated Forms Conversion service](configure-service.md)
+* Configure una base de datos. La base de datos utilizada en la implementación de muestra es MySQL 5.6.24. Sin embargo, puede integrar el formulario adaptable convertido con cualquier base de datos que desee.
 
 ## Formulario adaptable de ejemplo {#sample-adaptive-form}
 
@@ -182,7 +183,7 @@ Utilice el servicio Conversión de formularios [automatizados para convertir](co
 
 ![Formulario adaptable con enlace JSON](assets/generate_af_with_data_bindings.png)
 
-Seleccione el formulario **Contacto convertido disponible en la** carpeta de **[!UICONTROL output]** y toque **[!UICONTROL Forms & Documents]** **[!UICONTROL Edit]**. Toque **[!UICONTROL Preview]**, introduzca valores en los campos del formulario adaptable y toque **[!UICONTROL Submit]**.
+Seleccione el formulario **de** contacto convertido disponible en la **[!UICONTROL output]** carpeta de **[!UICONTROL Forms & Documents]** y toque **[!UICONTROL Edit]**. Toque **[!UICONTROL Preview]**, introduzca valores en los campos del formulario adaptable y toque **[!UICONTROL Submit]**.
 
 Inicie sesión en **crx-repository** y navegue hasta */content/forms/fp/admin/submit/data* para ver los valores enviados en formato JSON. A continuación se muestran los datos de ejemplo en formato JSON al enviar el formulario adaptable **Contact Us** convertido:
 
@@ -263,7 +264,7 @@ Ejecute los siguientes pasos para configurar el formulario adaptable para rellen
 
 1. Seleccione Correo **electrónico** en la **[!UICONTROL Input]** sección y los tres campos restantes del modelo de datos de formulario, **Nombre**, Número **de** teléfono y Descripción **de** problema en la **[!UICONTROL Output]** sección . Toque **[!UICONTROL Done]** para guardar la configuración.
 
-   ![Configuración de la configuración previa de correo electrónico](assets/email_prefill_settings.png)
+   ![Configurar opciones de cumplimentación previa de correo electrónico](assets/email_prefill_settings.png)
 
    Como resultado, según las entradas de correo electrónico existentes en la base de datos de MYSQL, puede rellenar previamente los valores de los tres campos restantes en el **[!UICONTROL Preview]** modo del formulario adaptable. Por ejemplo, si especifica aya.tan@xyz.com en el campo Correo **electrónico** (en función de los datos existentes en la sección [Preparar modelo](#prepare-data-for-form-model) de datos de formulario de este artículo) y salir del campo, los tres campos restantes, **Nombre**, Número **de** teléfono y Descripción **de** número, se mostrarán automáticamente en el formulario adaptable.
 
