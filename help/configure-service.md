@@ -1,13 +1,13 @@
 ---
-title: Configuración del servicio Conversión automatizada de formularios
+title: Configurar el servicio de conversión automatizada de formularios
 description: Listo la instancia de AEM para utilizar el servicio Conversión automatizada de formularios
 translation-type: tm+mt
-source-git-commit: ef5789dabccc65dcf988b9424b435aa036017691
+source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 ---
 
 
-# Configuración del servicio Conversión automatizada de formularios {#about-this-help}
+# Configurar el servicio de conversión automatizada de formularios {#about-this-help}
 
 Esta ayuda describe cómo un administrador de AEM puede configurar el servicio de conversión automatizada de formularios para automatizar la conversión de sus formularios PDF a formularios adaptables. Esta ayuda es para administradores de TI y AEM de su organización. La información proporcionada se basa en el supuesto de que cualquiera que lea esta Ayuda está familiarizado con las siguientes tecnologías:
 
@@ -21,11 +21,11 @@ Esta ayuda describe cómo un administrador de AEM puede configurar el servicio d
 
 **Vea el vídeo o lea el artículo para configurar el servicio de conversión automatizada de formularios**
 
-## Incorporación{#onboarding}
+## Integración{#onboarding}
 
-El servicio está disponible de forma gratuita para los clientes a plazo local de AEM 6.5 Forms y AEM 6.4 Forms y para los clientes empresariales de servicios gestionados de Adobe. Puede ponerse en contacto con el equipo de ventas de Adobe o con su representante de Adobe para solicitar acceso al servicio.
+El servicio está disponible de forma gratuita para los clientes a plazo local de AEM 6.4 Forms y AEM 6.5 Forms y para los clientes empresariales de servicios gestionados de Adobe. Póngase en contacto con el equipo de ventas de Adobe o con su representante de Adobe para solicitar acceso al servicio.
 
-Adobe habilita el acceso para su organización y proporciona los privilegios requeridos a la persona designada como administrador en su organización. El administrador puede otorgar acceso a los desarrolladores (usuarios) de AEM Forms de su organización para conectarse al servicio.
+Adobe posibilita el acceso a su organización y otorga los pertinentes privilegios a la persona de su organización designada como administrador. El administrador puede otorgar acceso a los desarrolladores de AEM Forms (usuarios) de su organización para conectarse al servicio.
 
 ## Requisitos previos {#prerequisites}
 
@@ -33,32 +33,32 @@ Para utilizar el servicio de conversión de formularios automatizados, debe hace
 
 * El servicio Conversión automatizada de formularios está habilitado para su organización
 * Una cuenta de Adobe ID con privilegios de administrador para el servicio de conversión
-* Una instancia de autor de AEM 6.5 o AEM 6.4 que se esté ejecutando con el último Service Pack de AEM
+* Una instancia de autor de AEM 6.4 o AEM 6.5 activa con el último Service Pack de AEM
 * Un usuario de AEM (en su instancia de AEM) que es miembro del grupo de usuarios de formularios
 
-## Configuración del entorno {#setuptheservice}
+## Configuración de entorno {#setuptheservice}
 
 Antes de usar el servicio, prepare la instancia de creación de AEM para conectarse al servicio que se ejecuta en Adobe Cloud. Realice los siguientes pasos en la secuencia indicada para preparar la instancia para el servicio:
 
-1. [Descargar e instalar AEM 6.5 o AEM 6.4](#aemquickstart)
+1. [Descargar e instalar AEM 6.4 o AEM 6.5](#aemquickstart)
 1. [Descargar e instalar el último Service Pack de AEM](#servicepack)
 1. [Descargar e instalar el paquete adicional más reciente de AEM Forms](#downloadaemformsaddon)
 1. [Creación de plantillas y temas personalizados](#referencepackage)
 
-### Descargar e instalar AEM 6.5 o AEM 6.4 {#aemquickstart}
+### Descargar e instalar AEM 6.4 o AEM 6.5 {#aemquickstart}
 
 
-El servicio Conversión automatizada de formularios se ejecuta en una instancia de creación de AEM. Se requiere AEM 6.5 o AEM 6.4 para configurar una instancia de creación de AEM. Si AEM no está en funcionamiento, descárguelo de las siguientes ubicaciones:
+El servicio Conversión automatizada de formularios se ejecuta en una instancia de creación de AEM. Se requiere AEM 6.4 o AEM 6.5 para configurar una instancia de creación de AEM. Si AEM no está en funcionamiento, descárguelo de las siguientes ubicaciones:
 
-* Si ya es cliente de AEM, descargue AEM 6.5 o AEM 6.4 del sitio web [de licencias de](http://licensing.adobe.com)Adobe.
+* Si ya es cliente de AEM, descargue AEM 6.4 o AEM 6.5 del sitio web [de licencias de](http://licensing.adobe.com)Adobe.
 
-* Si es un socio de Adobe, utilice [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar AEM 6.5 o AEM 6.4.
+* Si es un socio de Adobe, utilice [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar AEM 6.4 o AEM 6.5.
 
 Después de descargar AEM, para obtener instrucciones sobre cómo configurar una instancia de autor de AEM, consulte [Implementación y mantenimiento](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
 
 ### Descargar e instalar AEM Service Pack más reciente {#servicepack}
 
-Descargue e instale el último Service Pack de AEM. Para obtener instrucciones detalladas, consulte las Notas [de la versión de](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html) AEM 6.5 Service Pack o las Notas [de la versión de](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)AEM 6.4 Service Pack.
+Descargue e instale el último Service Pack de AEM. Para obtener instrucciones detalladas, consulte las Notas [de la versión de](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) AEM 6.4 Service Pack o las Notas [de la versión de](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html)AEM 6.5 Service Pack.
 
 ### Descargar e instalar el paquete de complementos de AEM Forms {#downloadaemformsaddon}
 
@@ -265,4 +265,4 @@ Cree una configuración de servicio en la nube para conectar la instancia de AEM
       }
    ```
 
-1. Tocar **[!UICONTROL Create]**.  Se crea la configuración de nube. La instancia de AEM Forms está lista para empezar a convertir formularios heredados en formularios adaptables.
+1. Tocar **[!UICONTROL Create]**. Se crea la configuración de nube. La instancia de AEM Forms está lista para empezar a convertir formularios heredados en formularios adaptables.
