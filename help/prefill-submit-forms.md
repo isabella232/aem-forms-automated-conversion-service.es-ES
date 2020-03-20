@@ -1,5 +1,5 @@
 ---
-title: Flujos de trabajo de envío y rellenado previo basados en orígenes de datos recomendados para formularios adaptables
+title: Flujos de trabajo recomendados de relleno y envío basados en fuentes de datos para formularios adaptables
 seo-title: Rellenar y enviar opciones para formularios adaptables
 description: Los flujos de trabajo de envío y rellenado previo basados en fuentes de datos para formularios adaptables generados mediante el servicio de conversión automatizada de formularios.
 seo-description: Los flujos de trabajo de envío y rellenado previo basados en fuentes de datos para formularios adaptables generados mediante el servicio de conversión automatizada de formularios.
@@ -9,12 +9,12 @@ topic-tags: forms
 discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
 translation-type: tm+mt
-source-git-commit: f598871fd41c402f98d94d7b2174ab8b2e487075
+source-git-commit: caccb547a5741eb0e70ddf75630a661f8fe75cb3
 
 ---
 
 
-# Flujos de trabajo de envío y rellenado previo basados en orígenes de datos recomendados para formularios adaptables {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
+# Flujos de trabajo recomendados de relleno y envío basados en fuentes de datos para formularios adaptables {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
 
 Puede utilizar cualquiera de los siguientes orígenes de datos con formularios adaptables convertidos mediante el servicio Conversión automatizada de formularios:
 
@@ -91,9 +91,9 @@ En este artículo se describen los flujos de trabajo recomendados para rellenar 
 
 Para obtener más información sobre el servicio Conversión automatizada de formularios, consulte los siguientes artículos:
 
-* [Introducción al servicio de conversión de formularios automatizados](introduction.md)
-* [Configuración del servicio Conversión automatizada de formularios](configure-service.md)
-* [Convertir formularios impresos en formularios adaptables](convert-existing-forms-to-adaptive-forms.md)
+* [Introducción al servicio de conversión automatizada de formularios](introduction.md)
+* [Configurar el servicio de conversión automatizada de formularios](configure-service.md)
+* [Convertir la impresión de formularios en formularios adaptables](convert-existing-forms-to-adaptive-forms.md)
 * [Revisar y corregir formularios convertidos](review-correct-ui-edited.md)
 
 La información proporcionada en este artículo se basa en la suposición de que cualquiera que la lea tiene conocimientos básicos de conceptos de formularios adaptables.
@@ -268,17 +268,17 @@ Siga estos pasos:
    1. En la **[!UICONTROL Submission]** sección, seleccione **[!UICONTROL Submit using Form Data Model]** en la lista **[!UICONTROL Submit Action]** desplegable.
 
    1. Seleccione el modelo de datos mediante el **[!UICONTROL Data Model to submit]** campo .
-   1. Toque ![el icono](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) done para guardar las propiedades.
+   1. Toque ![el icono](assets/save_icon.svg) done para guardar las propiedades.
 
-1. Puntee en el cuadro de texto Nombre del solicitante y seleccione ![Configurar icono](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configurar).
+1. Puntee en el cuadro de texto Nombre del solicitante y seleccione ![Configurar icono](assets/configure_icon.svg) (Configurar).
 
-   1. En el campo Referencia de enlace, seleccione **Solicitante** > **Nombre** y toque el icono ![hecho](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para guardar las propiedades. Del mismo modo, cree un enlace de datos para **Dirección**, Número **de** teléfono, Correo **electrónico**, **Ocupación**, Salario **Anual (en dólares)****yNo. de los campos familiares** dependientes con las entidades del modelo de datos de formulario.
+   1. En el campo Referencia de enlace, seleccione **Solicitante** > **Nombre** y toque el icono ![hecho](assets/save_icon.svg) para guardar las propiedades. Del mismo modo, cree un enlace de datos para **Dirección**, Número **de** teléfono, Correo **electrónico**, **Ocupación**, Salario **Anual (en dólares)****yNo. de los campos familiares** dependientes con las entidades del modelo de datos de formulario.
    ![Enlazar referencias](assets/bind_references.png)
 
 1. Toque **[!UICONTROL Preview]** para ver los valores de campo de formulario adaptable rellenados previamente.
 1. Si es necesario, modifique los valores de los campos y envíe el formulario adaptable. Los valores de campo se envían a la base de datos MySQL. Puede actualizar la tabla de **candidatos** de la base de datos para ver los valores actualizados en la tabla.
 
-**** Caso de uso: Puede generar un formulario adaptable sin enlace de datos mediante el servicio Conversión automatizada de formularios y configurar la base de datos MYSQL como el origen de datos. Los campos de formulario adaptables se enlazan mediante el editor de reglas para rellenar previamente los valores de campo. Si es necesario, modifique los valores de los campos y envíe los datos al repositorio crx.
+**Caso de uso:** Puede generar un formulario adaptable sin enlace de datos mediante el servicio Conversión automatizada de formularios y configurar la base de datos MYSQL como el origen de datos. Los campos de formulario adaptables se enlazan mediante el editor de reglas para rellenar previamente los valores de campo. Si es necesario, modifique los valores de los campos y envíe los datos al repositorio crx.
 
 Ejecute los siguientes pasos para utilizar el editor [de](https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html) reglas para invocar el servicio del modelo de datos de formulario para enlazar campos y rellenar previamente valores en un formulario adaptable:
 
@@ -319,7 +319,7 @@ Ejecute los siguientes pasos para utilizar el editor [de](https://helpx.adobe.co
 
 ### Usar el esquema JSON como origen de datos {#jsondatasource}
 
-**** Caso de uso: Puede generar un formulario adaptable sin enlace de datos mediante el servicio Conversión automatizada de formularios y configurar el esquema JSON como el origen de datos. Los campos de formulario adaptables se enlazan manualmente al esquema JSON y se utiliza la opción **Vista previa con datos** para rellenar previamente los valores de campo. Si es necesario, modifique los valores de los campos y envíe los datos al repositorio crx.
+**Caso de uso:** Puede generar un formulario adaptable sin enlace de datos mediante el servicio Conversión automatizada de formularios y configurar el esquema JSON como el origen de datos. Los campos de formulario adaptables se enlazan manualmente al esquema JSON y se utiliza la opción **Vista previa con datos** para rellenar previamente los valores de campo. Si es necesario, modifique los valores de los campos y envíe los datos al repositorio crx.
 
 Antes de ejecutar el caso de uso, asegúrese de que:
 
@@ -331,9 +331,9 @@ Siga estos pasos:
 1. Seleccione el formulario **de solicitud de préstamo de** ejemplo convertido disponible en la carpeta de **salida** y toque **[!UICONTROL Properties]**.
 1. Toque la **[!UICONTROL Form Model]** ficha, seleccione **[!UICONTROL Schema]** en la lista **[!UICONTROL Select From]** desplegable y toque **[!UICONTROL Select Schema]** para cargar el esquema JSON **de** demo.schema guardado en el sistema de archivos local. Toque **[!UICONTROL Save & Close]** para guardar el formulario.
 1. Seleccione el formulario **de solicitud de préstamo de** ejemplo y toque **[!UICONTROL Edit]**.
-1. Puntee en el cuadro de texto Nombre del solicitante y seleccione ![Configurar icono](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configurar).
+1. Puntee en el cuadro de texto Nombre del solicitante y seleccione ![Configurar icono](assets/configure_icon.svg) (Configurar).
 
-   En el campo Referencia de enlace, seleccione **Solicitante** > **Nombre** y toque el icono ![hecho](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para guardar las propiedades. Del mismo modo, cree un enlace de datos para **Dirección**, Número **de** teléfono, Correo **electrónico**, **Ocupación**, Salario **Anual (en dólares)****yNo. de los campos familiares** dependientes con las entidades de esquema JSON.
+   En el campo Referencia de enlace, seleccione **Solicitante** > **Nombre** y toque el icono ![hecho](assets/save_icon.svg) para guardar las propiedades. Del mismo modo, cree un enlace de datos para **Dirección**, Número **de** teléfono, Correo **electrónico**, **Ocupación**, Salario **Anual (en dólares)****yNo. de los campos familiares** dependientes con las entidades de esquema JSON.
 
 1. Seleccione el formulario **de solicitud de préstamo de** ejemplo convertido disponible en la **[!UICONTROL output]** carpeta de nuevo y seleccione **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
@@ -347,7 +347,7 @@ Siga estos pasos:
 
 ### Utilizar el esquema XSD como origen de datos {#xsddatasource}
 
-**** Caso de uso: Puede generar un formulario adaptable sin enlace de datos mediante el servicio Conversión automatizada de formularios y configurar el esquema XSD como el origen de datos. Los campos de formulario adaptables se enlazan manualmente al esquema XSD y se utiliza la **Vista previa con datos** para rellenar previamente los valores de campo. Si es necesario, modifique los valores de los campos y envíe los datos al repositorio crx.
+**Caso de uso:** Puede generar un formulario adaptable sin enlace de datos mediante el servicio Conversión automatizada de formularios y configurar el esquema XSD como el origen de datos. Los campos de formulario adaptables se enlazan manualmente al esquema XSD y se utiliza la **Vista previa con datos** para rellenar previamente los valores de campo. Si es necesario, modifique los valores de los campos y envíe los datos al repositorio crx.
 
 Antes de ejecutar el caso de uso, asegúrese de que:
 
@@ -359,8 +359,8 @@ Siga estos pasos:
 1. Seleccione el formulario **de solicitud de préstamo de** ejemplo convertido disponible en la **[!UICONTROL output]** carpeta y toque **[!UICONTROL Properties]**.
 1. Toque la **[!UICONTROL Form Model]** ficha, seleccione **[!UICONTROL Schema]** en la lista **[!UICONTROL Select From]** desplegable y toque **[!UICONTROL Select Schema]** para cargar el esquema XSD de la aplicación de **** préstamo guardado en el sistema de archivos local. Seleccione el elemento raíz para el esquema XSD y toque **[!UICONTROL Save & Close]** para guardar el formulario.
 1. Seleccione el formulario **de solicitud de préstamo de** ejemplo y toque **[!UICONTROL Edit]**.
-1. Puntee en el cuadro de texto Nombre del solicitante y seleccione ![Configurar icono](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configurar).
-En el campo Referencia de enlace, seleccione **Solicitante** > **Nombre** y toque el icono ![Listo](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para guardar las propiedades. Del mismo modo, cree un enlace de datos para **Dirección**, Número **de** teléfono, Correo **electrónico**, **Ocupación**, Salario **Anual (en dólares)****yNo. de los campos de miembros** de la familia dependientes con las entidades de esquema XSD.
+1. Puntee en el cuadro de texto Nombre del solicitante y seleccione ![Configurar icono](assets/configure_icon.svg) (Configurar).
+En el campo Referencia de enlace, seleccione **Solicitante** > **Nombre** y toque el icono ![Listo](assets/save_icon.svg) para guardar las propiedades. Del mismo modo, cree un enlace de datos para **Dirección**, Número **de** teléfono, Correo **electrónico**, **Ocupación**, Salario **Anual (en dólares)****yNo. de los campos de miembros** de la familia dependientes con las entidades de esquema XSD.
 
 1. Seleccione de nuevo el formulario **de solicitud de préstamo de** ejemplo convertido disponible en la carpeta de **salida** y seleccione **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
@@ -381,7 +381,7 @@ Utilice el servicio Conversión de formularios [automatizados para convertir](co
 
 ### Usar el esquema JSON como origen de datos {#jsonwithdatabinding}
 
-**** Caso de uso: Puede generar un formulario adaptable con enlace de datos JSON mediante el servicio Conversión automatizada de formularios. El servicio de cumplimentación previa y el envío de formularios funcionan sin problemas. No necesita ningún paso de configuración.
+**Caso de uso:** Puede generar un formulario adaptable con enlace de datos JSON mediante el servicio Conversión automatizada de formularios. El servicio de cumplimentación previa y el envío de formularios funcionan sin problemas. No necesita ningún paso de configuración.
 
 Antes de ejecutar el caso de uso, asegúrese de que tiene [un formulario adaptable con enlace](#generate-adaptive-forms-with-json-binding)de datos.
 
