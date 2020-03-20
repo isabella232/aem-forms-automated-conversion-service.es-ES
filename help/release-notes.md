@@ -2,7 +2,7 @@
 title: 'Novedades? Notas de la versión: Servicio de conversión automatizada de formularios'
 description: 'Obtenga información sobre las últimas funciones y errores corregidos para el servicio de conversión de formularios automatizados '
 translation-type: tm+mt
-source-git-commit: 01dfd20951314017d47713bfb1a2a5f2d563f434
+source-git-commit: 6d658dbb181c09e42073e328e0232e40d4fb6b58
 
 ---
 
@@ -18,15 +18,13 @@ El servicio de conversión automatizada de formularios recibe mejoras de forma c
 * Instrucciones especiales
 * Planes futuros de cambios
 
-Esta página se actualiza mensualmente, por lo que puede volver a verla regularmente.
-
 ## 20 de marzo de 2020 (AFC-2020.03.1)
 
 ### Novedades
 
 **Detectar automáticamente secciones lógicas en un formulario**
 
-De forma predeterminada, el servicio crea un panel de nivel superior independiente para cada página de un formulario PDF de entrada. Ahora puede seleccionar la **[!UICONTROL Auto-detect logical sections]** opción para eliminar la noción de crear un panel de nivel superior independiente para cada página PDF y detectar automáticamente las secciones lógicas. Los clubes de servicio relacionaban los campos de un formulario con una sección lógica. Por ejemplo: todos los campos relacionados con la dirección de facturación se agrupan en una sección y todos los campos relacionados con la dirección de envío se agrupan en una sección diferente. El servicio también crea un panel de nivel superior independiente para cada sección lógica detectada automáticamente.
+De forma predeterminada, el servicio crea un panel de nivel superior independiente para cada página de un formulario PDF. Ahora puede utilizar la **[!UICONTROL Auto-detect logical sections]** opción para colocar paneles de nivel de página (paneles basados en números de página) y crear solo paneles lógicos.  También muestra los campos que no pertenecen a ninguna sección con una sección lógica anterior. También agrupa los campos de una sección lógica en dos páginas adyacentes en una sola sección lógica. Por ejemplo: si algunos campos de una sección lógica se encuentran al final de la página uno y algunos están al comienzo de la página dos, todos esos campos se agrupan en una sola sección lógica.
 
 ### Qué se ha mejorado
 
