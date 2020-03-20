@@ -2,7 +2,7 @@
 title: 'Novedades? Notas de la versión: Servicio de conversión automatizada de formularios'
 description: 'Obtenga información sobre las últimas funciones y errores corregidos para el servicio de conversión de formularios automatizados '
 translation-type: tm+mt
-source-git-commit: 6d658dbb181c09e42073e328e0232e40d4fb6b58
+source-git-commit: ec3a85ccd4c5d535ebc31c55702adab9aa92cf4e
 
 ---
 
@@ -24,7 +24,7 @@ El servicio de conversión automatizada de formularios recibe mejoras de forma c
 
 **Detectar automáticamente secciones lógicas en un formulario**
 
-De forma predeterminada, el servicio crea un panel de nivel superior independiente para cada página de un formulario PDF. Ahora puede utilizar la **[!UICONTROL Auto-detect logical sections]** opción para colocar paneles de nivel de página (paneles basados en números de página) y crear solo paneles lógicos.  También muestra los campos que no pertenecen a ninguna sección con una sección lógica anterior. También agrupa los campos de una sección lógica en dos páginas adyacentes en una sola sección lógica. Por ejemplo: si algunos campos de una sección lógica se encuentran al final de la página uno y algunos están al comienzo de la página dos, todos esos campos se agrupan en una sola sección lógica.
+De forma predeterminada, el servicio crea un panel de nivel superior independiente para cada página de un formulario PDF. Ahora puede utilizar la **[!UICONTROL Auto-detect logical sections]** opción para colocar paneles de nivel de página (paneles basados en números de página) y crear solo paneles lógicos.  También agrupa los campos que no pertenecen a ninguna sección con una sección lógica anterior y los campos de una sección lógica extendidos en dos páginas adyacentes en una sola sección lógica. Por ejemplo: si algunos campos de una sección lógica se encuentran al final de la página uno y algunos están al comienzo de la página dos, todos esos campos se agrupan en una sola sección lógica.
 
 ### Qué se ha mejorado
 
