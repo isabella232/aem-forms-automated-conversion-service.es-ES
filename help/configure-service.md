@@ -2,7 +2,7 @@
 title: Configurar el servicio de conversión automatizada de formularios
 description: Listo la instancia de AEM para utilizar el servicio Conversión automatizada de formularios
 translation-type: tm+mt
-source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
+source-git-commit: 5f27fcbf756350a03b7143af489f737e01a7f0e3
 
 ---
 
@@ -43,6 +43,7 @@ Antes de usar el servicio, prepare la instancia de creación de AEM para conecta
 1. [Descargar e instalar AEM 6.4 o AEM 6.5](#aemquickstart)
 1. [Descargar e instalar el último Service Pack de AEM](#servicepack)
 1. [Descargar e instalar el paquete adicional más reciente de AEM Forms](#downloadaemformsaddon)
+1. [Descargar e instalar el paquete de conector más reciente](#installConnectorPackage)
 1. [Creación de plantillas y temas personalizados](#referencepackage)
 
 ### Descargar e instalar AEM 6.4 o AEM 6.5 {#aemquickstart}
@@ -65,8 +66,20 @@ Descargue e instale el último Service Pack de AEM. Para obtener instrucciones d
 Una instancia de AEM contiene funciones básicas de formularios. El servicio de conversión requiere todas las funciones de AEM Forms. Descargue e instale el paquete de complementos de AEM Forms para utilizar todas las funciones de AEM Forms. El paquete es necesario para configurar y ejecutar el servicio de conversión. Para obtener instrucciones detalladas, consulte [Instalación y configuración de funciones de captura de datos.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
 >[!NOTE]
-> Si ya es usuario del servicio Conversión automatizada de formularios, instale el complemento de AEM Forms más reciente para seguir utilizando el servicio. El paquete de conector se combina con el paquete del complemento AEM Forms. El paquete de conector adicional ya no es necesario.
 > Asegúrese de realizar las configuraciones obligatorias posteriores a la instalación después de instalar el paquete de complemento.
+
+
+### Descargar e instalar paquete de conector {#installConnectorPackage}
+
+Debe utilizar el paquete de conector 1.1.38 o superior para utilizar las últimas funciones y mejoras de la versión AFC-2020.03.1. Puede descargar el paquete de conector desde Uso compartido de paquetes AEM.
+
+| Sistema operativo | Vínculo de descarga de paquete de conector |
+| ------------- | ------------- |
+| Microsoft Windows | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
+| Linux | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
+
+>[!NOTE]
+> si ya dispone de un entorno de servicio Conversión automatizada de formularios en ejecución, para utilizar las últimas funciones del servicio de conversión, instale el Service Pack más reciente, el paquete adicional de AEM Forms más reciente y el paquete de conector más reciente en el orden mencionado.
 
 
 ### Creación de plantillas y temas personalizados {#referencepackage}
