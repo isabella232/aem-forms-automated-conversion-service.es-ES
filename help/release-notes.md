@@ -2,7 +2,7 @@
 title: 'Novedades? Notas de la versión: Servicio de conversión automatizada de formularios'
 description: 'Obtenga información sobre las últimas funciones y errores corregidos para el servicio de conversión de formularios automatizados '
 translation-type: tm+mt
-source-git-commit: ec3a85ccd4c5d535ebc31c55702adab9aa92cf4e
+source-git-commit: e01334d9a22ab95749e9b9b459da8886ae1ccd78
 
 ---
 
@@ -36,6 +36,6 @@ El servicio ahora es más eficaz en la detección de listas con viñetas y numer
 
 **Instalar el paquete de conector del servicio de conversión de formularios automatizados**
 
-Debe utilizar el paquete de conector 1.1.38 o superior para utilizar las últimas funciones y mejoras de la versión AFC-2020.03.1. Puede descargar el paquete de conector desde Uso compartido de paquetes [AEM](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN).
+Debe utilizar el paquete de conector 1.1.38 o superior para utilizar las últimas funciones y mejoras de la versión AFC-2020.03.1. Puede descargar el paquete de conector desde Uso compartido de paquetes [AEM](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
 Si ya dispone de un entorno de servicio Conversión automatizada de formularios en ejecución, para utilizar las últimas funciones del servicio de conversión, instale el Service Pack más reciente, el paquete adicional de AEM Forms más reciente y el paquete de conector más reciente en el orden mencionado. Para obtener instrucciones detalladas, consulte el artículo [Configurar el servicio](configure-service.md) Conversión automatizada de formularios.
