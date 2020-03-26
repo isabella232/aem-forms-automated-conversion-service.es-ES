@@ -8,7 +8,7 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: bcd55fa59f37b71b95b7cbfd80fcda368eaba408
+source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
 
 ---
 
@@ -21,7 +21,7 @@ El servicio de conversión automatizada de formularios de AEM Forms, con la tecn
 
 * [**Configurar el servicio de conversión **](configure-service.md)
 
-* **Prepare las[plantillas](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)que se van a aplicar a los formularios convertidos:** El uso de una plantilla le permite aplicar una marca coherente en todos los formularios adaptables. Además, el servicio Conversión automatizada de formularios no extrae ni utiliza el encabezado ni el pie de página de los documentos PDF de origen. Puede utilizar plantillas de formulario adaptables para especificar el encabezado y el pie de página. El encabezado y el pie de página especificados en la plantilla se aplican a los formularios adaptables durante la conversión.
+* **Prepare las[plantillas](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)que se van a aplicar a los formularios convertidos:** El uso de una plantilla le permite aplicar una marca coherente en todos los formularios adaptables. Además, el servicio Conversión automatizada de formularios no extrae ni utiliza el encabezado ni el pie de página de los documentos PDF de origen. Puede utilizar plantillas de formulario adaptables para especificar el encabezado y el pie de página. El encabezado y el pie de página especificados en la plantilla se aplican al formulario adaptable durante la conversión.
 
 * **Prepare las[temáticas](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)que se aplicarán a los formularios convertidos:** El uso de un tema permite aplicar un estilo coherente a todas las formas adaptables de la organización.
 
@@ -42,7 +42,7 @@ El servicio de conversión convierte los formularios PDF disponibles en la insta
 * Mantenga el número de páginas de un formulario por debajo de 15.
 * No cargue los formularios protegidos. El servicio no convierte formularios protegidos por contraseña ni protegidos por contraseña.
 * No cargue formularios de origen con espacios en el nombre del archivo. Quite el espacio del nombre del archivo antes de cargar los formularios.
-* No cargue [carpetas PDF](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). El servicio no convierte una carpeta PDF a formularios adaptables.
+* No cargue [carpetas PDF](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). El servicio no convierte una cartera PDF a un formulario adaptable.
 * Lea las secciones Problemas [](known-issues.md) conocidos y [Prácticas recomendadas y consideraciones](styles-and-pattern-considerations-and-best-practices.md) y realice los cambios sugeridos en los formularios.
 
 Siga estos pasos para cargar los formularios que se van a convertir en una carpeta en la instancia de AEM Forms:
@@ -91,7 +91,7 @@ Si selecciona esta opción, el servicio de conversión genera un formulario adap
 
 
    * Seleccione la **[!UICONTROL Auto-detect multi-column layout of input forms]** opción para conservar la presentación del formulario de origen para pantallas grandes como equipos de escritorio y portátiles. Esta opción es útil para conservar el diseño de varias columnas de los formularios de origen. Por ejemplo, cuando un PDF de origen tiene una presentación de dos columnas, el servicio genera un formulario adaptable de salida con una presentación de dos columnas para pantallas grandes y una presentación de una sola columna para dispositivos de pantalla pequeños como teléfonos móviles. La función tiene algunos problemas conocidos con la estructura del esquema del origen de datos. Para obtener más información, consulte el artículo sobre problemas [](known-issues.md) conocidos.
-   * De forma predeterminada, el servicio crea un panel de nivel superior independiente para cada página de un formulario PDF. Ahora puede utilizar la **[!UICONTROL Auto-detect logical sections]** opción para colocar paneles de nivel de página (paneles basados en números de página) y crear solo paneles lógicos. También agrupa los campos que no pertenecen a ninguna sección con una sección lógica anterior y los campos de una sección lógica extendidos en dos páginas adyacentes en una sola sección lógica. Por ejemplo: si algunos campos de una sección lógica se encuentran al final de la página uno y algunos están al comienzo de la página dos, todos esos campos se agrupan en una sola sección lógica.
+   * De forma predeterminada, el servicio crea un panel de nivel superior independiente para cada página de un formulario PDF. Ahora puede utilizar la **[!UICONTROL Auto-detect logical sections]** opción para no crear paneles de nivel de página (paneles basados en números de página) y crear solo paneles lógicos. También agrupa los campos que no pertenecen a ninguna sección con la sección lógica anterior y los campos de una sección lógica extendidos en dos páginas adyacentes en una sola sección lógica. Por ejemplo: si algunos campos de una sección lógica se encuentran al final de la página uno y algunos están al comienzo de la página dos, todos esos campos se agrupan en una sola sección lógica.
 
       >[!NOTE]
       > Debe utilizar la función el paquete de conector 1.1.38 o superior para utilizar la **[!UICONTROL Auto-detect logical sections]** .
@@ -129,7 +129,7 @@ Si selecciona esta opción, el servicio de conversión genera un formulario adap
 
    >[!NOTE]
    >
-   >Si el proceso de conversión tarda más de 60 minutos y el formulario PDF aún no se convierte en un formulario adaptable, cree una nueva carpeta en la instancia de AEM Forms, cargue el formulario PDF en la carpeta recién creada y reinicie la conversión.
+   >Si el proceso de conversión tarda más de 60 minutos y el formulario PDF aún no se convierte en un formulario adaptable, cree una carpeta en la instancia de AEM Forms, cargue el formulario PDF en la carpeta recién creada y reinicie la conversión.
 
 ## Review and correct the converted forms {#review-and-correct-the-converted-forms}
 
