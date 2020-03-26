@@ -5,7 +5,7 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
+source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 El servicio Conversión automatizada de formularios le permite convertir un formulario PDF no interactivo, un formulario Acro o un formulario PDF basado en XFA en un formulario adaptable. Al iniciar el proceso de conversión, tiene la opción de generar un formulario adaptable con o sin enlaces de datos.
 
-Si selecciona generar un formulario adaptable sin enlaces de datos, puede integrar el formulario adaptable convertido con un modelo de datos de formulario, un esquema XML o un esquema JSON después de la conversión. Sin embargo, si genera un formulario adaptable con enlaces de datos, el servicio de conversión asocia automáticamente los formularios adaptables con un esquema JSON y crea un enlace de datos entre los campos disponibles en el formulario adaptable y el esquema JSON. A continuación, puede integrar el formulario adaptable con una base de datos de su elección, rellenar los datos del formulario y enviarlos a la base de datos mediante Forms Portal.
+Si selecciona generar un formulario adaptable sin enlaces de datos, puede integrar el formulario adaptable convertido con un modelo de datos de formulario, un esquema XML o un esquema JSON después de la conversión. Sin embargo, si se genera un formulario adaptable con enlaces de datos, el servicio de conversión asocia automáticamente los formularios adaptables con un esquema JSON y crea un enlace de datos entre los campos disponibles en el formulario adaptable y el esquema JSON. A continuación, puede integrar el formulario adaptable con una base de datos de su elección, rellenar los datos del formulario y enviarlos a la base de datos mediante Forms Portal.
 
 En la siguiente figura se muestran las diferentes etapas de integración de un formulario adaptable convertido con una base de datos mediante Forms Portal:
 
@@ -59,7 +59,7 @@ Realice los siguientes pasos, en todas las instancias de creación y publicació
 
 Realice los siguientes pasos para crear esquemas y tablas en la base de datos:
 
-1. Cree un esquema en la base de datos mediante la siguiente instrucción SQL:
+1. Cree un esquema en la base de datos con la siguiente instrucción SQL:
 
    ```sql
    CREATE SCHEMA `formsportal` ;
@@ -67,7 +67,7 @@ Realice los siguientes pasos para crear esquemas y tablas en la base de datos:
 
    donde **formsportal** hace referencia al nombre del esquema.
 
-1. Cree una tabla **de datos** en el esquema de base de datos mediante la siguiente instrucción SQL:
+1. Cree una tabla **de datos** en el esquema de la base de datos con la siguiente instrucción SQL:
 
    ```sql
     CREATE TABLE `data` (
@@ -79,7 +79,7 @@ Realice los siguientes pasos para crear esquemas y tablas en la base de datos:
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-1. Cree una tabla de **metadatos** en el esquema de la base de datos mediante la siguiente instrucción SQL:
+1. Cree una tabla de **metadatos** en el esquema de la base de datos con la siguiente instrucción SQL:
 
    ```sql
    CREATE TABLE `metadata` (
@@ -119,7 +119,7 @@ Realice los siguientes pasos para crear esquemas y tablas en la base de datos:
        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-1. Cree una tabla **adicional de metadatos** en el esquema de la base de datos mediante la siguiente instrucción SQL:
+1. Cree una tabla **adicional de metadatos** en el esquema de la base de datos con la siguiente instrucción SQL:
 
    ```sql
    CREATE TABLE `additionalmetadatatable` (
@@ -255,7 +255,7 @@ Realice los siguientes pasos de configuración para crear una conexión entre la
     <td><p>Los valores de ejemplo son SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</p></td>
     </tr>
      <tr> 
-    <td><p>Tiempo de espera de consulta de validación</p></td> 
+    <td><p>Tiempo de espera de Consulta de validación</p></td> 
     <td><p>10 000</p></td>
     </tr>
     </tbody> 
@@ -279,7 +279,7 @@ Realice los siguientes pasos, en todas las instancias de creación y publicació
 Siga estos pasos para activar el envío de formularios adaptables mediante la página Portal de formularios:
 1. [Ejecute la conversión](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process) para convertir un formulario de origen en un formulario adaptable.
 1. Abra el formulario adaptable en modo de edición.
-1. Puntee Contenedor de formulario y seleccione Configurar ![formulario](assets/configure-adaptive-form.png)adaptable.
+1. Puntee en Contenedor de formulario y seleccione Configurar ![formulario](assets/configure-adaptive-form.png)adaptable.
 1. En la **[!UICONTROL Submission]** sección, seleccione **[!UICONTROL Forms Portal Submit Action]** en la lista **[!UICONTROL Submit Action]** desplegable.
 1. Toque ![Guardar directiva](assets/edit_template_done.png) de plantilla para guardar la configuración.
 
@@ -292,7 +292,7 @@ Siga estos pasos para crear una página de Forms Portal y configurarla de modo q
 1. Seleccione la plantilla de la página, toque **[!UICONTROL Next]**, especifique un título para la página y toque **[!UICONTROL Create]**.
 1. Toque **[!UICONTROL Edit]** para configurar la página.
 1. En el encabezado de página, toque ![Editar plantilla](assets/edit_template_sites.png) > **[!UICONTROL Edit Template]** para abrir la plantilla de la página.
-1. Toque Contenedor de diseño y ![Editar directiva](assets/edit_template_policy.png)de plantilla. En la **[!UICONTROL Allowed Components]** ficha, active las opciones **[!UICONTROL Document Services]** y **[!UICONTROL Document Services Predicates]** y toque ![Guardar directiva](assets/edit_template_done.png)de plantilla.
+1. Toque Diseño Contenedor y ![Editar directiva](assets/edit_template_policy.png)de plantilla. En la **[!UICONTROL Allowed Components]** ficha, active las opciones **[!UICONTROL Document Services]** y **[!UICONTROL Document Services Predicates]** y toque ![Guardar directiva](assets/edit_template_done.png)de plantilla.
 1. Inserte **[!UICONTROL Search & Lister]** un componente en la página. Como resultado, todos los formularios adaptables existentes disponibles en la instancia de AEM se muestran en la página.
 1. Inserte **[!UICONTROL Drafts & Submissions]** un componente en la página. En la página Portal de formularios se muestran dos fichas **[!UICONTROL Draft Forms]** y **[!UICONTROL Submitted Forms]**. La ficha **[!UICONTROL Draft Forms]** también muestra el formulario adaptable convertido generado mediante los pasos mencionados en [Configurar el formulario adaptable convertido para la integración con Forms Portal](#configure-converted-adaptive-form-for-forms-portal-integration)
 
