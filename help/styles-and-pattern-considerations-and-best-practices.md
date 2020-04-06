@@ -2,12 +2,12 @@
 title: 'Prácticas recomendadas y consideraciones '
 seo-title: 'Prácticas recomendadas y consideraciones '
 description: Prácticas recomendadas y consideraciones para el servicio Conversión automatizada de formularios
-seo-description: Lista de estilos y patrones en formularios PDF de origen que el servicio Conversión automatizada de formularios encuentra difíciles de identificar
+seo-description: Lista de estilos y patrones en formularios PDF de origen que el servicio Conversión automatizada de formularios encuentra difícil de identificar
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 0f413a8bc0bb444b6faaddaf32f84f36e38438a5
+source-git-commit: 8e373b978535cd6616072cf50c223bd7f4f7c35a
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 0f413a8bc0bb444b6faaddaf32f84f36e38438a5
 
 Este documento proporciona directrices y recomendaciones de las que pueden beneficiarse los administradores, autores y desarrolladores de formularios al trabajar con el servicio Conversión automatizada de formularios. Se analizan las prácticas recomendadas desde la preparación de formularios de origen hasta la corrección de patrones complejos que requieren un esfuerzo adicional para la conversión automatizada. Estas prácticas recomendadas contribuyen de forma colectiva al rendimiento y la salida generales del servicio de conversión automatizada de formularios.
 
-## Prácticas recomendadas
+## Prácticas recomendadas  
 
 El servicio de conversión convierte los formularios PDF disponibles en la instancia de AEM Forms en formularios adaptables. Puede cargar todos los formularios PDF de una vez o de forma gradual, según sea necesario. Antes de cargar los formularios, tenga en cuenta lo siguiente:
 
@@ -24,8 +24,8 @@ El servicio de conversión convierte los formularios PDF disponibles en la insta
 * Mantenga el tamaño de la carpeta por debajo de los 10 MB. No mantenga los formularios en una subcarpeta.
 * Mantenga el número de páginas de un formulario por debajo de 15.
 * No cargue los formularios protegidos. El servicio no convierte formularios protegidos por contraseña ni protegidos por contraseña.
-* No cargue las carteras [PDF](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). El servicio no convierte una cartera PDF en formularios adaptables.
-* No cargue formularios escaneados, coloreados, que no estén en inglés ni rellenados. Estos formularios no son compatibles.
+* Do not upload the [PDF Portfolios](https://helpx.adobe.com/es/acrobat/using/overview-pdf-portfolios.html). El servicio no convierte una carpeta PDF a formularios adaptables.
+* No cargue formularios escaneados, coloreados, que no estén en inglés y completados. Estas clases de formulario no se admiten.
 * No cargue formularios de origen con espacios en el nombre del archivo. Quite el espacio del nombre del archivo antes de cargar los formularios.
 * Utilice plantillas de formulario adaptables para especificar el encabezado y el pie de página del formulario adaptable de salida. El servicio omite el encabezado y el pie de página de los documentos PDF de origen y utiliza el encabezado y el pie de página especificados en la plantilla de formulario adaptable.
 
@@ -35,11 +35,11 @@ El servicio de conversión automatizada de AEM Forms utiliza inteligencia artifi
 
 El servicio Conversión automatizada de formularios se capacita en un gran conjunto de formularios. Identifica fácilmente los campos de un formulario de origen y genera formularios adaptables. Sin embargo, hay algunos campos y estilos en formularios PDF que son fácilmente visibles para el ojo humano pero difíciles de entender para el servicio. El servicio puede asignar tipos de campos o paneles diferentes de los aplicables a algunos campos o estilos. Todos estos patrones de estilo y campo se enumeran a continuación.
 
-El servicio empezaría a identificar y asignar los campos o paneles correctos a estos patrones, ya que sigue aprendiendo de los datos de origen. Por el momento, puede utilizar el editor [Revisar y corregir](review-correct-ui-edited.md) para corregir estos problemas. Antes de empezar a corregir los problemas o a leer más, familiarícese con los componentes [de formulario](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)adaptables.
+El servicio tiene el inicio de identificar y asignar los campos o paneles correctos a estos patrones, ya que sigue aprendiendo de los datos de origen. Por el momento, puede utilizar el editor [Revisar y corregir](review-correct-ui-edited.md) para corregir estos problemas. Antes de inicio de corregir los problemas o leer más, familiarícese con los componentes [de formulario](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)adaptables.
 
 ### Patrones generales {#general}
 
-| Patrón | Resolución |
+| Patrón | Ejemplo |
 |--- |--- |
 | **El servicio de patrones** <br> no convierte los formularios PDF de color en formularios adaptables. <br><br>**Resolución **<br>Utilice formularios PDF en blanco y negro o en escala de grises. | ![Formulario en color](assets/best-practice-coloured-forms.png) |
 | **El** servicio de patrones <br>no convierte los formularios PDF rellenados en formularios adaptables. <br><br>**Resolución **<br>Utilice formularios adaptables vacíos. | ![Formulario rellenado](assets/best-practice-filled-forms.png) |
@@ -70,9 +70,9 @@ El servicio empezaría a identificar y asignar los campos o paneles correctos a 
 
 | Patrón | Resolución |
 |--- |--- |
-| **Patrón** Las <br>listas que contienen campos de formulario se combinan o no se convierten en los componentes de formulario adaptables correspondientes <br><br>**Resolución **<br>Utilice los campos de formulario con límites claros o utilice el editor Revisar y corregir para corregir estos problemas. | ![listas que contienen grupos de opciones](assets/best-practice-lists-containing-form-fields.png) |
+| **Las** Listas de patrones <br>que contienen campos de formulario se combinan o no se convierten en los componentes de formulario adaptables correspondientes <br><br>**Resolución **<br>Utilice los campos de formulario con límites claros o utilice el editor Revisar y corregir para corregir estos problemas. | ![listas que contienen grupos de opciones](assets/best-practice-lists-containing-form-fields.png) |
 | **El** servicio de patrones <br>puede dejar algunas listas anidadas sin identificar <br><br>**Resolución **<br>Utilice el editor Revisar y corregir para corregir estos problemas. | ![listas que contienen grupos de opciones](assets/best-practice-nested-lists.png) |
-| **El Servicio de patrones** <br> combina algunas listas que contienen grupos de opciones entre sí <br><br>**Resolución **<br>Utilice el editor Revisión y Correcto para corregir estos problemas. | ![listas que contienen grupos de opciones](assets/best-practice-check-box-in-table-cells.png) |
+| **El servicio de patrones** <br> combina algunas listas que contienen grupos de opciones entre sí <br><br>**Resolución **<br>Utilice el editor Revisión y Correcto para corregir estos problemas. | ![listas que contienen grupos de opciones](assets/best-practice-check-box-in-table-cells.png) |
 
 <!--
 Comment Type: draft
