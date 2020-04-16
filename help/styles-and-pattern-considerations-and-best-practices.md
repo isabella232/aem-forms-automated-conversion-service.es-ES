@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 12b4df8feb19fdc6e723c4d7301d299f26676716
+source-git-commit: cab926fc408a1a680853ee557e36354938f7424a
 
 ---
 
@@ -20,7 +20,8 @@ Este documento proporciona directrices y recomendaciones de las que pueden benef
 
 El servicio de conversión convierte los formularios PDF disponibles en la instancia de AEM Forms en formularios adaptables. Las optimizaciones que se enumeran a continuación le ayudan a mejorar la velocidad y la precisión de conversión. Además, estas optimizaciones le ayudan a ahorrar tiempo empleado en actividades posteriores a la conversión.
 
-### Antes de cargar formularios de origen
+### Antes de cargar el origen
+
 Puede cargar todos los formularios PDF de una vez o de forma gradual, según sea necesario. Antes de cargar los formularios, tenga en cuenta lo siguiente:
 
 * Mantenga el número de formularios en una carpeta por debajo de 15 y el número total de páginas en una carpeta por debajo de 50.
