@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: a5d663c2a59895eb71eb5287586bc6b3862927fc
+source-git-commit: 83e35b3cf21c1348c09dcddbae3edf77990457d0
 
 ---
 
@@ -38,8 +38,8 @@ Cuando utilice un formulario XDP para la conversión, realice los siguientes pas
 * Analice el formulario XDP y corrija problemas visuales. Asegúrese de que el documento de origen utilice los controles y estructuras deseados. Por ejemplo, el formulario de origen puede tener casillas de verificación en lugar de botones de opción para una sola selección. Cambie las casillas de verificación por botones de opción para crear un formulario adaptable con los componentes deseados.
 * [Añada enlaces al formulario](http://www.adobe.com/go/learn_aemforms_designer_65) XDP antes de iniciar la conversión. Cuando los enlaces están disponibles en el formulario XDP de origen, el servicio aplica automáticamente los enlaces a los campos de formulario adaptables correspondientes durante la conversión. Le ahorra el tiempo necesario para aplicar manualmente los enlaces.
 * [Añada las etiquetas](https://helpx.adobe.com/sign/using/text-tag.html) de Adobe Sign en el archivo XDP. El servicio convierte automáticamente las etiquetas de Adobe Sign en los campos de formulario adaptables correspondientes. Los formularios adaptables admiten un número limitado de campos de Adobe Sign. Para obtener la lista completa de los campos admitidos, consulte [Uso de Adobe Sign en la documentación de un formulario](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) adaptable.
-* Utilice subformularios en documentos XDP para crear paneles en formularios adaptables. Service convierte cada subformulario en un panel de formulario adaptable durante la conversión.
 * Convierta tablas complejas en documentos XDP en tablas simples, si es posible. Una tabla con campos de formulario en celdas de tabla, celdas de tamaño desigual, celdas de filas o columnas extendidas, celdas combinadas, bordes parciales o ningún borde visible se considera una tabla compleja. Un cuadro con cualquiera de los elementos mencionados se considera un cuadro complejo.
+<!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
 
 ### Antes de realizar el inicio de la conversión
 
