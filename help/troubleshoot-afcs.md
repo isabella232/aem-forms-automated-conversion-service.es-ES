@@ -20,7 +20,7 @@ source-git-commit: 3a82102feffa7fc618dc37c9a745c254a46a0700
 
 | Error | Ejemplo |
 |--- |--- |
-| **Mensaje** de error <br> El encabezado de token de acceso no está disponible. <br><br> **Motivo** <br> : Un administrador ha creado varias configuraciones IMS o la configuración IMS no puede acceder al servicio AFCS en Adobe Cloud. <br><br>**Resolución **<br>Si hay varias configuraciones, elimine todas las configuraciones y[cree una nueva configuración](configure-service.md#obtainpubliccertificates).<br>Si hay una configuración única, utilice** Health Check **para[comprobar la conectividad](configure-service.md#createintegrationoption). | ![El encabezado de token de acceso no está disponible](assets/invalid-ims-configuration.png) |
+| **Mensaje** de error <br> El encabezado de token de acceso no está disponible. <br><br>**Motivo **<br>: Un administrador ha creado varias configuraciones IMS o la configuración IMS no puede acceder al servicio AFCS en Adobe Cloud.<br><br>**Resolución** <br> Si hay varias configuraciones, elimine todas las configuraciones y [cree una nueva configuración](configure-service.md#obtainpubliccertificates). <br> Si hay una configuración única, utilice **Health Check** para [comprobar la conectividad](configure-service.md#createintegrationoption). | ![El encabezado de token de acceso no está disponible](assets/invalid-ims-configuration.png) |
 
 | Error | Ejemplo |
 |--- |--- |
