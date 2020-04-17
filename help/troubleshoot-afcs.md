@@ -6,7 +6,7 @@ seo-description: Problemas comunes del AFCS y sus soluciones
 contentOwner: khsingh
 topic-tags: forms
 translation-type: tm+mt
-source-git-commit: e905833e5b58c05aac612e3a8139eb7fb60ef4bf
+source-git-commit: 3a82102feffa7fc618dc37c9a745c254a46a0700
 
 ---
 
@@ -20,7 +20,10 @@ source-git-commit: e905833e5b58c05aac612e3a8139eb7fb60ef4bf
 
 | Error | Ejemplo |
 |--- |--- |
-| **Mensaje** de error <br> El encabezado de token de acceso no está disponible. <br><br>**Motivo **<br>: Un administrador ha creado varias configuraciones IMS o la configuración IMS no puede acceder al servicio AFCS en Adobe Cloud.<br><br>**Resolución** <br> Si hay varias configuraciones, elimine todas las configuraciones y [cree una nueva configuración](configure-service.md#obtainpubliccertificates). <br> Si hay una sola configuración, use **[!UICONTROL Health Check]** para [comprobar la conectividad](configure-service.md#createintegrationoption). | ![El encabezado de token de acceso no está disponible](assets/invalid-ims-configuration.png) |
+| **Mensaje** de error <br> El encabezado de token de acceso no está disponible. <br><br> **Motivo** <br> : Un administrador ha creado varias configuraciones IMS o la configuración IMS no puede acceder al servicio AFCS en Adobe Cloud. <br><br>**Resolución **<br>Si hay varias configuraciones, elimine todas las configuraciones y[cree una nueva configuración](configure-service.md#obtainpubliccertificates).<br>Si hay una configuración única, utilice** Health Check **para[comprobar la conectividad](configure-service.md#createintegrationoption). | ![El encabezado de token de acceso no está disponible](assets/invalid-ims-configuration.png) |
+
+| Error | Ejemplo |
+|--- |--- |
 | **Mensaje** de error <br> No se puede conectar al servicio.  <br><br>**Motivo **<br>: URL de servicio incorrecta o no se menciona ninguna URL de servicio en los servicios de nube del servicio de conversión automatizada de formularios.<br><br>**Resolución** <br> Corrección de la URL [del servicio](configure-service.md#configure-the-cloud-service) en los servicios de nube de servicios de conversión de formularios automatizados. | ![No se puede conectar con el servicio.](assets/wrong-endpoint-configured.png) |
 | **Mensaje** de error <br> El servicio no pudo convertir el formulario.  <br><br>**Razón **por la que<br>los problemas de conectividad de red se producen al final, el servicio se ha reducido debido a un mantenimiento programado o a una interrupción en Adobe Cloud.<br><br>**Resolución** <br> Resuelva los problemas de conectividad de red al final y verifique el estado del servicio en https://status.adobe.com/ para una interrupción planificada o no planificada. | ![No se puede conectar con el servicio.](assets/service-failure.png) |
 | **Mensaje** de error <br> El número de páginas es mayor que 15.  <br><br>**Motivo **<br>El formulario de origen tiene más de 15 páginas.<br><br>**Resolución**<br> Utilice Adobe Acrobat para dividir formularios con más de 15 páginas. Coloque el número de páginas de un formulario en menos de 15. | ![No se puede conectar con el servicio.](assets/number-of-pages.png) |
