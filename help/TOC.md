@@ -5,7 +5,7 @@ sub-product: servicio de conversión de formularios
 audience: end-user
 user-guide-title: Servicio de conversión automatizada de formularios de Adobe Experience Manager
 translation-type: tm+mt
-source-git-commit: 4b9f3f4fe3b3901cb99c9374ff40e8f49855237f
+source-git-commit: 90f577a3bc75afdb596ad1dea27cd833e1c996ce
 
 ---
 
@@ -23,5 +23,5 @@ source-git-commit: 4b9f3f4fe3b3901cb99c9374ff40e8f49855237f
 + [Preguntas frecuentes](frequently-asked-questions.md)
 + [Prácticas recomendadas y consideraciones](styles-and-pattern-considerations-and-best-practices.md)
 + [Problemas conocidos](known-issues.md)
-+ [Solucionar problemas del servicio](troubleshoot-afcs.md)
++ [Solución de problemas](troubleshoot-afcs.md)
 
