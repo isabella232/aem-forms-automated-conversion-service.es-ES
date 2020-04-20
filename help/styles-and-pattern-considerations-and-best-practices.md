@@ -7,18 +7,18 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 43b9b30e7e912081756050aa002a9e398d1d74fc
+source-git-commit: fa3b365b9762a044fddb3820ad3c091d211e0ae6
 
 ---
 
 
 # Prácticas recomendadas y patrones complejos conocidos {#Best-practices-and-considerations2}
 
-Este documento proporciona directrices y recomendaciones de las que pueden beneficiarse los administradores, autores y desarrolladores de formularios al trabajar con el servicio Conversión automatizada de formularios. Se analizan las prácticas recomendadas desde la preparación de formularios de origen hasta la corrección de patrones complejos que requieren un esfuerzo adicional para la conversión automatizada. Estas optimizaciones contribuyen de forma colectiva al rendimiento general y al resultado del servicio de conversión automatizada de formularios.
+Este documento proporciona directrices y recomendaciones de las que el administrador de formularios, los autores y los desarrolladores pueden beneficiarse al trabajar con [!DNL Automated Forms Conversion service]. Se analizan las prácticas recomendadas desde la preparación de formularios de origen hasta la corrección de patrones complejos que requieren un esfuerzo adicional para la conversión automatizada. Estas prácticas recomendadas contribuyen colectivamente al rendimiento y los resultados generales del [!DNL Automated Forms Conversion service].
 
 ## Prácticas recomendadas
 
-El servicio de conversión convierte los formularios PDF disponibles en la instancia de AEM Forms en formularios adaptables. Las optimizaciones que se enumeran a continuación le ayudan a mejorar la velocidad y la precisión de conversión. Además, estas optimizaciones le ayudan a ahorrar tiempo empleado en actividades posteriores a la conversión.
+El servicio de conversión convierte los formularios PDF disponibles en la instancia de AEM [!DNL Forms] a formularios adaptables. Las optimizaciones que se enumeran a continuación le ayudan a mejorar la velocidad y la precisión de conversión. Además, estas optimizaciones le ayudan a ahorrar tiempo empleado en actividades posteriores a la conversión.
 
 ### Antes de cargar el origen
 
@@ -54,9 +54,9 @@ Cuando utilice un formulario XDP para la conversión, realice los siguientes pas
 
 ## Conocer patrones complejos
 
-El servicio de conversión automatizada de AEM Forms utiliza inteligencia artificial y algoritmos de aprendizaje automático para comprender la presentación y los campos del formulario de origen. Cada servicio de aprendizaje automático aprende continuamente de los datos de origen y produce una salida mejorada con cada repetición. Estos servicios aprenden de experiencias como las humanas.
+AEM [!DNL Forms Automated Conversion service] utiliza inteligencia artificial y algoritmos de aprendizaje automático para comprender la presentación y los campos del formulario de origen. Cada servicio de aprendizaje automático aprende continuamente de los datos de origen y produce una salida mejorada con cada repetición. Estos servicios aprenden de experiencias como las humanas.
 
-El servicio Conversión automatizada de formularios se capacita en un gran conjunto de formularios. Identifica fácilmente los campos de un formulario de origen y genera formularios adaptables. Sin embargo, hay algunos campos y estilos en formularios PDF que son fácilmente visibles para el ojo humano pero difíciles de entender para el servicio. El servicio puede asignar diferentes tipos de campos o paneles aplicables a algunos campos o estilos. Todos estos patrones de estilo y campo se enumeran a continuación.
+[!DNL Automated Forms Conversion service] está capacitado en un gran conjunto de formularios. Identifica fácilmente los campos de un formulario de origen y genera formularios adaptables. Sin embargo, hay algunos campos y estilos en formularios PDF que son fácilmente visibles para el ojo humano pero difíciles de entender para el servicio. El servicio puede asignar diferentes tipos de campos o paneles aplicables a algunos campos o estilos. Todos estos patrones de estilo y campo se enumeran a continuación.
 
 El servicio tiene el inicio de identificar y asignar los campos o paneles correctos a estos patrones, ya que sigue aprendiendo de los datos de origen. Por el momento, puede utilizar el editor [Revisar y corregir](review-correct-ui-edited.md) para corregir estos problemas. Antes de inicio de corregir los problemas o leer más, familiarícese con los componentes [de formulario](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)adaptables.
 
