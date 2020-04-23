@@ -1,7 +1,7 @@
 ---
 title: Introducción
 description: 'Acelere la conversión de impresión de formularios en formularios adaptables '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ceff5cb56aa9896a28004628c5e26c262b7918bd
 
 ---
@@ -21,7 +21,7 @@ El servicio de conversión automática de formularios ayuda a acelerar la digita
 
 ## Integración {#onboarding}
 
-El servicio está disponible de forma gratuita para los clientes a plazo local de AEM 6.4 Forms y AEM 6.5 Forms y para los clientes empresariales de servicios gestionados de Adobe. Póngase en contacto con el equipo de ventas de Adobe o con su representante de Adobe para solicitar acceso al servicio.
+El servicio está disponible de forma gratuita para clientes de AEM 6.4 Forms y AEM 6.5 Forms On-Premise y clientes empresariales de Adobe Managed Services. Póngase en contacto con el equipo de ventas de Adobe o con su representante de Adobe para solicitar acceso al servicio.
 
 Adobe posibilita el acceso a su organización y otorga los pertinentes privilegios a la persona de su organización designada como administrador. El administrador puede otorgar acceso a los desarrolladores de AEM Forms (usuarios) de su organización para conectarse al servicio. Consulte [Configurar el servicio de conversión automatizada de formularios](configure-service.md) para obtener más información.
 
@@ -29,7 +29,7 @@ Adobe posibilita el acceso a su organización y otorga los pertinentes privilegi
 
 El servicio admite formularios PDF no interactivos, formularios creados con Adobe Acrobat conocidos como AcroForms y formularios basados en XFA creados con AEM Forms o Adobe LiveCycle.
 
-El servicio solo puede convertir formularios en inglés a formularios adaptables. Puede traducir los formularios adaptables que se generan a otro idioma mediante el [flujo de trabajo de traducción de AEM](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+El servicio solo puede convertir formularios en inglés a formularios adaptables. Puede traducir los formularios adaptables que se generan a otro idioma mediante el [flujo de trabajo de traducción de AEM](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
 ## Flujo de trabajo de conversión  {#conversion-workflow}
 
@@ -39,7 +39,7 @@ El servicio de conversión automatizada de formularios se ejecuta en Adobe Cloud
 
 ### 1. Configuración de entorno {#set-up-the-environment}
 
-El servicio de conversión automatizada de formularios se ejecuta en Adobe Cloud. [Configure la cuenta de E/S de Adobe de su organización. Después, conecte la instancia local de AEM Forms](configure-service.md) con el servicio de conversión que se ejecuta en Adobe Cloud.
+El servicio de conversión automatizada de formularios se ejecuta en Adobe Cloud. [Configure la cuenta de Adobe I/O de su organización. Después, conecte la instancia local de AEM Forms](configure-service.md) con el servicio de conversión que se ejecuta en Adobe Cloud.
 
 ### 2. Conversión de formularios PDF en formularios adaptables {#use-the-conversion-service}
 
@@ -48,7 +48,7 @@ Tras configurar el entorno de AEM Forms, para convertir los formularios PDF en f
 * No cargue los formularios que estén protegidos. El servicio no convierte formularios cifrados y protegidos por contraseña.
 * No cargue formularios escaneados, coloreados, que no estén en inglés y completados. Estas clases de formulario no se admiten.
 * No cargue formularios PDF con espacios en el nombre del archivo.
-* No cargue [carpetas PDF](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). El servicio no convierte una carpeta PDF a formularios adaptables.
+* No cargue [carpetas PDF](https://helpx.adobe.com/es/acrobat/using/overview-pdf-portfolios.html). El servicio no convierte una carpeta PDF a formularios adaptables.
 * Aplique los cambios sugeridos en formularios PDF que se indican en el artículo [Prácticas recomendadas y consideraciones](styles-and-pattern-considerations-and-best-practices.md).
 * Lea el artículo [Problemas conocidos](known-issues.md) para prevenir problemas.
 
