@@ -1,7 +1,7 @@
 ---
-title: 'Novedades? Notas de la versión: Servicio de conversión automatizada de formularios'
-description: 'Obtenga información sobre las últimas funciones y errores corregidos para el servicio de conversión de formularios automatizados '
-translation-type: tm+mt
+title: 'Novedades Notas de la versión: Servicio de conversión automatizada de formularios'
+description: 'Obtenga información sobre las últimas funciones y los errores corregidos para el Servicio de conversión automatizada de formularios '
+translation-type: ht
 source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
 
 ---
@@ -9,35 +9,35 @@ source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
 
 # Servicio de conversión automatizada de formularios: Notas de la versión
 
-El servicio de conversión automatizada de formularios recibe mejoras de forma continua. Para mantenerse al día con los últimos desarrollos, visite esta página con regularidad. Esta página le proporciona información sobre:
+El Servicio de conversión automatizada de formularios es objeto de mejoras continuas. Para estar al día de los desarrollos más recientes, visite esta página regularmente. Esta página le proporciona información sobre:
 
-* Acceso anticipado
+* Acceso temprano
 * Últimas versiones
 * Nuevas funciones
-* mejoras
-* Correcciones de errores
+* Mejoras
+* Corrección de errores
 * Funcionalidad obsoleta
 * Instrucciones especiales
-* Planes futuros de cambios
+* Planes de futuros cambios
 
 ## 20 de marzo de 2020 (AFC-2020.03.1)
 
-### Acceso anticipado
+### Acceso temprano
 
-**Detectar automáticamente secciones lógicas en un formulario**
+**Detección automática de secciones lógicas en un formulario**
 
-De forma predeterminada, el servicio crea un panel de nivel superior independiente para cada página de un formulario PDF. Ahora puede utilizar la **[!UICONTROL Auto-detect logical sections]** opción para colocar paneles de nivel de página (paneles basados en números de página) y crear solo paneles lógicos. También agrupa los campos que no pertenecen a ninguna sección con la sección lógica anterior y los campos de una sección lógica extendidos en dos páginas adyacentes en una sola sección lógica. Por ejemplo: si algunos campos de una sección lógica se encuentran al final de la página uno y algunos están al comienzo de la página dos, todos esos campos se agrupan en una sola sección lógica.
+De forma predeterminada, el servicio crea un panel independiente de nivel superior para cada página de un formulario PDF. Ahora puede usar la opción **[!UICONTROL Auto-detect logical sections]** para soltar paneles de nivel de página (basados en el número de página) y crear solo paneles lógicos. También agrupa los campos que no pertenecen a ninguna sección con la sección lógica anterior y los campos de una sección lógica se distribuyen en dos páginas adyacentes en una sola sección lógica. Por ejemplo, si algunos campos de una sección lógica están al final de la página uno y otros al comienzo de la página dos, todos esos campos se agrupan en una sola sección lógica.
 
-### Qué se ha mejorado
+### Mejoras
 
 **Mejoras en la detección de listas**
 
-El servicio es ahora más eficiente en la detección de listas con viñetas y numeradas.
+El servicio ahora es más eficiente en la detección de listas numeradas y con viñetas.
 
 ### Instrucciones especiales
 
-**Instalar el paquete de conector del servicio de conversión de formularios automatizados**
+**Instalación del paquete del conector del Servicio de conversión automatizada de formularios**
 
-Debe utilizar el paquete de conector 1.1.38 o superior para utilizar las últimas funciones y mejoras de la versión AFC-2020.03.1. Puede descargar el paquete de conector desde Uso compartido de paquetes [AEM](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
+Se necesita el paquete del conector 1.1.38 o una versión superior para utilizar las últimas funciones y mejoras de la versión AFC-2020.03.1. Puede descargar el paquete del conector de [Uso compartido de paquetes AEM](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
-Si ya dispone de un entorno de servicio Conversión automatizada de formularios en ejecución para utilizar las últimas funciones del servicio de conversión, instale el Service Pack más reciente, el paquete adicional de AEM Forms más reciente y el paquete de conector más reciente en el orden mencionado. Para obtener instrucciones detalladas, consulte el artículo [Configurar el servicio](configure-service.md) Conversión automatizada de formularios.
+Si ya tiene un entorno de servicio de conversión automatizada de formularios en funcionamiento, para usar las últimas funciones del servicio de conversión, instalar el último paquete de servicios, el último paquete de complemento de AEM Forms y el último paquete del conector en el orden mencionado. Para obtener instrucciones detalladas al respeto, consulte el artículo [Configurar el servicio de conversión automatizada de formularios](configure-service.md).
