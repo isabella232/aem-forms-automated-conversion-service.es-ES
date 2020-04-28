@@ -1,10 +1,10 @@
 ---
 cloud: experience-cloud
 product: experience manager
-sub-product: servicio de conversión de formularios
+sub-product: Servicio de conversión de formularios
 audience: end-user
 user-guide-title: Servicio de conversión automatizada de formularios de Adobe Experience Manager
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
 
 ---
@@ -14,7 +14,7 @@ source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
 
 + [Notas de la versión](release-notes.md)
 + [Introducción](introduction.md)
-+ [Configurar el servicio](configure-service.md)
++ [Configure el servicio](configure-service.md)
 + [Convertir la impresión de formularios en formularios adaptables](convert-existing-forms-to-adaptive-forms.md)
 + [Revisar y corregir formularios convertidos](review-correct-ui-edited.md)
 + [Ampliar el metamodelo predeterminado](extending-the-default-meta-model.md)
