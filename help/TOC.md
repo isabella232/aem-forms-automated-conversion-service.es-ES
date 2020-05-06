@@ -4,7 +4,7 @@ product: experience manager
 sub-product: Servicio de conversión de formularios
 audience: end-user
 user-guide-title: Servicio de conversión automatizada de formularios de Adobe Experience Manager
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 41fb68ef566f5bd44d6f47f31de0b0edeeb978f2
 
 ---
