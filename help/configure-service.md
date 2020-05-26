@@ -2,9 +2,9 @@
 title: Configurar el servicio de conversión automatizada de formularios
 description: Listo la instancia de AEM para utilizar el servicio Conversión automatizada de formularios
 translation-type: tm+mt
-source-git-commit: 7e94acb29f30603d9b22fbee9dc8052fafa5704b
+source-git-commit: 117280695bfddad627e5f7bcb54ff019bbf2026a
 workflow-type: tm+mt
-source-wordcount: '2528'
+source-wordcount: '2531'
 ht-degree: 8%
 
 ---
@@ -139,7 +139,7 @@ El servicio Conversión automatizada de formularios utiliza el servicio de corre
 
 #### Añadir usuario al grupo de usuarios de formularios {#adduserstousergroup}
 
-Especifique una dirección de correo electrónico en el perfil del usuario de AEM designado para ejecutar el servicio. Asegúrese de que el usuario es el miembro del grupo de usuarios [de](https://helpx.adobe.com/experience-manager/6-4/forms/using/forms-groups-privileges-tasks.html) formularios. Se envían correos electrónicos a la dirección de correo electrónico del usuario que ejecuta la conversión. Para especificar una dirección de correo electrónico para el usuario y agregar el usuario al grupo de usuarios de formularios:
+Especifique una dirección de correo electrónico en el perfil del usuario de AEM designado para ejecutar el servicio. Asegúrese de que el usuario es el miembro del grupo de usuarios [de](https://helpx.adobe.com/experience-manager/6-4/forms/using/forms-groups-privileges-tasks.html) formularios. Se envían correos electrónicos a la dirección de correo electrónico del usuario que ejecuta la conversión. Para especificar una dirección de correo electrónico para el usuario y agregar el usuario al grupo de usuarios de formularios`e:
 
 1. Inicie sesión en la instancia de creación de AEM Forms como administrador de AEM. Utilice sus credenciales locales de AEM para iniciar sesión. No utilice el ID de Adobe para iniciar sesión. Tap **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 
@@ -183,7 +183,7 @@ Un certificado público le permite autenticar su perfil en Adobe I/O.
 
 Para utilizar el servicio Conversión automatizada de formularios, cree un proyecto y agregue la API del servicio de configuración automatizada de formularios al proyecto en Adobe Developer Console. La integración genera la clave de API, el secreto del cliente y la carga útil (JWT).
 
-1. Inicie sesión en https://console.adobe.io/. Utilice su ID de Adobe y su cuenta de desarrollador que el administrador haya proporcionado para iniciar sesión en la consola de Adobe I/O.
+1. Inicie sesión en [https://console.adobe.io/](https://console.adobe.io/). Utilice su ID de Adobe y su cuenta de desarrollador que el administrador haya proporcionado para iniciar sesión en la consola de Adobe I/O.
 1. Seleccione su organización en la esquina superior derecha. Si no conoce su organización, póngase en contacto con su administrador.
 1. Tocar **[!UICONTROL Create new project]**. Aparece una pantalla para comenzar con el nuevo proyecto. Tocar **[!UICONTROL Add API]**. Aparece una pantalla con lista de todas las API habilitadas para su cuenta.
 1. Seleccione **[!UICONTROL Automated Forms Conversion service]** y toque **[!UICONTROL Next]**. Aparece una pantalla para configurar la API.
