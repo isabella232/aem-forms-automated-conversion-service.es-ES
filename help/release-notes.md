@@ -1,9 +1,9 @@
 ---
 title: 'Novedades Notas de la versión: Servicio de conversión automatizada de formularios'
 description: 'Obtenga información sobre las últimas funciones y los errores corregidos para el Servicio de conversión automatizada de formularios '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5031050795a558795c151e9f3c26a16736566adf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '305'
 ht-degree: 100%
 
