@@ -7,7 +7,10 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: ffab4d916cbd545078f4b72b8de5c9968f23b0da
+source-git-commit: 77bdb4e88194bd634dea125852ff2a897bc24678
+workflow-type: tm+mt
+source-wordcount: '2372'
+ht-degree: 1%
 
 ---
 
@@ -22,9 +25,7 @@ Meta-model es un esquema JSON. Antes de realizar el inicio con el meta-modelo, a
 
 ## Meta-model predeterminado {#default-meta-model}
 
-El servicio Conversión automatizada de formularios tiene un meta-modelo predeterminado. Es un esquema JSON y reside en Adobe Cloud con otros componentes del servicio de conversión automatizada de formularios. Puede encontrar una copia del meta-modelo en el servidor AEM local en:
-
-http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json.
+El servicio Conversión automatizada de formularios tiene un meta-modelo predeterminado. Es un esquema JSON y reside en Adobe Cloud con otros componentes del servicio de conversión automatizada de formularios. Puede encontrar una copia del meta-modelo en el servidor AEM local en: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json. También puede [hacer clic aquí](assets/global.schema.json) para acceder o descargar el esquema predeterminado.
 
 El esquema del metamodelo se deriva de las entidades de esquema en https://schema.org/docs/schemas.html. Tiene Person, PostalAddress, LocalBusiness y más entidades, según se define en https://schema.org. Cada entidad del metamodelo se adhiere al tipo de objeto de esquema JSON. El código siguiente representa una estructura de ejemplo de metamodelo:
 
