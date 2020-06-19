@@ -7,9 +7,9 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: b1df14a331dc4aef7ce6383dec0091fa6db1fd7b
+source-git-commit: 3b3bb98352e23544d32c39f0bfb5f0d9b7ae99cf
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1686'
 ht-degree: 5%
 
 ---
@@ -92,7 +92,7 @@ Las razones más comunes para que la conversión falle son:</p>
    Se puede utilizar un meta-modelo para asignar los objetos de formulario al componente de formulario adaptable de su elección y preconfigurar validaciones, reglas, patrones de datos, texto de ayuda y propiedades de accesibilidad para los componentes. Todas las propiedades especificadas se aplican durante la conversión. Puede utilizar el metamodelo para aplicar propiedades comunes a los campos. Puede ayudarle a reducir algunos problemas repetidos en los distintos formularios.<br/><br/>
 
 1. **¿Cuáles son las opciones para los formularios con datos confidenciales como la información de identificación personal (PII)?**
-El servicio solo admite formularios en blanco o sin rellenar. No cargue formularios o formularios rellenados con información de identificación personal (PII). Además, elimine los datos precargados y la información PII de etiqueta blanca, confidencial y de propiedad en los formularios de origen. <br/>
+El servicio solo admite formularios en blanco o sin rellenar. No cargue formularios o formularios rellenados con información de identificación personal (PII). Además, elimine los datos precargados, la información de identificación personal (PII), la información confidencial y la información de propiedad en los formularios de origen. <br/>
 
 1. **¿Dónde se deben colocar el encabezado y los pies de página?**
    <p>Coloque el encabezado y el pie de página en una plantilla de formulario adaptable. Si el formulario PDF de origen tiene encabezado y pie de página, el servicio detecta y reemplaza el encabezado y pie de página detectados por el encabezado y pie de página disponibles en la plantilla de formulario adaptable durante la conversión. Si se incluye cualquier encabezado o pie de página adicional en el formulario adaptable, puede utilizar el editor <a href="review-correct-ui-edited.md">Revisar y corregir</a> para corregir o eliminar dicho encabezado o pie de página.</p> <br />
