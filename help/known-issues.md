@@ -7,9 +7,9 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: 902131e27d458b88f7f5c5f85c90de89f77e4bd7
+source-git-commit: 1c48cc1b271bfea19ac2394eaf40be21060a349e
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Antes de empezar a utilizar el servicio Conversión automatizada de formularios 
    * No admite paneles repetibles para formularios basados en XFA.
    * Si modifica una lista de una tabla con el editor Revisar y corregir, el ancho de fila no se ajusta automáticamente y el texto podría extenderse a la siguiente fila de la tabla.
    * La **[!UICONTROL Auto-detect multi-column layout from input forms]** función no funciona con el editor Revisar y corregir ni con los fragmentos de formulario.
-   * La firma de garabatos creada con el editor Revisar y corregir no se puede cargar en los formularios adaptables publicados. Los usuarios no pueden firmar un formulario adaptable con estos componentes de firma de garabatos.
+   * La firma de garabatos creada con el editor Revisar y corregir no se carga en los formularios adaptables publicados.
 
 
 * Para formularios basados en XFA:
