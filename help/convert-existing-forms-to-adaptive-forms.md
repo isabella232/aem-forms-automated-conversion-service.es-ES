@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 019ae541117f037f11703a88162ec3ab4cb67947
+source-git-commit: 5fdf997fdde07cc4546accebddb85a248f36e057
 workflow-type: tm+mt
-source-wordcount: '1480'
+source-wordcount: '1477'
 ht-degree: 8%
 
 ---
@@ -24,7 +24,7 @@ El servicio Conversión automatizada de formularios para AEM Forms, con tecnolog
 
 * [**Configurar el servicio de conversión **](configure-service.md)
 
-* **Prepare las[plantillas](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)que se van a aplicar a los formularios convertidos:** El uso de una plantilla le permite aplicar una marca coherente en todos los formularios adaptables. Además, el servicio Conversión automatizada de formularios no extrae ni utiliza el encabezado ni el pie de página de los documentos PDF de origen. Puede utilizar plantillas de formulario adaptables para especificar el encabezado y el pie de página. El encabezado y el pie de página especificados en la plantilla se aplican al formulario adaptable durante la conversión. Cuando cree una carpeta para las plantillas, seleccione la opción **[!UICControl Examinar configuración]** para todos.
+* **Prepare las[plantillas](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)que se van a aplicar a los formularios convertidos:** El uso de una plantilla le permite aplicar una marca coherente en todos los formularios adaptables. Además, el servicio Conversión automatizada de formularios no extrae ni utiliza el encabezado ni el pie de página de los documentos PDF de origen. Puede utilizar plantillas de formulario adaptables para especificar el encabezado y el pie de página. El encabezado y el pie de página especificados en la plantilla se aplican al formulario adaptable durante la conversión. Cuando cree una carpeta para las plantillas, seleccione la **[!UICONTROL Browse configurations]** opción para todos.
 
 * **Prepare las[temáticas](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)que se aplicarán a los formularios convertidos:** El uso de un tema permite aplicar un estilo coherente a todas las formas adaptables de la organización.
 
