@@ -2,18 +2,21 @@
 title: Problemas conocidos
 seo-title: Problemas conocidos
 description: problemas conocidos y limitaciones del servicio de conversión de formularios automatizados
-seo-description: Antes de empezar a utilizar el servicio de conversión automatizada de formularios de AEM Forms, conozca los problemas conocidos y las limitaciones del servicio
+seo-description: Antes de empezar a utilizar el servicio AEM Forms de conversión automatizada de formularios, conozca los problemas conocidos y las limitaciones del servicio
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: 2fcceb45d9be4297fcd923f5a17c7b593294e855
+source-git-commit: 902131e27d458b88f7f5c5f85c90de89f77e4bd7
+workflow-type: tm+mt
+source-wordcount: '785'
+ht-degree: 1%
 
 ---
 
 # Problemas y limitaciones conocidos {#known-issues-limitations}
 
-Antes de empezar a utilizar el servicio de conversión automatizada de formularios de AEM Forms, consulte los siguientes problemas y limitaciones conocidos:
+Antes de empezar a utilizar el servicio Conversión automatizada de formularios para AEM Forms, revise los problemas y limitaciones conocidos siguientes:
 
 ## Problemas conocidos {#known-issues}
 
@@ -25,6 +28,8 @@ Antes de empezar a utilizar el servicio de conversión automatizada de formulari
    * No admite paneles repetibles para formularios basados en XFA.
    * Si modifica una lista de una tabla con el editor Revisar y corregir, el ancho de fila no se ajusta automáticamente y el texto podría extenderse a la siguiente fila de la tabla.
    * La **[!UICONTROL Auto-detect multi-column layout from input forms]** función no funciona con el editor Revisar y corregir ni con los fragmentos de formulario.
+   * La firma de garabatos creada con el editor Revisar y corregir no se puede cargar en los formularios adaptables publicados. Los usuarios no pueden firmar un formulario adaptable con estos componentes de firma de garabatos.
+
 
 * Para formularios basados en XFA:
    * No se admite la extracción de fragmentos de un formulario basado en XFA.
@@ -33,7 +38,7 @@ Antes de empezar a utilizar el servicio de conversión automatizada de formulari
    * No se identifica la opción Grupos de opciones con un solo carácter
    * Cuando el documento de origen es un XFA dinámico (.XDP) y [define el comportamiento de las propiedades XFA en un formulario](https://helpx.adobe.com/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr)adaptable, no se respeta la propiedad presence del documento de origen. Por ejemplo, un campo del documento de origen se marca como oculto y una secuencia de comandos hace que el campo sea visible y, a continuación, el campo permanece visible en el formulario adaptable de salida.
 
-* Cuando utilice la opción **Usar AcroForm de entrada como documento de registro (DoR) para formularios** adaptables generados, tenga en cuenta lo siguiente:
+* Cuando utilice la opción **Usar AcroForm de entrada como Documento de registro (DoR) para los formularios** adaptables generados, tenga en cuenta lo siguiente:
 
 <table>
     <tr>
@@ -57,19 +62,19 @@ Antes de empezar a utilizar el servicio de conversión automatizada de formulari
         <td></td>
     </tr>
     <tr >
-        <td>Los límites de algunas tablas se extienden fuera de la página en el documento de registro generado automáticamente (DoR). </td>
+        <td>Los límites de algunas tablas se extienden fuera de la página en el documento de registros generado automáticamente (DoR). </td>
         <td></td>
     </tr>
 </table>
 
-## Restricciones {#limitations}
+## Restricciones   {#limitations}
 
-* Los formularios PDF con presentación dinámica compleja, los campos con contorno de puntos, los campos rellenos o los campos de color no son compatibles.
+* No se admiten PDF forms con presentación dinámica compleja, campos con contorno de puntos, campos rellenos o campos de color.
 * Las imágenes y el texto dentro de las imágenes no se identifican. Agregue manualmente imágenes a los formularios convertidos.
-* Los documentos XDP de ilustraciones no son compatibles.
-* No se admiten los formularios PDF de más de 15 páginas.
+* No se admiten documentos XDP de ilustraciones.
+* No se admiten PDF forms de más de 15 páginas.
 * Los documentos cifrados, protegidos con contraseña y protegidos no se convierten. Elimine el cifrado o las contraseñas antes de ejecutar la conversión.
 * No se admiten tablas complejas como tablas sin bordes, tablas anidadas, tablas con filas de color y tablas con valores de marcador de posición. Utilice el editor de formularios adaptables para agregar o modificar tablas complejas después de la conversión. Solo se admiten tablas simples, con campos vacíos, encabezados adecuados y límites claros.
-* El servicio convierte solo los formularios en inglés en formularios adaptables. Puede traducir formularios adaptables convertidos a otro idioma mediante el flujo de trabajo [de traducción de](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)AEM.
+* El servicio convierte solo los formularios en inglés en formularios adaptables. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * AEM 6.4 Forms no admite la detección automática del diseño de varias columnas de los formularios de entrada.
 
