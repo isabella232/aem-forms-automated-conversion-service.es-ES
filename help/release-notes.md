@@ -2,10 +2,10 @@
 title: 'Novedades Notas de la versión: Servicio de conversión automatizada de formularios'
 description: 'Obtenga información sobre las últimas funciones y los errores corregidos para el Servicio de conversión automatizada de formularios '
 translation-type: tm+mt
-source-git-commit: caa019d1a7dd1968a52df5ec5be4755e1c6c4ee6
+source-git-commit: 1c6bdd03d5a3ac37a11a31e5c7948c28412b67aa
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -46,7 +46,7 @@ El servicio ahora es más eficiente en la detección de listas numeradas y con v
 
 ### Instrucciones especiales
 
-**Instalación del paquete del conector del Servicio de conversión automatizada de formularios**
+**Instalar el paquete del conector del servicio de conversión de formularios automatizados**
 
 Se necesita el paquete del conector 1.1.38 o una versión superior para utilizar las últimas funciones y mejoras de la versión AFC-2020.03.1. Puede descargar el paquete del conector de [Uso compartido de paquetes AEM](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
