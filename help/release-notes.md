@@ -46,7 +46,7 @@ El servicio ahora es más eficiente en la detección de listas numeradas y con v
 
 ### Instrucciones especiales
 
-**Instalar el paquete del conector del servicio de conversión de formularios automatizados**
+**Instalación del paquete del conector del servicio de conversión automatizada de Forms**
 
 Se necesita el paquete del conector 1.1.38 o una versión superior para utilizar las últimas funciones y mejoras de la versión AFC-2020.03.1. Puede descargar el paquete del conector de [Uso compartido de paquetes AEM](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
