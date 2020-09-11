@@ -2,10 +2,10 @@
 title: 'Novedades Notas de la versión: Servicio de conversión automatizada de formularios'
 description: 'Obtenga información sobre las últimas funciones y los errores corregidos para el Servicio de conversión automatizada de formularios '
 translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+source-git-commit: bf14583de678ef963b0f2084c3da4624c9304b30
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 88%
+source-wordcount: '338'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,7 @@ El Servicio de conversión automatizada de formularios es objeto de mejoras cont
 
 ### Novedades
 
-Ahora puede utilizar el servicio para convertir formularios PDF de color en formularios adaptables.
+Se añadió la compatibilidad para convertir formularios PDF de color en formularios adaptables.
 
 ### Mejoras
 
