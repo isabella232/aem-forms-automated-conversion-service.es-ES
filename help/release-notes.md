@@ -2,10 +2,10 @@
 title: 'Novedades Notas de la versión: Servicio de conversión automatizada de formularios'
 description: 'Obtenga información sobre las últimas funciones y los errores corregidos para el Servicio de conversión automatizada de formularios '
 translation-type: tm+mt
-source-git-commit: 1c6bdd03d5a3ac37a11a31e5c7948c28412b67aa
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 92%
+source-wordcount: '343'
+ht-degree: 88%
 
 ---
 
@@ -26,9 +26,14 @@ El Servicio de conversión automatizada de formularios es objeto de mejoras cont
 
 ## 16 de julio de 2020 (AFC-2020.07.0)
 
+### Novedades
+
+Ahora puede utilizar el servicio para convertir formularios PDF de color en formularios adaptables.
+
 ### Mejoras
 
 Mejoras en la conversión automatizada de texto, formulario y campos de grupo de opciones a los componentes de formulario adaptables correspondientes.
+
 
 ## 20 de marzo de 2020 (AFC-2020.03.1)
 
