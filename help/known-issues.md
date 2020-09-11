@@ -1,22 +1,22 @@
 ---
 title: Problemas conocidos
 seo-title: Problemas conocidos
-description: problemas conocidos y limitaciones del servicio de conversión de formularios automatizados
-seo-description: Antes de empezar a utilizar el servicio AEM Forms de conversión automatizada de formularios, conozca los problemas conocidos y las limitaciones del servicio
+description: problemas conocidos y limitaciones del servicio de conversión automatizado de Forms
+seo-description: Antes de empezar a utilizar el servicio de conversión automatizada de Forms de AEM Forms, conozca los problemas conocidos y las limitaciones del servicio
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: 1c48cc1b271bfea19ac2394eaf40be21060a349e
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
 
 # Problemas y limitaciones conocidos {#known-issues-limitations}
 
-Antes de empezar a utilizar el servicio Conversión automatizada de formularios para AEM Forms, revise los problemas y limitaciones conocidos siguientes:
+Antes de empezar a utilizar el servicio de conversión automatizada de Forms de AEM Forms, revise los siguientes problemas y limitaciones conocidos:
 
 ## Problemas conocidos {#known-issues}
 
@@ -67,14 +67,14 @@ Antes de empezar a utilizar el servicio Conversión automatizada de formularios 
     </tr>
 </table>
 
-## Restricciones   {#limitations}
+## Restricciones     {#limitations}
 
-* No se admiten PDF forms con presentación dinámica compleja, campos con contorno de puntos, campos rellenos o campos de color.
+* No se admiten PDF forms con presentación dinámica compleja, campos con contorno de puntos o campos rellenos.
 * Las imágenes y el texto dentro de las imágenes no se identifican. Agregue manualmente imágenes a los formularios convertidos.
 * No se admiten documentos XDP de ilustraciones.
 * No se admiten PDF forms de más de 15 páginas.
 * Los documentos cifrados, protegidos con contraseña y protegidos no se convierten. Elimine el cifrado o las contraseñas antes de ejecutar la conversión.
-* No se admiten tablas complejas como tablas sin bordes, tablas anidadas, tablas con filas de color y tablas con valores de marcador de posición. Utilice el editor de formularios adaptables para agregar o modificar tablas complejas después de la conversión. Solo se admiten tablas simples, con campos vacíos, encabezados adecuados y límites claros.
+* No se admiten tablas complejas como tablas sin bordes, tablas anidadas y tablas con valores de marcador de posición. Utilice el editor de formularios adaptables para agregar o modificar tablas complejas después de la conversión. Solo se admiten tablas simples, con campos vacíos, encabezados adecuados y límites claros.
 * El servicio convierte solo los formularios en inglés en formularios adaptables. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * AEM 6.4 Forms no admite la detección automática del diseño de varias columnas de los formularios de entrada.
 
