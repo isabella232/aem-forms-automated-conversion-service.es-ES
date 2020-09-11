@@ -10,9 +10,9 @@ discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
 translation-type: tm+mt
-source-git-commit: 356eb083b889a1bf151c32bc5f01a6d263b96274
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '555'
 ht-degree: 6%
 
 ---
@@ -20,26 +20,13 @@ ht-degree: 6%
 
 # [NO PUBLICAR] optimizaciones y consideraciones {#do-not-publish-best-practices-and-considerations}
 
-El servicio Conversión automatizada de AEM Forms convierte un formulario PDF en un formulario adaptable. El servicio utiliza inteligencia artificial y algoritmos de aprendizaje automático para comprender el diseño y los campos del formulario de origen. Cada servicio de aprendizaje automático aprende continuamente de los datos de origen y produce una salida mejorada con cada repetición. Estos servicios aprenden de la experiencia como humanos.
+El servicio de conversión automatizada de AEM Forms convierte un formulario PDF en un formulario adaptable. El servicio utiliza inteligencia artificial y algoritmos de aprendizaje automático para comprender el diseño y los campos del formulario de origen. Cada servicio de aprendizaje automático aprende continuamente de los datos de origen y produce una salida mejorada con cada repetición. Estos servicios aprenden de la experiencia como humanos.
 
-El servicio Conversión automatizada de formularios se capacita en un gran conjunto de formularios. Identifica fácilmente los campos de un formulario de origen y genera formularios adaptables. Sin embargo, hay algunos campos y estilos en los PDF forms que son fácilmente visibles para el ojo humano pero difíciles de entender para el servicio. El servicio puede asignar tipos de campos o paneles diferentes de los aplicables a algunos campos o estilos. Todos estos patrones de estilo y campo se enumeran a continuación.
+El servicio de conversión automatizada de Forms se capacita en un gran conjunto de formularios. Identifica fácilmente los campos de un formulario de origen y genera formularios adaptables. Sin embargo, hay algunos campos y estilos en los PDF forms que son fácilmente visibles para el ojo humano pero difíciles de entender para el servicio. El servicio puede asignar tipos de campos o paneles diferentes de los aplicables a algunos campos o estilos. Todos estos patrones de estilo y campo se enumeran a continuación.
 
 El servicio tiene el inicio de identificar y asignar los campos o paneles correctos a estos patrones, ya que sigue aprendiendo de los datos de origen. Por el momento, puede utilizar el editor [Revisar y corregir](review-correct-ui-edited.md) para corregir estos problemas. Antes de inicio de corregir los problemas o leer más, familiarícese con los componentes [de formulario](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)adaptables.
 
 ## General {#general}
-
-<!--
-Comment Type: draft
-
-<ul>
-<li>Service does not convert filled PDF forms to adaptive form. Use empty adaptive forms.Service does not convert colored PDF forms to adaptive form. Use  and white or grayscale adaptive forms. <br /> </li>
-<li>Service does not convert filled PDF forms to adaptive form. Use empty adaptive forms.</li>
-<li>Service does not support scanned forms. Do not use scanned forms. </li>
-<li>Service can fail to recognize text and fields in a dense form. Increase the width between text and fields of a dense form before starting the conversion.</li>
-<li>Service does not extract images. Manually add images to converted forms.</li>
-<li>Service does not extract text present within an image. Manually add text to the adaptive form.</li>
-</ul>
--->
 
 <table border="1" cellpadding="1" cellspacing="0" style="border-collapse: separate; border-spacing: 0px;" width="100%"> 
  <tbody>
@@ -47,11 +34,6 @@ Comment Type: draft
    <td width="30%">Patrones y resolución conocidos</td> 
    <td width="70%">Ejemplo</td> 
   </tr>
-  <tr>
-   <td><p><strong>Patrón</strong></p> <p>Service no convierte los PDF forms de color en formularios adaptables.</p> <p> </p> <p><strong>Resolución</strong></p> <p>Utilice PDF forms en blanco y negro o en escala de grises. </p> </td> 
-   <td style="text-align: left;"> <img src="assets/coloured-form.png" /></td> 
-  </tr>
-  <tr>
    <td><p><strong>Patrón</strong></p> <p>El servicio no convierte los PDF forms rellenados en formularios adaptables.</p> <p> </p> <p><strong>Resolución</strong></p> <p>Utilice formularios adaptables vacíos.</p> </td> 
    <td style="text-align: left;"><img src="assets/pre-filled-form.png" /></td> 
   </tr>
@@ -125,7 +107,7 @@ Comment Type: draft
    <td width="70%">Ejemplo</td> 
   </tr>
   <tr>
-   <td><p><strong>Patrón</strong></p> <p>Las Listas que contienen campos de formulario se combinan o no se convierten en los componentes de formulario adaptables correspondientes</p> <p><strong>Resolución</strong></p> <p>Utilice los campos de formulario con límites claros o utilice el editor Revisar y corregir para corregir estos problemas.</p> </td> 
+   <td><p><strong>Patrón</strong></p> <p>Las listas que contienen campos de formulario se combinan o no se convierten en los componentes de formulario adaptables correspondientes</p> <p><strong>Resolución</strong></p> <p>Utilice los campos de formulario con límites claros o utilice el editor Revisar y corregir para corregir estos problemas.</p> </td> 
    <td><img src="assets/lists-with-fields.png" /></td> 
   </tr>
   <tr>
