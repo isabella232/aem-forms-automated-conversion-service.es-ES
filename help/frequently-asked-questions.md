@@ -7,10 +7,10 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+source-git-commit: 14e6d1fba9f27fde4fe24de83cb00c9847ea4e90
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 5%
+source-wordcount: '1822'
+ht-degree: 4%
 
 ---
 
@@ -132,4 +132,11 @@ El error mencionado se produce cuando la delegación de inicio no está configur
    <br/>
 
 1. **¿Cómo se cambia automáticamente el formato de mayúsculas y minúsculas del texto del formulario adaptable?**
+
    <p>Se puede utilizar un método adaptable de temáticas o un editor de estilos para cambiar la forma en mayúsculas de un campo de formulario adaptable. Por ejemplo, puede abrir el editor de temas y establecer el valor de la propiedad Case de todo el texto del formulario en mayúsculas, minúsculas o camelCase. También puede utilizar la opción Anulación de CSS en el editor de temas para crear distintos tipos de estilos.</p>
+
+1. **¿Puedo utilizar etiquetas de texto de Adobe Sign con el servicio de conversión automatizada de Forms?**
+
+   <p> Cuando se utiliza el servicio de conversión automatizada de Forms para convertir un formulario PDF en un formulario adaptable y el formulario PDF tiene etiquetas de texto de Adobe Sign, dichas etiquetas se convierten a los campos de formulario adaptables correspondientes y los detalles del firmante se rellenan automáticamente.  Esta función solo está disponible para Acrobat Forms y los formularios adaptables admiten un número limitado de campos de Adobe Sign.</p>  </br>
+
+   <p> Para la lista completa de las etiquetas admitidas, abra un formulario en el editor de formularios adaptables y agregue un bloque Adobe Sign. Utilice el bloque Adobe Sign para buscar todos los campos de Adobe Sign admitidos. Proporciona una lista desplegable para seleccionar todos los campos admitidos.</p>
