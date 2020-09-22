@@ -1,32 +1,37 @@
 ---
 title: 'Conversión de formularios PDF en formularios adaptables '
 seo-title: 'Conversión de formularios PDF en formularios adaptables '
-description: Ejecución del servicio Conversión automatizada de formularios para convertir PDF forms en formularios adaptables
-seo-description: Ejecución del servicio Conversión automatizada de formularios para convertir PDF forms en formularios adaptables
+description: Ejecutar el servicio de conversión automatizada de Forms para convertir PDF forms en formularios adaptables
+seo-description: Ejecutar el servicio de conversión automatizada de Forms para convertir PDF forms en formularios adaptables
 uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 5fdf997fdde07cc4546accebddb85a248f36e057
+source-git-commit: 14e6d1fba9f27fde4fe24de83cb00c9847ea4e90
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 8%
+source-wordcount: '1579'
+ht-degree: 7%
 
 ---
 
 
 # Conversión de formularios PDF en formularios adaptables {#convert-print-forms-to-adaptive-forms}
 
-El servicio Conversión automatizada de formularios para AEM Forms, con tecnología de Adobe Sensei, convierte automáticamente a sus PDF forms en formularios adaptables adaptables y adaptables para dispositivos. Tanto si utiliza PDF forms no interactivos, formularios Acro Forms o PDF forms basados en XFA, el servicio Conversión automatizada de formularios puede convertir fácilmente estos formularios en formularios adaptables. Para obtener información sobre las capacidades, el flujo de trabajo de conversión y la información de integración, consulte Servicio de conversión [de formularios](introduction.md) automatizados.
+El servicio de conversión automatizada de Forms de AEM Forms, con tecnología Adobe Sensei, convierte automáticamente a sus PDF forms en formularios adaptables adaptables adaptables y adaptables para dispositivos. Tanto si utiliza PDF forms no interactivos, Acro Forms o PDF forms basados en XFA, el servicio de conversión automatizada de Forms puede convertir fácilmente estos formularios en formularios adaptables. Para obtener información sobre las capacidades, el flujo de trabajo de conversión y la información de integración, consulte Servicio [automatizado de conversión](introduction.md) de Forms.
 
 ## Requisitos previos {#pre-requisites}
 
-* [**Configurar el servicio de conversión **](configure-service.md)
+* [**Configurar el servicio de conversión**](configure-service.md)
 
-* **Prepare las[plantillas](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)que se van a aplicar a los formularios convertidos:** El uso de una plantilla le permite aplicar una marca coherente en todos los formularios adaptables. Además, el servicio Conversión automatizada de formularios no extrae ni utiliza el encabezado ni el pie de página de los documentos PDF de origen. Puede utilizar plantillas de formulario adaptables para especificar el encabezado y el pie de página. El encabezado y el pie de página especificados en la plantilla se aplican al formulario adaptable durante la conversión. Cuando cree una carpeta para las plantillas, seleccione la **[!UICONTROL Browse configurations]** opción para todos.
+* **Prepare las[plantillas](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)que se van a aplicar a los formularios convertidos:** El uso de una plantilla le permite aplicar una marca coherente en todos los formularios adaptables. Además, el servicio de conversión automatizada de Forms no extrae ni utiliza el encabezado ni el pie de página de los documentos PDF de origen. Puede utilizar plantillas de formulario adaptables para especificar el encabezado y el pie de página. El encabezado y el pie de página especificados en la plantilla se aplican al formulario adaptable durante la conversión. Cuando cree una carpeta para las plantillas, seleccione la **[!UICONTROL Browse configurations]** opción para todos.
 
 * **Prepare las[temáticas](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)que se aplicarán a los formularios convertidos:** El uso de un tema permite aplicar un estilo coherente a todas las formas adaptables de la organización.
+
+* **Añada las etiquetas de texto de Adobe Sign a los documentos PDF de origen:** Cuando el formulario PDF de origen tiene etiquetas [de texto de](https://helpx.adobe.com/sign/using/text-tag.html)Adobe Sign, el servicio automáticamente esas etiquetas se convierten en campos de formulario adaptables correspondientes y los detalles del firmante se rellenan automáticamente. Esta función solo está disponible para AcroForms y los formularios adaptables admiten un número limitado de campos de Adobe Sign.
+
+
+   Para la lista completa de las etiquetas admitidas, abra un formulario en el editor de formularios adaptables y agregue un bloque Adobe Sign. Utilice el bloque Adobe Sign para buscar todos los campos de Adobe Sign admitidos. Proporciona una lista desplegable para seleccionar todos los campos admitidos.
 
 ## Inicio del proceso de conversión {#start-the-conversion-process}
 
@@ -45,7 +50,7 @@ El servicio de conversión convierte los PDF forms disponibles en la instancia d
 * Mantenga el número de páginas de un formulario por debajo de 15.
 * No cargue los formularios protegidos. El servicio no convierte formularios protegidos por contraseña ni protegidos por contraseña.
 * No cargue formularios de origen con espacios en el nombre del archivo. Quite el espacio del nombre del archivo antes de cargar los formularios.
-* No cargue [carpetas PDF](https://helpx.adobe.com/es/acrobat/using/overview-pdf-portfolios.html). El servicio no convierte una cartera PDF a un formulario adaptable.
+* No cargue [carpetas PDF](https://helpx.adobe.com/es/acrobat/using/overview-pdf-portfolios.html). El servicio no convierte un Portfolio PDF en un formulario adaptable.
 * Lea las secciones Problemas [](known-issues.md) conocidos y [Prácticas recomendadas y consideraciones](styles-and-pattern-considerations-and-best-practices.md) y realice los cambios sugeridos en los formularios.
 
 Siga los pasos siguientes para cargar los formularios que se van a convertir en una carpeta en la instancia de AEM Forms:
@@ -61,7 +66,7 @@ Siga los pasos siguientes para cargar los formularios que se van a convertir en 
 
 Después de cargar los formularios y configurar el servicio, realice los siguientes pasos para realizar la inicio:
 
-1. En la instancia de AEM Forms, toque **[!UICONTROL Adobe Experience Manager]** Configuración de ![conversión (Cuadro de diálogo](assets/adobeexperiencemanager.png) ) > **[!UICONTROL Navigation]** > ![](assets/compass.png) > **[!UICONTROL Forms]** **[!UICONTROL Forms & Documents]**.
+1. En la instancia de AEM Forms, toque el cuadro de diálogo **[!UICONTROL Adobe Experience Manager]** Configuración ![de conversión >](assets/adobeexperiencemanager.png) **[!UICONTROL Navigation]** > ![](assets/compass.png) > **[!UICONTROL Forms]** **[!UICONTROL Forms & Documents]**.
 1. Seleccione un formulario o la carpeta que contenga PDF forms (formularios que se van a convertir) y toque **[!UICONTROL Start Automated Conversion]**. Aparecerá el **[!UICONTROL Conversion Settings]** cuadro de diálogo.
 
    ![Especifique las configuraciones](assets/conversion-settings-dialog.png)
@@ -73,6 +78,7 @@ Después de cargar los formularios y configurar el servicio, realice los siguien
    * Utilice la opción **Generar formularios adaptables sin enlaces** de modelo de datos para seleccionar si desea generar un formulario adaptable con o sin enlaces de modelo de datos.
 Si no selecciona esta opción, el servicio de conversión asocia automáticamente los formularios adaptables con un esquema JSON y crea un enlace de datos entre los campos disponibles en el formulario adaptable y el esquema JSON. El **[!UICONTROL Save generated data model schema at]** campo muestra la ubicación predeterminada para guardar el esquema JSON generado. También puede personalizar la ubicación para guardar el esquema generado.
 Si selecciona esta opción, el servicio de conversión genera un formulario adaptable sin enlaces de modelo de datos. Tras una conversión correcta, puede asociar un formulario adaptable a un modelo de datos de formulario, un esquema XML o un esquema JSON. Para obtener más información, consulte [Creación de un formulario](https://helpx.adobe.com/experience-manager/6-5/forms/using/creating-adaptive-form.html)adaptable.
+
    <!--
    Comment Type: draft
 
@@ -85,6 +91,7 @@ Si selecciona esta opción, el servicio de conversión genera un formulario adap
 1. En la ficha **[!UICONTROL Additional]** del cuadro de diálogo Configuración de conversión,
    * Seleccione la **[!UICONTROL Extract fragment from adaptive forms]** opción para permitir que el servicio de conversión identifique, extraiga y descargue fragmentos de formulario para los formularios convertidos. Cuando selecciona la **[!UICONTROL Extract fragment from adaptive forms]** opción, se activan las opciones para especificar rutas para guardar fragmentos de formulario extraídos y los esquemas de fragmentos de formulario correspondientes.
    * Especifique la ubicación de **[!UICONTROL existing adaptive form fragments]**, si tiene fragmentos de formulario JSON basados en esquemas JSON y de esquema menos adaptables y tiene pensado utilizar estos fragmentos en formularios adaptables generados automáticamente. El servicio de conversión coincide con los fragmentos de formulario disponibles basados en esquemas JSON y con los fragmentos de formulario menos adaptables de esquema con PDF forms de entrada (solo PDF forms no interactivos). Si hay una coincidencia, el fragmento de formulario adaptable coincidente se utiliza en los formularios adaptables correspondientes.
+
    >[!NOTE]
    >
    >
@@ -103,8 +110,9 @@ Si selecciona esta opción, el servicio de conversión genera un formulario adap
 
 1. Tocar **[!UICONTROL Start Conversion]**. Se ha iniciado la conversión. El progreso de conversión se muestra en la carpeta o en el formulario hasta que la conversión esté en curso. El mensaje se sustituye por otro mensaje de estado (Convertido, Conversión parcial o Error de conversión) una vez finalizada la conversión. También se envía un mensaje de correo electrónico de estado en la dirección de correo electrónico configurada una vez finalizada la conversión:
 
-   * Si la conversión se realiza correctamente, el formulario adaptable convertido y el esquema relacionado se descargan en la ruta especificada en la **[!UICONTROL Basic]** ficha del cuadro de diálogo de conversión. Los fragmentos de formulario y el esquema correspondiente solo se descargan si se selecciona la opción Extraer fragmento antes de iniciar la conversión.
+   * Si la conversión se realiza correctamente, el formulario adaptable convertido y el esquema relacionado se descargan en la ruta de acceso especificada en la **[!UICONTROL Basic]** ficha del cuadro de diálogo de conversión. Los fragmentos de formulario y el esquema correspondiente solo se descargan si se selecciona la opción Extraer fragmento antes de iniciar la conversión.
    * En una conversión fallida, el **[!UICONTROL Conversion Failed]** mensaje se muestra si no se pueden convertir todos los formularios de entrada o si el mensaje **[!UICONTROL Partially Failed]** se muestra cuando sólo unos pocos de los formularios de entrada no se pueden convertir. Se envía un correo electrónico de estado en la dirección [de correo electrónico](configure-service.md#configureemailnotification) configurada y se registra un error en el archivo error.log.
+
    Si va a convertir un formulario PDF basado en XFA en un formulario adaptable, el servicio de conversión asocia automáticamente el formulario PDF al formulario adaptable convertido como el Documento de la plantilla de registro. Después de la conversión, puede abrir las propiedades del formulario adaptable para la vista del Documento de la plantilla Registro en la **[!UICONTROL Document of Record Template Configuration]** sección de la **[!UICONTROL Form Model]** ficha. </br>
 
    El servicio de conversión carga automáticamente el formulario PDF en el formulario adaptable convertido como Documento de la plantilla Grabar solo si activa la opción **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > **[!UICONTROL Properties of selected configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** .
