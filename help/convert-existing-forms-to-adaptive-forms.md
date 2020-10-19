@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: fa8a27021fbccdd1c6c0721a6e5c032db486e262
+source-git-commit: 19c688ae925774c008683be8b92afcbfb9f2bcdb
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1599'
 ht-degree: 7%
 
 ---
@@ -24,14 +24,15 @@ El servicio de conversión automatizada de Forms de AEM Forms, con tecnología A
 
 * [**Configurar el servicio de conversión**](configure-service.md)
 
-* **Prepare las[plantillas](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)que se van a aplicar a los formularios convertidos:** El uso de una plantilla le permite aplicar una marca coherente en todos los formularios adaptables. Además, el servicio de conversión automatizada de Forms no extrae ni utiliza el encabezado ni el pie de página de los documentos PDF de origen. Puede utilizar plantillas de formulario adaptables para especificar el encabezado y el pie de página. El encabezado y el pie de página especificados en la plantilla se aplican al formulario adaptable durante la conversión. Cuando cree una carpeta para las plantillas, seleccione la **[!UICONTROL Browse configurations]** opción para todos.
+* **Prepare las [plantillas](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) que se van a aplicar a los formularios convertidos:** El uso de una plantilla le permite aplicar una marca coherente en todos los formularios adaptables. Además, el servicio de conversión automatizada de Forms no extrae ni utiliza el encabezado ni el pie de página de los documentos PDF de origen. Puede utilizar plantillas de formulario adaptables para especificar el encabezado y el pie de página. El encabezado y el pie de página especificados en la plantilla se aplican al formulario adaptable durante la conversión. Cuando cree una carpeta para las plantillas, seleccione la **[!UICONTROL Browse configurations]** opción para todos.
 
-* **Prepare las[temáticas](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)que se aplicarán a los formularios convertidos:** El uso de un tema permite aplicar un estilo coherente a todas las formas adaptables de la organización.
+* **Prepare las [temáticas](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) que se aplicarán a los formularios convertidos:** El uso de un tema permite aplicar un estilo coherente a todas las formas adaptables de la organización.
 
-* **Añada las etiquetas de texto de Adobe Sign a los documentos PDF de origen:** Cuando el formulario PDF de origen tiene etiquetas [de texto de](https://helpx.adobe.com/sign/using/text-tag.html)Adobe Sign, el servicio automáticamente esas etiquetas se convierten en campos de formulario adaptables correspondientes y los detalles del firmante se rellenan automáticamente. Esta función solo está disponible para AcroForms y los formularios adaptables admiten un número limitado de campos de Adobe Sign.
+* **Añada las etiquetas de texto de Adobe Sign a los documentos PDF de origen:** Cuando un formulario PDF de origen tiene etiquetas [de texto de](https://helpx.adobe.com/sign/using/text-tag.html)Adobe Sign, el servicio conserva toda la información relacionada con el firmante durante la conversión. El formulario adaptable generado rellena todos los detalles del firmante al enviar el formulario adaptable al servicio de Adobe Sign para firmar. La función solo está disponible para AcroForms y las propiedades del formulario adaptable se alinean exactamente con las propiedades de AcroForm.
 
-   </br>
-    El formulario adaptable solo admite campos como firma, firma, texto, número, fecha, lista desplegable, botón de opción, casilla de verificación, inicial, bloque de firma, firma digital, título del firmante, correo electrónico del firmante, compañía del firmante, fecha de firma y Adobe Sign con el nombre completo del firmante. Por lo tanto, el servicio convierte las etiquetas de texto de solo los campos mencionados a los campos de formulario adaptables correspondientes.
+Para agregar etiquetas de texto de Adobe Sign a sus documentos PDF de origen, reemplace el nombre del campo en el documento PDF de origen por una etiqueta [de](https://helpx.adobe.com/sign/using/text-tag.html) texto o utilice el artículo Convertir a formulario de Adobe Sign como se describe en [Crear formularios con Acrobat DC](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) .
+
+
 
 ## Inicio del proceso de conversión {#start-the-conversion-process}
 
