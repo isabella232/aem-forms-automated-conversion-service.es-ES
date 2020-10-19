@@ -8,7 +8,7 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 19c688ae925774c008683be8b92afcbfb9f2bcdb
+source-git-commit: 0bff37d64df233dc52310266e306edb734887727
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 7%
@@ -30,7 +30,7 @@ El servicio de conversión automatizada de Forms de AEM Forms, con tecnología A
 
 * **Añada las etiquetas de texto de Adobe Sign a los documentos PDF de origen:** Cuando un formulario PDF de origen tiene etiquetas [de texto de](https://helpx.adobe.com/sign/using/text-tag.html)Adobe Sign, el servicio conserva toda la información relacionada con el firmante durante la conversión. El formulario adaptable generado rellena todos los detalles del firmante al enviar el formulario adaptable al servicio de Adobe Sign para firmar. La función solo está disponible para AcroForms y las propiedades del formulario adaptable se alinean exactamente con las propiedades de AcroForm.
 
-Para agregar etiquetas de texto de Adobe Sign a sus documentos PDF de origen, reemplace el nombre del campo en el documento PDF de origen por una etiqueta [de](https://helpx.adobe.com/sign/using/text-tag.html) texto o utilice el artículo Convertir a formulario de Adobe Sign como se describe en [Crear formularios con Acrobat DC](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) .
+   Para agregar etiquetas de texto de Adobe Sign a sus documentos PDF de origen, reemplace el nombre del campo en el documento PDF de origen por una etiqueta [de](https://helpx.adobe.com/sign/using/text-tag.html) texto o utilice el artículo Convertir a formulario de Adobe Sign como se describe en [Crear formularios con Acrobat DC](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) .
 
 
 
