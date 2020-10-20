@@ -12,8 +12,8 @@ breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.
 translation-type: tm+mt
 source-git-commit: 49fff7234975daab051b5a0b887004c407be927a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '90'
+ht-degree: 90%
 
 ---
 
