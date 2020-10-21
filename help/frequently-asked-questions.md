@@ -7,7 +7,7 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: 49f1b6c93529ab30141503ab884801cf1c37b20b
+source-git-commit: ac110cc2e8b29603fb7ff8b86c5d323f13bc204e
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 4%
@@ -142,4 +142,7 @@ El error mencionado se produce cuando la delegación de inicio no está configur
    <p> Para la lista completa de las etiquetas admitidas, abra un formulario en el editor de formularios adaptables y agregue un bloque Adobe Sign. Utilice el bloque Adobe Sign para buscar todos los campos de Adobe Sign admitidos. Proporciona una lista desplegable para seleccionar todos los campos admitidos.</p>
 
 1. **¿Cómo se crea un formulario PDF habilitado para Adobe Sign?**
-   </p>Para crear un formulario PDF habilitado para Adobe Sign:</p> Añada [etiquetas de texto de Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html) en nombres de campo o utilice la opción [Convertir en formulario de Adobe Sign](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html). </br>
+
+   </p>Para crear un formulario PDF habilitado para Adobe Sign:</p>
+
+   Añada etiquetas [de texto de](https://helpx.adobe.com/sign/using/text-tag.html) Adobe Sign en nombres de campo o utilice la opción [Convertir a formulario](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) de Adobe Sign.
