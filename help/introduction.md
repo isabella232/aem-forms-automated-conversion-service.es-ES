@@ -1,8 +1,11 @@
 ---
 title: Introducción
 description: 'Acelere la conversión de impresión de formularios en formularios adaptables '
-translation-type: ht
-source-git-commit: ceff5cb56aa9896a28004628c5e26c262b7918bd
+translation-type: tm+mt
+source-git-commit: c4f0d07b38cdb6aa162a0b61abe12fe9d1677a8c
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 92%
 
 ---
 
@@ -28,6 +31,8 @@ Adobe posibilita el acceso a su organización y otorga los pertinentes privilegi
 ## Idiomas y formularios PDF admitidos {#supported-languages-and-pdf-forms}
 
 El servicio admite formularios PDF no interactivos, formularios creados con Adobe Acrobat conocidos como AcroForms y formularios basados en XFA creados con AEM Forms o Adobe LiveCycle.
+
+El servicio también admite PDF forms habilitados para Adobe Sign. Si el formulario PDF de origen tiene etiquetas de texto de Adobe Sign, el servicio conserva toda la información relacionada con Adobe Sign durante la conversión y asocia la información del firmante presente en el PDF de origen con los campos de formulario adaptables correspondientes. La función solo está disponible para AcroForms.
 
 El servicio solo puede convertir formularios en inglés a formularios adaptables. Puede traducir los formularios adaptables que se generan a otro idioma mediante el [flujo de trabajo de traducción de AEM](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
