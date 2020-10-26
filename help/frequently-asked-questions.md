@@ -7,9 +7,9 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: 7b8e013af91430e86c0014c7a1695abb05c3c0f2
+source-git-commit: 92cd241915ef5818fb004a8982674b4f6753c171
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1825'
 ht-degree: 4%
 
 ---
@@ -138,8 +138,6 @@ El error mencionado se produce cuando la delegación de inicio no está configur
 1. **¿Puedo utilizar etiquetas de texto de Adobe Sign con el servicio de conversión automatizada de Forms?**
 
    <p> Cuando se utiliza el servicio de conversión automatizada de Forms para convertir un formulario PDF en un formulario adaptable y el formulario PDF tiene etiquetas de texto de Adobe Sign, dichas etiquetas se convierten a los campos de formulario adaptables correspondientes y los detalles del firmante se rellenan automáticamente.  Esta función solo está disponible para Acrobat Forms y los formularios adaptables admiten un número limitado de campos de Adobe Sign.</p>  </br>
-
-   <p> Para la lista completa de las etiquetas admitidas, abra un formulario en el editor de formularios adaptables y agregue un bloque Adobe Sign. Utilice el bloque Adobe Sign para buscar todos los campos de Adobe Sign admitidos. Proporciona una lista desplegable para seleccionar todos los campos admitidos.</p>
 
 1. **¿Cómo se crea un formulario PDF habilitado para Adobe Sign?**
 
