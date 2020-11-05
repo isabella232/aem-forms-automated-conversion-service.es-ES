@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 audience: end-user
 user-guide-title: Servicio de conversión automatizada de Adobe Experience Manager Forms
-user-guide-description: Convierta PDF forms a Forms HTML interactivos y listos para dispositivos móviles.
+user-guide-description: Convierta PDF forms a un Forms HTML interactivo y listo para dispositivos móviles.
 breadcrumb-title: Guía de conversión automatizada de Forms
 breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
 translation-type: tm+mt
