@@ -25,9 +25,9 @@ ht-degree: 8%
 
 El servicio de conversión automatizada de AEM Forms convierte un formulario PDF en un formulario adaptable. El servicio utiliza inteligencia artificial y algoritmos de aprendizaje automático para comprender el diseño y los campos del formulario de origen. Cada servicio de aprendizaje automático aprende continuamente de los datos de origen y produce una salida mejorada con cada repetición. Estos servicios aprenden de la experiencia como humanos.
 
-El servicio de conversión automatizada de Forms se capacita en un gran conjunto de formularios. Identifica fácilmente los campos de un formulario de origen y genera formularios adaptables. Sin embargo, hay algunos campos y estilos en los PDF forms que son fácilmente visibles para el ojo humano pero difíciles de entender para el servicio. El servicio puede asignar tipos de campos o paneles diferentes de los aplicables a algunos campos o estilos. Todos estos patrones de estilo y campo se enumeran a continuación.
+El servicio de automated forms conversion está capacitado en un gran conjunto de formularios. Identifica fácilmente los campos de un formulario de origen y genera formularios adaptables. Sin embargo, hay algunos campos y estilos en los PDF forms que son fácilmente visibles para el ojo humano pero difíciles de entender para el servicio. El servicio puede asignar tipos de campos o paneles diferentes de los aplicables a algunos campos o estilos. Todos estos patrones de estilo y campo se enumeran a continuación.
 
-El servicio tiene el inicio de identificar y asignar los campos o paneles correctos a estos patrones, ya que sigue aprendiendo de los datos de origen. Por el momento, puede utilizar el editor [Revisar y corregir](review-correct-ui-edited.md) para corregir estos problemas. Antes de inicio de corregir los problemas o leer más, familiarícese con los componentes [de formulario](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)adaptables.
+El servicio tiene el inicio de identificar y asignar los campos o paneles correctos a estos patrones, ya que sigue aprendiendo de los datos de origen. Por el momento, puede utilizar el editor [Revisar y corregir](review-correct-ui-edited.md) para solucionar estos problemas. Antes de inicio de corregir los problemas o de leer más, familiarícese con [componentes de formulario adaptables](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 
 ## General {#general}
 
@@ -59,7 +59,7 @@ El servicio tiene el inicio de identificar y asignar los campos o paneles correc
  </tbody>
 </table>
 
-## Grupo de opciones  {#choice-group}
+## Grupo de opciones {#choice-group}
 
 <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
  <tbody>
@@ -74,7 +74,7 @@ El servicio tiene el inicio de identificar y asignar los campos o paneles correc
  </tbody>
 </table>
 
-## Form fields {#form-fields}
+## Campos de formulario {#form-fields}
 
 <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
  <tbody>
