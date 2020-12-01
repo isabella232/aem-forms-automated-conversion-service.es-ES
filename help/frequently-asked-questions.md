@@ -2,7 +2,7 @@
 title: Preguntas frecuentes
 seo-title: Preguntas frecuentes
 description: Consultas comunes o preguntas más frecuentes
-seo-description: preguntas más frecuentes sobre el servicio automatizado de conversión de Forms
+seo-description: preguntas más frecuentes sobre el servicio de Automated forms conversion
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
@@ -17,26 +17,26 @@ ht-degree: 4%
 
 # Preguntas frecuentes{#frequently-asked-questions}
 
-1. **¿Qué versión de AEM Forms admite el servicio Conversión automatizada de Forms?**
+1. **¿Qué versión de AEM Forms admite el servicio de Automated forms conversion?**
 
-   <p>El servicio de conversión automatizada de Forms es compatible con AEM 6.4 Forms y AEM 6.5 Forms. Funciona con AEM Forms en OSGi y AEM formularios en JEE. Para utilizar el servicio, debe disponer del paquete de AEM Forms Add-on más reciente que AEM instancia de creación. For detailed instructions, see <a href="configure-service.md">Configure the Automated Forms Conversion</a> service.</p> 
+   <p>El servicio de automated forms conversion admite AEM 6.4 Forms y AEM 6.5 Forms. Funciona con AEM Forms en OSGi y AEM formularios en JEE. Para utilizar el servicio, debe disponer del paquete de AEM Forms Add-on más reciente que AEM instancia de creación. Para obtener instrucciones detalladas, consulte <a href="configure-service.md">Configuración del servicio de Automated forms conversion</a>.</p> 
     <br>
 
 1. **¿Puede instalarse el servicio in situ?**
 
-   <p>Adobe forma regularmente algoritmos AI y ML del servicio de conversión automatizada de Forms con nuevos conjuntos de datos para mejorar la precisión de conversión. Los algoritmos actualizados se implementan en el servicio de conversión que se ejecuta en Adobe Cloud a intervalos periódicos. Todos los clientes del servicio se benefician de los algoritmos actualizados. Por lo tanto, la implementación central alojada en la nube es la mejor opción para el servicio de conversión automatizada de Forms para aprender y ofrecer mejoras de forma continua a todos los clientes.</p> 
+   <p>Adobe entrena regularmente algoritmos AI y ML del servicio de Automated forms conversion con nuevos conjuntos de datos para mejorar la precisión de conversión. Los algoritmos actualizados se implementan en el servicio de conversión que se ejecuta en Adobe Cloud a intervalos periódicos. Todos los clientes del servicio se benefician de los algoritmos actualizados. Por lo tanto, la implementación central alojada en la nube es la mejor opción para el servicio de Automated forms conversion para aprender y ofrecer mejoras de forma continua a todos los clientes.</p> 
     <p>El servicio convierte los formularios en blanco en formularios adaptables. El servicio no admite formularios rellenados ni extracción de datos de formularios rellenados. Elimine datos de los formularios rellenados y elimine o lista de permitidos la información de propiedad de los formularios antes de enviarlos al servicio para su conversión</p> <br>
 
-1. **¿Admite el servicio todos los formatos de PDF forms? ¿Qué idiomas son compatibles?**
+1. **¿Admite el servicio todos los formatos de PDF forms? ¿Qué idiomas se admiten?**
 
-   <p>El servicio puede convertir PDF forms no interactivos, XDP y PDF forms basados en XFA y AcroForms en formularios adaptables. El servicio no admite formularios escaneados o rellenados. Para ver otras limitaciones, consulte el artículo sobre problemas <a href="known-issues.md"></a> conocidos.<br /> </p> 
-    <p>Generalmente agregamos compatibilidad con otros tipos de fuentes. Mantenga la sección de formularios <a href="introduction.md">PDF</a> admitidos en la lista de observación para obtener una actualización periódica de las funciones y funciones recientemente agregadas.</p>
+   <p>El servicio puede convertir PDF forms no interactivos, XDP y PDF forms basados en XFA y AcroForms en formularios adaptables. El servicio no admite formularios escaneados o rellenados. Para ver otras limitaciones, consulte el artículo <a href="known-issues.md">problemas conocidos</a>.<br /> </p> 
+    <p>Generalmente agregamos compatibilidad con otros tipos de fuentes. Mantenga la sección <a href="introduction.md">formularios PDF admitidos</a> en la lista de observación para obtener una actualización periódica de las funciones y capacidades recientemente agregadas.</p>
 
    El servicio solo puede convertir formularios en inglés a formularios adaptables. Puede traducir los formularios adaptables que se generan a otro idioma mediante el [flujo de trabajo de traducción de AEM.](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **¿Puede el servicio producir un XDP en lugar de un formulario adaptable?**
 
-   <p>El servicio no produce una salida XDP. Estamos añadiendo funciones y servicios con regularidad. Mantenga la sección de idiomas y PDF forms <a href="introduction.md"></a> admitidos en la lista de observación para obtener una actualización periódica de las funciones y funciones recientemente agregadas.</p> <br>
+   <p>El servicio no produce una salida XDP. Estamos añadiendo funciones y servicios con regularidad. Mantenga la sección <a href="introduction.md">PDF forms y lenguajes admitidos</a> en la lista de observación para obtener una actualización periódica de las funciones y capacidades recientemente agregadas.</p> <br>
 
 1. **¿Cuál es el tipo de esquema generado?**
 
@@ -49,15 +49,15 @@ ht-degree: 4%
 
    <p>No, el servicio no convierte un formulario de Microsoft Word a un formulario adaptable. Puede guardar un formulario de Microsoft Word en un formulario PDF y convertirlo en un formulario adaptable. El proceso completo es </p> <br>
 
-   1. Utilice Adobe Acrobat para [convertir Word Document en un PDF](https://helpx.adobe.com/acrobat/how-to/create-pdf-files-word-excel-website.html)no interactivo.
-   1. Utilice Adobe Acrobat para [convertir los PDF forms producidos en formularios](https://helpx.adobe.com/acrobat/how-to/convert-word-excel-paper-pdf-forms.html)PDF rellenables.
+   1. Utilice Adobe Acrobat para [convertir Word Document en un PDF no interactivo](https://helpx.adobe.com/acrobat/how-to/create-pdf-files-word-excel-website.html).
+   1. Utilice Adobe Acrobat para [convertir los PDF forms producidos en formularios PDF rellenables](https://helpx.adobe.com/acrobat/how-to/convert-word-excel-paper-pdf-forms.html).
    1. Utilice Adobe Acrobat para actualizar y corregir manualmente los campos del formulario.
    1. Guarde el formulario PDF. Ahora puede utilizar el formulario con el servicio de conversión para generar un formulario adaptable. También puede utilizar el formulario como Documento de la plantilla Registro.
 
 
 1. **¿Puede el servicio convertir formularios impresos digitalizados y formularios coloreados en formularios adaptables?**
 
-   <p>El servicio puede convertir PDF forms de color en formularios adaptables. El servicio no admite formularios escaneados o rellenados. Para ver otras limitaciones, consulte el artículo sobre problemas <a href="known-issues.md"></a> conocidos.</p> <br>
+   <p>El servicio puede convertir PDF forms de color en formularios adaptables. El servicio no admite formularios escaneados o rellenados. Para ver otras limitaciones, consulte el artículo <a href="known-issues.md">problemas conocidos</a>.</p> <br>
 
 1. **¿Puede el servicio convertir un formulario digitalizado o solo una imagen de un formulario en un formulario adaptable?**
 
@@ -77,15 +77,15 @@ Las razones más comunes para que la conversión falle son:
    * Se proporcionan PDF forms seguros para la conversión. No utilice PDF forms protegidos por contraseña o protegidos para la conversión.
    * Se ha interrumpido la conexión a Internet. Asegúrese de estar conectado a Internet durante la conversión.
    * El PDF de origen tiene una imagen del formulario en lugar del formulario real.
-   * El servicio está configurado incorrectamente, no se proporciona la dirección URL del servicio o la dirección URL del servicio proporcionada es incorrecta. Compruebe la configuración [del](configure-service.md#configure-the-cloud-service) servicio en **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
+   * El servicio está configurado incorrectamente, no se proporciona la dirección URL del servicio o la dirección URL del servicio proporcionada es incorrecta. Compruebe la [configuración del servicio](configure-service.md#configure-the-cloud-service) en **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
    * La configuración de IMS no está configurada correctamente. Realice una comprobación de estado en la configuración de IMS para asegurarse de que funciona correctamente. Para comprobar si la configuración de IMS es correcta o no:
       1. Ir a `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`
-      2. Seleccione la configuración. Haga clic en el **[!UICONTROL Check Health]** encabezado y haga clic en **[!UICONTROL Check]**. Si tiene éxito, recibirá **[!UICONTROL Token retrieved successfully!]** un mensaje. <br> <br>
+      2. Seleccione la configuración. Haga clic en **[!UICONTROL Check Health]** en el encabezado y haga clic en **[!UICONTROL Check]**. Si tiene éxito, recibirá **[!UICONTROL Token retrieved successfully!]** mensaje. <br> <br>
 
 1. **¿El uso de fuentes personalizadas afecta a la conversión?**
 
    <p>Cuando un formulario PDF no interactivo se convierte en un formulario adaptable, para mejorar la calidad de la conversión, las fuentes se incrustan en el formulario PDF. La compatibilidad con la incrustación de fuentes está restringida a los PDF forms no interactivos. Para optimizar la conversión de PDF forms basados en AcroForm y XFA, se utilizan fuentes de reserva.</p> 
-    <p>Solo los formularios disponibles en el directorio de fuentes personalizadas que aparece en el campo <strong>Directorio</strong> de fuentes del cliente de la configuración del servicio <strong></strong> CQ-DAM-Handler-Gibson Font Manager están incrustados en un formulario PDF no interactivo.</p> 
+    <p>Solo los formularios disponibles en el directorio de fuentes personalizadas que se encuentran en el campo <strong>Directorio de fuentes del cliente</strong> de la configuración <strong> CQ-DAM-Handler-Gibson Font Manager Service</strong> están incrustados en un formulario PDF no interactivo.</p> 
     <p> </p> <br>
 
 1. **¿El servicio identifica y utiliza fuentes del PDF de origen en los formularios adaptables de salida?**
@@ -94,17 +94,17 @@ Las razones más comunes para que la conversión falle son:
 
 1. **¿El servicio extrae automáticamente JavaScript de formularios basados en XDP y lo aplica a los formularios adaptables correspondientes?**
 
-   <p>El servicio no convierte automáticamente las secuencias de comandos de formularios basados en XFA o Acro Forms a las correspondientes reglas de formularios adaptables. Los autores de formularios pueden utilizar el editor <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html">de</a> reglas para agregar interactividad a un formulario adaptable.</p> <br>
+   <p>El servicio no convierte automáticamente las secuencias de comandos de formularios basados en XFA o Acro Forms a las correspondientes reglas de formularios adaptables. Los autores de formularios pueden utilizar el <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html">editor de reglas</a> para agregar interactividad a un formulario adaptable.</p> <br>
 
 1. **Algunos objetos de formulario no se convierten correctamente en componentes de formulario adaptables. ¿Cómo resolver el problema?**
 
-   <p>El servicio de conversión automatizada de Forms se capacita en un gran conjunto de formularios. Pero las aplicaciones basadas en AI/ML están limitadas por sus datos y patrones de capacitación. Podría haber múltiples tipos de campo, diseños, patrones y contexto perceptibles para la percepción humana pero difíciles de reconocer automáticamente. Es posible que el servicio no identifique dichos objetos o que los reconozca incorrectamente. Puede utilizar el editor <a href="review-correct-ui-edited.md" target="_blank">Revisar y corregir</a> para realizar las modificaciones necesarias en la presentación familiar basada en formularios impresos del formulario de entrada.</p> <br/>
+   <p>El servicio de automated forms conversion está capacitado en un gran conjunto de formularios. Pero las aplicaciones basadas en AI/ML están limitadas por sus datos y patrones de capacitación. Podría haber múltiples tipos de campo, diseños, patrones y contexto perceptibles para la percepción humana pero difíciles de reconocer automáticamente. Es posible que el servicio no identifique dichos objetos o que los reconozca incorrectamente. Puede utilizar el editor <a href="review-correct-ui-edited.md" target="_blank">Revisar y corregir</a> para realizar las modificaciones necesarias en el diseño conocido del formulario de entrada basado en formularios impresos.</p> <br/>
 
 1. **Algunas correcciones se repiten en todos los formularios. ¿Puede el servicio identificar y corregir todas estas instancias en futuras conversiones?**
 
    El servicio está formando de manera consistente en sus formularios y patrones. Aprende nuevos patrones a diario. Todavía no se han aplicado inicios para aplicar automáticamente las correcciones repetidas en todos los formularios. Esté atento a los formularios de evaluación para la disponibilidad de dicha función. <br/><br/>
 
-   Se puede utilizar un meta-modelo para asignar los objetos de formulario al componente de formulario adaptable de su elección y preconfigurar validaciones, reglas, patrones de datos, texto de ayuda y propiedades de accesibilidad para los componentes. Todas las propiedades especificadas se aplican durante la conversión. Puede utilizar el metamodelo para aplicar propiedades comunes a los campos. Puede ayudarle a reducir algunos problemas repetidos en los distintos formularios.<br/><br/>
+   Se puede utilizar un meta-modelo para asignar los objetos de formulario al componente de formulario adaptable de su elección y preconfigurar validaciones, reglas, patrones de datos, texto de ayuda y propiedades de accesibilidad para los componentes. Todas las propiedades especificadas se aplican durante la conversión. Puede utilizar el metamodelo para aplicar propiedades comunes a los campos. Puede ayudarle a reducir algunos problemas repetidos en los formularios.<br/><br/>
 
 1. **¿Cuáles son las opciones para los formularios con datos confidenciales como la información de identificación personal (PII)?**
 El servicio solo admite formularios en blanco o sin rellenar. No cargue formularios o formularios rellenados con información de identificación personal (PII). Además, elimine los datos precargados, la información de identificación personal (PII), la información confidencial y la información de propiedad en los formularios de origen. 
@@ -118,16 +118,16 @@ El servicio solo admite formularios en blanco o sin rellenar. No cargue formular
 
    <p>La cantidad de tiempo depende del tamaño y la complejidad de los formularios de entrada y del número de solicitudes. El servicio tiene la intención de reducir significativamente el tiempo de respuesta al valor convirtiendo a los PDF forms en formularios adaptables a un ritmo mucho más rápido en comparación con el proceso manual de conversión de formularios. </p> <br />
 
-1. **¿Qué hacer si se produce un error relacionado con las bibliotecas RSA? El mensaje de error es similar al que se indica a continuación:** <br/>
+1. **¿Qué hacer si se produce un error relacionado con las bibliotecas RSA? El mensaje de error es similar al mensaje que se indica a continuación:** <br/>
 
 El error mencionado se produce cuando la delegación de inicio no está configurada para las bibliotecas RSA/BouncyCastle. Siga los pasos a continuación para resolver el problema:   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
 El error mencionado se produce cuando la delegación de inicio no está configurada para las bibliotecas RSA/BouncyCastle. Siga los pasos a continuación para resolver el problema:
    <p> </p>
 
-   1. Detenga la instancia de AEM. Vaya a la `[AEM installation directory]\crx-quickstart\conf\` carpeta. Abra el archivo sling.properties para editarlo. Si utiliza `[AEM installation directory]\crx-quickstart\bin\start.bat` para inicio de una instancia de AEM, edite el archivo sling.properties ubicado en `[AEM_root]\crx-quickstart\`.
+   1. Detenga la instancia de AEM. Vaya a la carpeta `[AEM installation directory]\crx-quickstart\conf\`. Abra el archivo sling.properties para editarlo. Si utiliza `[AEM installation directory]\crx-quickstart\bin\start.bat` para inicio de una instancia de AEM, edite el archivo sling.properties ubicado en `[AEM_root]\crx-quickstart\`.
    1. Añada las siguientes propiedades en el archivo sling.properties:<br/> `sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*`<br />  `sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*`<br /> `sling.bootdelegation.xerces=org.apache.xerces.*`
    1. Guarde y cierre el archivo. <br/>
-   1. Inicio la instancia de AEM.<br/>
+   1. Inicio de la instancia de AEM.<br/>
 
    <br/>
 
@@ -135,12 +135,12 @@ El error mencionado se produce cuando la delegación de inicio no está configur
 
    <p>Se puede utilizar un método adaptable de temáticas o un editor de estilos para cambiar la forma en mayúsculas de un campo de formulario adaptable. Por ejemplo, puede abrir el editor de temas y establecer el valor de la propiedad Case de todo el texto del formulario en mayúsculas, minúsculas o camelCase. También puede utilizar la opción Anulación de CSS en el editor de temas para crear distintos tipos de estilos.</p>
 
-1. **¿Puedo utilizar etiquetas de texto de Adobe Sign con el servicio de conversión automatizada de Forms?**
+1. **¿Puedo utilizar etiquetas de texto de Adobe Sign con el servicio de Automated forms conversion?**
 
-   <p> Cuando se utiliza el servicio de conversión automatizada de Forms para convertir un formulario PDF en un formulario adaptable y el formulario PDF tiene etiquetas de texto de Adobe Sign, dichas etiquetas se convierten a los campos de formulario adaptables correspondientes y los detalles del firmante se rellenan automáticamente.  Esta función solo está disponible para Acrobat Forms y los formularios adaptables admiten un número limitado de campos de Adobe Sign.</p>  </br>
+   <p> Cuando se utiliza el servicio de Automated forms conversion para convertir un formulario PDF a un formulario adaptable y el formulario PDF tiene etiquetas de texto de Adobe Sign, dichas etiquetas se convierten a los campos de formulario adaptables correspondientes y los detalles del firmante se rellenan automáticamente.  Esta función solo está disponible para Acrobat Forms y los formularios adaptables admiten un número limitado de campos de Adobe Sign.</p>  </br>
 
 1. **¿Cómo se crea un formulario PDF habilitado para Adobe Sign?**
 
    </p>Para crear un formulario PDF habilitado para Adobe Sign:</p>
 
-   Añada etiquetas [de texto de](https://helpx.adobe.com/sign/using/text-tag.html) Adobe Sign en nombres de campo o utilice la opción [Convertir a formulario](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) de Adobe Sign.
+   Añada [etiquetas de texto de Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html) en nombres de campo o utilice la opción [Convertir en formulario de Adobe Sign](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html).
