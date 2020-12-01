@@ -1,8 +1,8 @@
 ---
 title: Problemas conocidos
 seo-title: Problemas conocidos
-description: problemas conocidos y limitaciones del servicio de conversión automatizado de Forms
-seo-description: Antes de empezar a utilizar el servicio de conversión automatizada de Forms de AEM Forms, conozca los problemas conocidos y las limitaciones del servicio
+description: problemas conocidos y limitaciones del servicio de Automated forms conversion
+seo-description: Antes de empezar a utilizar el servicio de Automated forms conversion de AEM Forms, conozca los problemas conocidos y las limitaciones del servicio
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
@@ -16,18 +16,18 @@ ht-degree: 1%
 
 # Problemas y limitaciones conocidos {#known-issues-limitations}
 
-Antes de empezar a utilizar el servicio de conversión automatizada de Forms de AEM Forms, revise los siguientes problemas y limitaciones conocidos:
+Antes de empezar a usar el servicio de Automated forms conversion de AEM Forms, revise los siguientes problemas y limitaciones conocidos:
 
 ## Problemas conocidos {#known-issues}
 
 * La carpeta que contiene los formularios para la conversión no debe tener más de 15 formularios y 50 páginas en total. El tamaño de la carpeta de origen no debe superar los 10 MB. No cree subcarpetas en la carpeta de origen.
-* Algunos objetos de formulario son fácilmente visibles para el ojo humano, pero son [difíciles de identificar para el servicio](styles-and-pattern-considerations-and-best-practices.md). Utilice [Revisar y el editor](review-correct-ui-edited.md) correcto para identificar y convertir dichos objetos de formulario.
+* Algunos objetos de formulario son fácilmente visibles para el ojo humano, pero son [difíciles de identificar para el servicio](styles-and-pattern-considerations-and-best-practices.md). Utilice [Revisar y corregir editor](review-correct-ui-edited.md) para identificar y convertir dichos objetos de formulario.
 * Editor de revisión y corrección:
 
    * No tiene una acción de deshacer. El botón Guardar guarda los cambios de forma permanente.
    * No admite paneles repetibles para formularios basados en XFA.
    * Si modifica una lista de una tabla con el editor Revisar y corregir, el ancho de fila no se ajusta automáticamente y el texto podría extenderse a la siguiente fila de la tabla.
-   * La **[!UICONTROL Auto-detect multi-column layout from input forms]** función no funciona con el editor Revisar y corregir ni con los fragmentos de formulario.
+   * La función **[!UICONTROL Auto-detect multi-column layout from input forms]** no funciona con el editor Revisar y corregir ni con los fragmentos de formulario.
    * La firma de garabatos creada con el editor Revisar y corregir no se carga en los formularios adaptables publicados.
 
 
@@ -36,9 +36,9 @@ Antes de empezar a utilizar el servicio de conversión automatizada de Forms de 
    * No se admiten scripts XFA. Por ejemplo, secuencias de comandos para generar valores automáticamente para un componente desplegable.
    * El modelo meta no funciona para el grupo de opciones
    * No se identifica la opción Grupos de opciones con un solo carácter
-   * Cuando el documento de origen es un XFA dinámico (.XDP) y [define el comportamiento de las propiedades XFA en un formulario](https://helpx.adobe.com/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr)adaptable, no se respeta la propiedad presence del documento de origen. Por ejemplo, un campo del documento de origen se marca como oculto y una secuencia de comandos hace que el campo sea visible y, a continuación, el campo permanece visible en el formulario adaptable de salida.
+   * Cuando el documento de origen es un XFA dinámico (.XDP) y [define el comportamiento de las propiedades XFA en un formulario adaptable](https://helpx.adobe.com/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr), no se respeta la propiedad presence del documento de origen. Por ejemplo, un campo del documento de origen se marca como oculto y una secuencia de comandos hace que el campo sea visible y, a continuación, el campo permanece visible en el formulario adaptable de salida.
 
-* Cuando utilice la opción **Usar AcroForm de entrada como Documento de registro (DoR) para los formularios** adaptables generados, tenga en cuenta lo siguiente:
+* Cuando utilice la opción **Utilizar AcroForm de entrada como Documento de registro (DoR) para los formularios adaptables generados**, tenga en cuenta lo siguiente:
 
 <table>
     <tr>
@@ -75,7 +75,7 @@ Antes de empezar a utilizar el servicio de conversión automatizada de Forms de 
 * No se admiten PDF forms de más de 15 páginas.
 * Los documentos cifrados, protegidos con contraseña y protegidos no se convierten. Elimine el cifrado o las contraseñas antes de ejecutar la conversión.
 * No se admiten tablas complejas como tablas sin bordes, tablas anidadas y tablas con valores de marcador de posición. Utilice el editor de formularios adaptables para agregar o modificar tablas complejas después de la conversión. Solo se admiten tablas simples, con campos vacíos, encabezados adecuados y límites claros.
-* El servicio convierte solo los formularios en inglés en formularios adaptables. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+* El servicio convierte solo los formularios en inglés en formularios adaptables. Puede traducir formularios adaptables convertidos a otro idioma mediante [flujo de trabajo de traducción de AEM](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * AEM 6.4 Forms no admite la detección automática del diseño de varias columnas de los formularios de entrada.
 * La información codificada con colores en el formulario PDF de origen no se transfiere a un formulario adaptable.
 * Los colores del formulario PDF de origen no se transfieren a temáticas de formulario adaptables.
