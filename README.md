@@ -1,16 +1,12 @@
 ---
-source-git-commit: d2af4611e68447253a818e0c83ff3ec519056373
+source-git-commit: c8489a521f35c60ee28227f499e9a0a7541960b9
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '517'
-ht-degree: 21%
+source-wordcount: '435'
+ht-degree: 23%
 
 ---
 # Artículo de Contribute
-
-| EXL-PR | EXL | Vista previa | Activar | Publicado | Ayuda |
-|--- |--- |--- |--- |--- |--- |
-| [![Estado de compilación](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_pr-exl/lastBuild/) | [![Estado de compilación](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_exl/lastBuild/lastBuild) | [URL de vista previa](https://experienceleague.corp.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Dirección URL en directo](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=en) | [Guía de creación](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Agradecemos las contribuciones de contenido de nuestra comunidad y de los empleados de Adobe fuera de los equipos de documentación.
 
@@ -20,7 +16,7 @@ Este proyecto ha adoptado el [Código de conducta de código abierto de Adobe](c
 
 ## Acerca de sus contribuciones al contenido del Adobe
 
-Consulte la Guía del colaborador de [Adobe Docs](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
+Consulte la [Guía del colaborador de documentos de Adobe](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
 
 La forma en que contribuya depende de quién sea y del tipo de cambios que desee aportar:
 
@@ -28,7 +24,7 @@ La forma en que contribuya depende de quién sea y del tipo de cambios que desee
 
 Para enviar una solicitud, haga clic en el vínculo **Registrar un problema** en un artículo, que abre un problema en GitHub. Especifique un título y una descripción y, a continuación, haga clic en **Enviar nuevo número**.
 
-Para solicitar actualizaciones menores, haga clic en el vínculo **Editar esta página** en un artículo, que abre el artículo de origen en GitHub. Use la interfaz de usuario de GitHub para realizar sus actualizaciones. Para obtener más información, consulte la guía [general del colaborador de](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) Adobe Docs.
+Para solicitar actualizaciones menores, haga clic en el vínculo **Editar esta página** en un artículo, que abre el artículo de origen en GitHub. Use la interfaz de usuario de GitHub para realizar sus actualizaciones. Consulte la guía general [Adobe Docs colabortor guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) para obtener más información.
 
 Las correcciones o aclaraciones menores que envíe para la documentación y los ejemplos de código de esta cesión temporal están cubiertos por las condiciones de uso del Adobe.
 
@@ -42,7 +38,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Principales cambios de los empleados de Adobes
 
-Si usted es un escritor técnico, un administrador de programas o un desarrollador del equipo de productos para una [!UICONTROL Adobe Experience Cloud] solución, y es su trabajo contribuir o crear artículos técnicos, debe utilizar el repositorio privado en `https://git.corp.adobe.com/AdobeDocs`. Consulte la Guía [de colaboración](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html)interna.
+Si usted es un escritor técnico, administrador de programas o desarrollador del equipo de productos para una solución [!UICONTROL Adobe Experience Cloud] y es su trabajo contribuir o crear artículos técnicos, debe utilizar el repositorio privado en `https://git.corp.adobe.com/AdobeDocs`. Consulte la [Guía de colaboración interna](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html).
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -50,7 +46,7 @@ Si usted es un escritor técnico, un administrador de programas o un desarrollad
 
 Los colaboradores de la comunidad pueden utilizar la interfaz de usuario de GitHub para la edición básica o realizar importantes contribuciones.
 
-Consulte la Guía [del colaborador de documentos de](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) Adobe para obtener más información.
+Consulte la [Guía del colaborador de documentos de Adobe](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) para obtener más información.
 
 ## Cómo utilizar el código desplegable para dar formato al tema
 
