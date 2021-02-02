@@ -2,7 +2,7 @@
 title: 'Novedades Notas de la versión: Servicio de conversión automatizada de formularios'
 description: 'Obtenga información sobre las últimas funciones y los errores corregidos para el Servicio de conversión automatizada de formularios '
 translation-type: tm+mt
-source-git-commit: 3fa3f484268c7cbe655408f90d53ae8d28b3a7ee
+source-git-commit: 765f7bd4126fe4b8f4dd92c4b3eb556dae4e9ff0
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 93%
@@ -23,8 +23,7 @@ El Servicio de conversión automatizada de formularios es objeto de mejoras cont
 * Instrucciones especiales
 * Planes de futuros cambios
 
-
-## 01 de febrero de 2021 (AFC-2021.01.2)
+## 2 de febrero de 2021 (AFC-2021.01.2)
 
 ### Mejoras
 
