@@ -2,10 +2,10 @@
 title: 'Novedades Notas de la versión: Servicio de conversión automatizada de formularios'
 description: 'Obtenga información sobre las últimas funciones y los errores corregidos para el Servicio de conversión automatizada de formularios '
 translation-type: tm+mt
-source-git-commit: 765f7bd4126fe4b8f4dd92c4b3eb556dae4e9ff0
+source-git-commit: 70dc18347e072ccd7c1625f6831554ecfc13f2fb
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 93%
+source-wordcount: '386'
+ht-degree: 88%
 
 ---
 
@@ -23,38 +23,44 @@ El Servicio de conversión automatizada de formularios es objeto de mejoras cont
 * Instrucciones especiales
 * Planes de futuros cambios
 
-## 2 de febrero de 2021 (AFC-2021.01.2)
+## 3 de marzo de 2021 (AFC-2021.02.2) {#mar-2021}
 
-### Mejoras
+### Mejoras {#march-2021-improvements}
 
-Mejoras en la organización del contenido del formulario en paneles y la generación de títulos para paneles al convertir un formulario de origen en un formulario adaptable.
+Mejoras en la organización del contenido del formulario en campos y grupos de opciones al convertir un formulario de origen en un formulario adaptable.
 
-## 16 de julio de 2020 (AFC-2020.07.2)
+## 2 de febrero de 2021 (AFC-2021.01.2) {#feb-2021}
 
-### Novedades
+### Mejoras {#feb-2021-improvements}
+
+Mejoras en la organización del contenido del formulario en paneles y la generación de títulos para paneles, al mismo tiempo que se convierte un formulario de origen en un formulario adaptable.
+
+## 16 de julio de 2020 (AFC-2020.07.2) {#jul-2020}
+
+### Novedades {#whats-new-jul-2020-}
 
 Ya es posible convertir formularios PDF en color a formularios adaptables.
 
-### Mejoras
+### Mejoras {#jul-2020-improvements}
 
 Mejoras de la conversión automatizada de los campos de texto, formulario y grupo de selección a los correspondientes componentes de formulario adaptable.
 
 
-## 20 de marzo de 2020 (AFC-2020.03.1)
+## 20 de marzo de 2020 (AFC-2020.03.1) {#mar-2020}
 
-### Acceso temprano
+### Acceso temprano {#early-access}
 
 **Detección automática de secciones lógicas en un formulario**
 
 De forma predeterminada, el servicio crea un panel independiente de nivel superior para cada página de un formulario PDF. Ahora puede usar la opción **[!UICONTROL Auto-detect logical sections]** para soltar paneles de nivel de página (basados en el número de página) y crear solo paneles lógicos. También agrupa los campos que no pertenecen a ninguna sección con la sección lógica anterior y los campos de una sección lógica se distribuyen en dos páginas adyacentes en una sola sección lógica. Por ejemplo, si algunos campos de una sección lógica están al final de la página uno y otros al comienzo de la página dos, todos esos campos se agrupan en una sola sección lógica.
 
-### Mejoras {#improvements}
+### Mejoras {#mar-2020-improvements}
 
 **Mejoras en la detección de listas**
 
 El servicio ahora es más eficiente en la detección de listas numeradas y con viñetas.
 
-### Instrucciones especiales
+### Instrucciones especiales  {#special-instructions}
 
 **Instalación del paquete del conector del servicio de conversión automatizada de formularios**
 
