@@ -9,11 +9,13 @@ user-guide-title: Servicio de conversión automatizada de Adobe Experience Manag
 user-guide-description: Convierta PDF forms a un Forms HTML interactivo y listo para dispositivos móviles.
 breadcrumb-title: Guía de conversión automatizada de Forms
 breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
+feature: Formularios adaptables
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: ab178dd8d1786c6c341d4a1a3da0aecebead31dd
+source-git-commit: b3946630c5180a600fe7acc25f1084601dec04ef
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 100%
+source-wordcount: '95'
+ht-degree: 97%
 
 ---
 
