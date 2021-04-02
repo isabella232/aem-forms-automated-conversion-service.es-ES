@@ -3,10 +3,10 @@ title: Configurar el servicio de conversión automatizada de formularios
 description: Liste la instancia de AEM para utilizar el servicio de Automated forms conversion
 role: Profesional empresarial, administrador
 translation-type: tm+mt
-source-git-commit: 9baad788f3e871eb4ce2cbda4bbf4d2e2ac6dd95
+source-git-commit: a9bab62fbe5ecc4b233e9bc55b9e461a5967b471
 workflow-type: tm+mt
-source-wordcount: '2550'
-ht-degree: 8%
+source-wordcount: '2673'
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ Esta ayuda describe cómo un administrador de AEM puede configurar el servicio d
 
 * Instalación, configuración y administración de paquetes de Adobe Experience Manager y AEM,
 
-* Uso de sistemas operativos Linux y Microsoft Windows,
+* Uso de sistemas operativos Linux® y Microsoft® Windows®,
 
 * Configuración de servidores de correo SMTP
 
@@ -27,7 +27,7 @@ Esta ayuda describe cómo un administrador de AEM puede configurar el servicio d
 
 ## Incorporación{#onboarding}
 
-El servicio está disponible de forma gratuita para clientes de AEM 6.4 Forms y AEM 6.5 Forms On-Premise y clientes empresariales de Adobe Managed Services. Póngase en contacto con el equipo de ventas de Adobe o con su representante de Adobe para solicitar acceso al servicio.
+El servicio está disponible de forma gratuita para AEM 6.4 Forms y AEM 6.5 clientes locales de Forms y clientes empresariales de servicio administrado por Adobe. Póngase en contacto con el equipo de ventas de Adobe o con su representante de Adobe para solicitar acceso al servicio. El servicio también está disponible de forma gratuita y está prehabilitado para los clientes de AEM Forms as a Cloud Service.
 
 Adobe posibilita el acceso a su organización y otorga los pertinentes privilegios a la persona de su organización designada como administrador. El administrador puede otorgar acceso a los desarrolladores de AEM Forms (usuarios) de su organización para conectarse al servicio.
 
@@ -37,35 +37,37 @@ Para utilizar el servicio de Automated forms conversion, es necesario lo siguien
 
 * El servicio de automated forms conversion está habilitado para su organización
 * Una cuenta de Adobe ID con privilegios de administrador para el servicio de conversión
-* Una instancia de autor de AEM 6.4 o AEM 6.5 activa con el Service Pack AEM más reciente
+* Una instancia de autor de AEM Forms como Cloud Service con el Service Pack AEM más reciente o con las últimas actualizaciones.
 * Un usuario AEM (en la instancia de AEM) que es miembro del grupo de usuarios de formularios
 
 ## Configuración de entorno {#setuptheservice}
 
 Antes de utilizar el servicio, prepare la instancia de autor de AEM para conectarse al servicio que se ejecuta en Adobe Cloud. Realice los siguientes pasos en la secuencia indicada para preparar la instancia para el servicio:
 
-1. [Descargar e instalar AEM 6.4 o AEM 6.5](#aemquickstart)
+1. [Descargue e instale AEM 6.4, AEM 6.5 o AEM Forms incorporado como Cloud Service](#aemquickstart)
 1. [Descargar e instalar AEM Service Pack más reciente](#servicepack)
 1. [Descargue e instale el último paquete de complementos de AEM Forms](#downloadaemformsaddon)
 1. (opcional) [Descargue e instale el último paquete del conector](#installConnectorPackage)
 1. [Creación de temas y plantillas personalizados](#referencepackage)
 
-### Descargue e instale AEM 6.4 o AEM 6.5 {#aemquickstart}
+### Descargue e instale AEM 6.4 o AEM 6.5 o AEM Forms incorporado como Cloud Service {#aemquickstart}
 
 
-El servicio de automated forms conversion se ejecuta en AEM instancia de autor. Se necesita AEM 6.4 o AEM 6.5 para configurar una instancia de autor AEM. Si no tiene AEM en funcionamiento, descárguelo desde las siguientes ubicaciones:
+El servicio de automated forms conversion se ejecuta en AEM instancia de autor. Se necesita AEM 6.4, AEM 6.5 o AEM Forms como Cloud Service para configurar una instancia de autor AEM.
 
-* Si ya es cliente de AEM, descargue AEM 6.4 o AEM 6.5 del [sitio web de licencias de Adobe](http://licensing.adobe.com).
+* Si no tiene AEM 6.4 o AEM 6.5 en funcionamiento, descárguelo desde las siguientes ubicaciones. Después de descargar AEM, para obtener instrucciones para configurar una instancia de autor AEM, consulte [implementación y mantenimiento](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall):
 
-* Si es socio de Adobe, utilice [Programa de formación de socios de Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar AEM 6.4 o AEM 6.5.
+   * Si ya es cliente de AEM, descargue AEM 6.4 o AEM 6.5 del [sitio web de licencias de Adobe](http://licensing.adobe.com).
 
-Después de descargar AEM, para obtener instrucciones para configurar una instancia de autor AEM, consulte [implementación y mantenimiento](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
+   * Si es socio de Adobe, utilice [Programa de formación de socios de Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar AEM 6.4 o AEM 6.5.
 
-### Descargue e instale AEM último Service Pack {#servicepack}
+* Si utiliza AEM Forms como Cloud Service, consulte Incorporar a [AEM Forms como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=en#setup-environment) y [configurar un entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=en#setup-environment).
+
+### (Solo para AEM 6.4 y AEM 6.5) Descargue e instale AEM último Service Pack {#servicepack}
 
 Descargue e instale AEM Service Pack más reciente. Para obtener instrucciones detalladas, consulte las [AEM 6.4 Notas de la versión del Service Pack](https://helpx.adobe.com/es/experience-manager/6-4/release-notes/sp-release-notes.html) o [AEM 6.5 Notas de la versión del Service Pack](https://helpx.adobe.com/es/experience-manager/6-5/release-notes/sp-release-notes.html).
 
-### Descargue e instale el paquete de complementos de AEM Forms {#downloadaemformsaddon}
+### (Solo para AEM 6.4 y AEM 6.5) Descargue e instale el paquete de complementos de AEM Forms {#downloadaemformsaddon}
 
 Una instancia de AEM contiene funciones básicas de formularios. El servicio de conversión requiere todas las funciones de AEM Forms. Descargue e instale el paquete de complementos de AEM Forms para disponer de todas las funcionalidades de AEM Forms. El paquete es necesario para configurar y ejecutar el servicio de conversión. Para obtener instrucciones detalladas, consulte [Instalar y configurar las capacidades de captura de datos.](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
@@ -73,28 +75,30 @@ Una instancia de AEM contiene funciones básicas de formularios. El servicio de 
 > Asegúrese de realizar las configuraciones obligatorias posteriores a la instalación después de instalar el paquete de complementos.
 
 
-### (Opcional) Descargue e instale el paquete del conector {#installConnectorPackage}
+<!-- ### (Optional) Download and install connector package  {#installConnectorPackage}
 
-El paquete del conector proporciona acceso anticipado a las funciones y mejoras de [Detección automática de secciones lógicas](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) de la versión AFC-2020.03.1. No instale el paquete si no necesita la función y las mejoras entregadas en AFC-2020.03.1. Puede [descargar el paquete del conector desde AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
+The connector package provides early access to the [Auto-detect logical sections](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) features and improvements delivered in release AFC-2020.03.1. Do not install the package if you do not require feature and improvements delivered in AFC-2020.03.1.  You can [download the connector package from AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1). -->
 
 
 ### Crear temas y plantillas personalizados {#referencepackage}
 
-Si inicia AEM en [production mode](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (nosamplecontent runmode), los paquetes de referencia no están instalados. Los paquetes de referencia contienen temas de muestra y plantillas. El servicio de automated forms conversion requiere al menos un tema y una plantilla para convertir un PDF form a un formulario adaptable. Cree un tema personalizado y una plantilla propia y apunte [configuración del servicio](#configure-the-cloud-service) para usar plantillas y temas personalizados antes de usar el servicio.
+Si inicia AEM 6.4 o AEM 6.5 en [modo de producción](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (modo de ejecución nosamplecontent), los paquetes de referencia no están instalados. Los paquetes de referencia contienen temas de muestra y plantillas. El servicio de automated forms conversion requiere al menos un tema y una plantilla para convertir un formulario PDF en un formulario adaptable. Cree un tema personalizado y una plantilla propia y apunte [configuración del servicio](#configure-the-cloud-service) para usar plantillas y temas personalizados antes de usar el servicio.
+
+También puede descargar e instalar el paquete [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html) en la instancia de autor. Crea algunos temas de referencia y plantillas.
 
 ## Configure el servicio {#configure-the-service}
 
 Antes de proceder a la configuración del servicio y conectar la instancia local con el servicio que se ejecuta en Adobe Cloud, obtenga información sobre las personas y los privilegios necesarios para conectarse al servicio. El servicio utiliza dos tipos diferentes de personalidades, administradores y desarrolladores:
 
-* **Administradores**: Los administradores son responsables de administrar el software y los servicios de Adobe para su organización. Los administradores conceden acceso a los desarrolladores de su organización para que se conecten al servicio de Automated forms conversion que se ejecuta en Adobe Cloud. Cuando se aprovisiona un administrador para una organización, este recibe un correo electrónico con el título **[!UICONTROL 'You now have administrator rights to manage Adobe software and services for your organization']**. Si es administrador, compruebe si hay algún correo electrónico en su buzón con el título mencionado y vaya a [conceder acceso a los desarrolladores de su organización](#adduseranddevs).
+* **Administradores**: Los administradores son responsables de administrar el software y los servicios de Adobe para su organización. Los administradores conceden acceso a los desarrolladores de su organización para que se conecten al servicio de Automated forms conversion que se ejecuta en Adobe Cloud. Cuando se aprovisiona un administrador para una organización, este recibe un correo electrónico con el título **[!UICONTROL 'You now have administrator rights to manage Adobe software and services for your organization']**. Si es administrador, compruebe si hay algún correo electrónico en su buzón con el título mencionado anteriormente y vaya a [conceder acceso a los desarrolladores de su organización](#adduseranddevs).
 
-![correo electrónico de concesión de acceso de administrador](assets/admin-console-adobe-io-access-grantedx75.png)
+![Correo electrónico de concesión de acceso del administrador](assets/admin-console-adobe-io-access-grantedx75.png)
 
-* **Desarrolladores**: Un desarrollador conecta una instancia de autor local de AEM Forms con el servicio de Automated forms conversion que se ejecuta en Adobe Cloud. Cuando un administrador concede derechos a un desarrollador para que se conecte al servicio de Automated forms conversion, se envía un mensaje de correo electrónico con el título Ahora tiene acceso de desarrollador para administrar las integraciones de API de Adobe para su organización al desarrollador. Si es un desarrollador, compruebe si hay un correo electrónico en su buzón con el título mencionado y vaya a [Conecte la instancia de AEM local al servicio de Automated forms conversion en Adobe Cloud.](#connectafcadobeio)
+* **Desarrolladores**: Un desarrollador conecta una instancia de autor local de AEM Forms con el servicio de Automated forms conversion que se ejecuta en Adobe Cloud. Cuando un administrador concede derechos a un desarrollador para que se conecte al servicio de Automated forms conversion, se envía un mensaje de correo electrónico con el título Ahora tiene acceso de desarrollador para administrar las integraciones de API de Adobe para su organización al desarrollador. Si es un desarrollador, compruebe si hay un correo electrónico en su buzón con el título anteriormente mencionado y continúe con [Conecte la instancia de AEM local al servicio de Automated forms conversion en Adobe Cloud.](#connectafcadobeio)
 
-![correo electrónico de concesión de acceso para desarrolladores](assets/email-developer-accessx94.png)
+![Correo electrónico de concesión de acceso para desarrolladores](assets/email-developer-accessx94.png)
 
-### (Solo para administradores) Conceder acceso a los desarrolladores de su organización {#adduseranddevs}
+### (Solo para administradores de AEM 6.4 y AEM 6.5) Conceda acceso a los desarrolladores de su organización {#adduseranddevs}
 
 Una vez que el Adobe habilita el acceso para su organización y proporciona los privilegios necesarios al administrador, este puede iniciar sesión en el Admin Console (instrucciones detalladas a continuación), crear un perfil y agregar desarrolladores al perfil. Los desarrolladores pueden conectar una instancia local de AEM Forms al servicio de Automated forms conversion en Adobe Cloud.
 
@@ -113,7 +117,7 @@ Los desarrolladores son miembros de su organización designada para ejecutar el 
    1. Introduzca la dirección de correo electrónico de los desarrolladores y, opcionalmente, los nombres y apellidos.
    1. Seleccione perfiles de producto. Tocar **[!UICONTROL Save]**.
 
-Repita los pasos anteriores para todos los usuarios.  Para obtener más información sobre cómo agregar desarrolladores, consulte [Administrar desarrolladores](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+Repita los pasos anteriores para todos los usuarios. Para obtener más información sobre cómo agregar desarrolladores, consulte [Administrar desarrolladores](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
 Una vez que un administrador agrega desarrolladores al perfil de Adobe I/O, se notifica a los desarrolladores por correo electrónico. Después de recibir el correo electrónico, los desarrolladores pueden [conectar una instancia local de AEM Forms con el servicio de Automated forms conversion en Adobe Cloud](#connectafcadobeio).
 
@@ -131,12 +135,16 @@ Una vez que un administrador le proporcione acceso para desarrolladores, puede c
 
 El servicio de automated forms conversion utiliza el servicio de correo de Day CQ para enviar notificaciones por correo electrónico. Estas notificaciones por correo electrónico contienen información sobre conversiones correctas o fallidas. Si elige no recibir notificación, omita estos pasos. Realice los siguientes pasos para configurar el servicio de correo Day CQ:
 
-1. Vaya a AEM administrador de configuración en `http://localhost:4502/system/console/configMgr`
-1. Abra la configuración de Day CQ Mail Service . Especifique un valor para los campos **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]** y **[!UICONTROL From address]**. Haga clic **[!UICONTROL Save]**.
+* Para AEM 6.4 Forms o AEM 6.5 Forms:
 
-   Puede ponerse en contacto con el proveedor de servicios de correo electrónico o el administrador de TI para obtener información sobre el nombre de host y el puerto del servidor SMTP. Puede utilizar cualquier dirección de correo electrónico válida en el campo de formulario. Por ejemplo, notification@example.com o donotreply@example.com.
+   1. Vaya a AEM administrador de configuración en `http://localhost:4502/system/console/configMgr`
+   1. Abra la configuración de Day CQ Mail Service . Especifique un valor para los campos **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]** y **[!UICONTROL From address]**. Haga clic **[!UICONTROL Save]**.
 
-1. Abra la configuración **[!UICONTROL Day CQ Link Externalizer]**. En el campo **[!UICONTROL Domains]**, especifique el nombre de host real o la dirección IP y el número de puerto para las instancias locales, de autor y de publicación. Haga clic **[!UICONTROL Save]**.
+      Puede ponerse en contacto con el proveedor de servicios de correo electrónico o el administrador de TI para obtener información sobre el nombre de host y el puerto del servidor SMTP. Puede utilizar cualquier dirección de correo electrónico válida en el campo de formulario. Por ejemplo, notification@example.com o donotreply@example.com.
+
+   1. Abra la configuración **[!UICONTROL Day CQ Link Externalizer]**. En el campo **[!UICONTROL Domains]**, especifique el nombre de host real o la dirección IP y el número de puerto para las instancias locales, de autor y de publicación. Haga clic **[!UICONTROL Save]**.
+
+* Para AEM Forms as a Cloud Service, [registre un ticket de asistencia para habilitar el servicio de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
 #### Agregar usuario al grupo de usuarios de formularios {#adduserstousergroup}
 
@@ -148,7 +156,7 @@ Especifique una dirección de correo electrónico en el perfil del usuario de AE
 1. Especifique una dirección de correo electrónico en el campo **[!UICONTROL Email]** y pulse **[!UICONTROL Save]**. Los correos electrónicos se envían a la dirección de correo electrónico especificada cuando la conversión se completa o no se realiza correctamente.
 1. Pulse la pestaña **Grupos**. En la ficha seleccionar grupo, escriba y seleccione el grupo **forms-users**. Toque **Guardar y cerrar**. El usuario es ahora miembro del grupo de usuarios de formularios.
 
-#### Obtener certificados públicos {#obtainpubliccertificates}
+#### (Solo para AEM 6.4 y AEM 6.5) Obtenga certificados públicos {#obtainpubliccertificates}
 
 Un certificado público permite autenticar el perfil en el Adobe I/O.
 
@@ -160,7 +168,7 @@ Un certificado público permite autenticar el perfil en el Adobe I/O.
 
 1. Seleccione la casilla de verificación **[!UICONTROL Create new certificate]** y especifique un alias. El alias sirve como nombre del cuadro de diálogo. Tocar **[!UICONTROL Create certificate]**. Aparece un cuadro de diálogo. Haga clic **[!UICONTROL OK]**. Se crea el certificado.
 
-1. Pulse **[!UICONTROL Download Public Key]** y guarde el archivo de certificado *AEM-Adobe-IMS.crt* en el equipo. El archivo de certificado se utiliza para [configurar las API de servicio en la consola del desarrollador de Adobe](#createintegration). Tocar **[!UICONTROL Next]**.
+1. Pulse **[!UICONTROL Download Public Key]** y guarde el archivo de certificado *AEM-Adobe-IMS.crt* en el equipo. El archivo de certificado se utiliza para [configurar las API de servicio en Adobe Developer Console](#createintegration). Tocar **[!UICONTROL Next]**.
 
 1. Especifique los siguientes:
 
@@ -181,7 +189,7 @@ Un certificado público permite autenticar el perfil en el Adobe I/O.
    <li>Step text</li>
    -->
 
-#### Configure las API de servicio en la consola de desarrollador de Adobe {#createintegration}
+#### (Solo para AEM 6.4 y AEM 6.5) Configure las API de servicio en Adobe Developer Console {#createintegration}
 
 Para utilizar el servicio de Automated forms conversion, cree un proyecto y añada la API del servicio de configuración automatizada de Forms al proyecto en Adobe Developer Console. La integración genera la clave de API, el secreto del cliente y la carga útil (JWT).
 
@@ -216,12 +224,12 @@ Para utilizar el servicio de Automated forms conversion, cree un proyecto y aña
 
    <br/> <br/>
 
-#### Configurar el servicio en la nube {#configure-the-cloud-service}
+#### Configure el Cloud Service {#configure-the-cloud-service}
 
 Cree una configuración de Cloud Service para conectar la instancia de AEM al servicio de conversión. También le permite especificar una plantilla, un tema y fragmentos de formulario para una conversión. Puede crear varias configuraciones de servicios de nube por separado para cada conjunto de formularios. Por ejemplo, puede tener una configuración independiente para los formularios de departamento de ventas y otra independiente para los formularios de asistencia al cliente. Siga estos pasos para crear una configuración de Cloud Service:
 
 1. En la instancia de AEM Forms, pulse **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** **[!UICONTROL Cloud Services]** > **[!UICONTROL Automate Forms Conversion Configuration]**.
-1. Pulse la carpeta **[!UICONTROL Global]** y pulse **[!UICONTROL Create]**. Aparece la página para crear la configuración de Automated forms conversion. La configuración se crea en la carpeta Global . También puede crear la configuración en una carpeta diferente que ya existe o crear una carpeta nueva para las configuraciones.
+1. Pulse la carpeta **[!UICONTROL Global]** y pulse **[!UICONTROL Create]**. Aparece la página para crear la configuración de Automated forms conversion. La configuración se crea en la carpeta Global . También puede crear la configuración en una carpeta diferente que existe o crear una carpeta para las configuraciones.
 
 1. En la página **[!UICONTROL Create Automated Forms Conversion Configuration]**, especifique el valor para los campos siguientes y pulse **[!UICONTROL Next]**.
 
@@ -254,7 +262,7 @@ Cree una configuración de Cloud Service para conectar la instancia de AEM al se
    </tr>
    <tr>
    <td>Activar Analytics</td>
-   <td>Seleccione la opción para habilitar Adobe Analytics en todos los formularios convertidos. Antes de utilizar la opción , compruebe que Adobe Analytics está habilitado para su instancia de AEM Forms.</td>
+   <td>(Solo para AEM 6.4 y AEM 6.5) Seleccione la opción para habilitar Adobe Analytics en todos los formularios convertidos. Antes de utilizar la opción , compruebe que Adobe Analytics está habilitado para su instancia de AEM Forms.</td>
    </tr>
    </tbody>
    </table>
