@@ -1,7 +1,7 @@
 ---
 title: Configurar el servicio de conversión automatizada de formularios
 description: Liste la instancia de AEM para utilizar el servicio de Automated forms conversion
-role: Profesional empresarial, administrador
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: a9bab62fbe5ecc4b233e9bc55b9e461a5967b471
 workflow-type: tm+mt
