@@ -61,3 +61,4 @@ En el repositorio público, se asignan etiquetas automatizadas a las solicitudes
 
 * **Cambio enviado al autor**: Se ha notificado al autor la solicitud de extracción pendiente.
 * **listo para combinar**: Listo para ser revisado por nuestro equipo de revisión de solicitudes de extracción.
+
