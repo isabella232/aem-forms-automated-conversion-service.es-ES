@@ -1,14 +1,13 @@
 ---
 title: 'Novedades Notas de la versión: Servicio de conversión automatizada de formularios'
-description: 'Obtenga información sobre las últimas funciones y los errores corregidos para el Servicio de conversión automatizada de formularios '
-translation-type: tm+mt
-source-git-commit: 70dc18347e072ccd7c1625f6831554ecfc13f2fb
+description: Obtenga información sobre las últimas funciones y los errores corregidos para el Servicio de conversión automatizada de formularios
+exl-id: fccafbc9-28c1-4736-922c-24d675b25213
+source-git-commit: fd568dca4ac552a1d9695d13ece1d03b2c1457b1
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 88%
+source-wordcount: '409'
+ht-degree: 84%
 
 ---
-
 
 # Notas de la versión
 
@@ -22,6 +21,12 @@ El Servicio de conversión automatizada de formularios es objeto de mejoras cont
 * Funcionalidad obsoleta
 * Instrucciones especiales
 * Planes de futuros cambios
+
+## 24 de junio de 2021 (AFC-2021.06.2) {#june-2021}
+
+### Mejoras {#june-2021-improvements}
+
+Se ha mejorado la precisión para detectar automáticamente secciones lógicas en los formularios de origen y convertirlas en los paneles de formulario adaptables correspondientes.
 
 ## 3 de marzo de 2021 (AFC-2021.02.2) {#mar-2021}
 
@@ -60,7 +65,7 @@ De forma predeterminada, el servicio crea un panel independiente de nivel superi
 
 El servicio ahora es más eficiente en la detección de listas numeradas y con viñetas.
 
-### Instrucciones especiales  {#special-instructions}
+### Instrucciones especiales {#special-instructions}
 
 **Instalación del paquete del conector del servicio de conversión automatizada de formularios**
 
