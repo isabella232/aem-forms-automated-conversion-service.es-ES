@@ -1,14 +1,13 @@
 ---
 title: Introducción
-description: 'Acelere la conversión de impresión de formularios en formularios adaptables '
-translation-type: tm+mt
-source-git-commit: 53b88de185ed1b6669ecfc3c7c6649d5627741e9
+description: Acelere la conversión de impresión de formularios en formularios adaptables
+exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
+source-git-commit: fed54ea64e19c77868e8e58e29e909cf4447f696
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 75%
+source-wordcount: '690'
+ht-degree: 71%
 
 ---
-
 
 # Introducción {#introduction-to-automated-forms-conversion-service}
 
@@ -34,7 +33,7 @@ El servicio admite formularios PDF no interactivos, formularios creados con Adob
 
 El servicio también admite PDF forms habilitados para Adobe Sign. Si el formulario PDF de origen tiene etiquetas de texto de Adobe Sign, el servicio conserva toda la información relacionada con Adobe Sign durante la conversión y asocia la información del firmante presente en el PDF de origen con los correspondientes campos del formulario adaptable. La función está disponible únicamente para AcroForms.
 
-El servicio solo puede convertir formularios en inglés a formularios adaptables. Puede traducir los formularios adaptables que se generan a otro idioma mediante el [flujo de trabajo de traducción de AEM](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+El servicio puede convertir formularios en inglés, francés, alemán y español a formularios adaptables. También puede traducir los formularios adaptables generados a otro idioma mediante [AEM flujo de trabajo de traducción](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
 ## Flujo de trabajo de conversión  {#conversion-workflow}
 
@@ -57,7 +56,7 @@ Tras configurar el entorno de AEM Forms, para convertir los formularios PDF en f
 * Aplique los cambios sugeridos en formularios PDF que se indican en el artículo [Prácticas recomendadas y consideraciones](styles-and-pattern-considerations-and-best-practices.md).
 * Lea el artículo [Problemas conocidos](known-issues.md) para prevenir problemas.
 
-### 3. Revisión de formularios convertidos{#review-converted-forms}
+### 3. Revisión de formularios convertidos {#review-converted-forms}
 
 Los formularios del mundo real pueden tener requisitos complejos de captura de datos en términos de diseño de campos, nombres o sugerencias implícitas que la lógica de detección basada en AI/ML puede no capturar con precisión. Tras finalizar la conversión automatizada, puede utilizar el [editor de revisiones y correcciones](review-correct-ui-edited.md) para revisar el formulario convertido, realizar los cambios pertinentes y generar un resultado más en consonancia con las expectativas. Después de realizar los cambios necesarios, envíe el formulario nuevamente para la conversión.
 
