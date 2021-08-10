@@ -2,10 +2,10 @@
 title: Introducción
 description: Acelere la conversión de impresión de formularios en formularios adaptables
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: fed54ea64e19c77868e8e58e29e909cf4447f696
+source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 71%
+source-wordcount: '699'
+ht-degree: 70%
 
 ---
 
@@ -50,7 +50,7 @@ El servicio de conversión automatizada de formularios se ejecuta en Adobe Cloud
 Tras configurar el entorno de AEM Forms, para convertir los formularios PDF en formularios adaptables, [cargue formularios PDF](convert-existing-forms-to-adaptive-forms.md) en la instancia de AEM e [inicie la conversión](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Antes de cargar los formularios, tenga en cuenta lo siguiente:
 
 * No cargue los formularios que estén protegidos. El servicio no convierte formularios cifrados y protegidos por contraseña.
-* No cargue formularios escaneados, coloreados, que no estén en inglés ni rellenados. Estas clases de formulario no se admiten.
+* No cargue formularios escaneados, coloreados, rellenos ni en ningún idioma que no sea inglés, francés, alemán y español. Estas clases de formulario no se admiten.
 * No cargue formularios PDF con espacios en el nombre del archivo.
 * No cargue [carpetas PDF](https://helpx.adobe.com/es/acrobat/using/overview-pdf-portfolios.html). El servicio no convierte un Portfolio PDF a un formulario adaptable.
 * Aplique los cambios sugeridos en formularios PDF que se indican en el artículo [Prácticas recomendadas y consideraciones](styles-and-pattern-considerations-and-best-practices.md).
