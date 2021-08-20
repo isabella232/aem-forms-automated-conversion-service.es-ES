@@ -7,9 +7,9 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 730910935e8c9e8a3ab2b670b022989afc403b5a
+source-git-commit: 86ffe3a6aa0257afe06310dbbc7a5ff8db3060e2
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1257'
 ht-degree: 3%
 
 ---
@@ -32,8 +32,7 @@ Puede cargar todos los PDF forms a la vez o de forma gradual, según sea necesar
 * Organice los documentos de origen en un lote de 8 a 15 documentos. Mantener los formularios de origen con fragmentos de formulario adaptables comunes en un único lote.
 * No cargue los formularios protegidos. El servicio no convierte formularios protegidos por contraseña y protegidos por contraseña.
 * No cargue los [Portfolio PDF](https://helpx.adobe.com/es/acrobat/using/overview-pdf-portfolios.html). El servicio no convierte un Portfolio PDF a un formulario adaptable.
-* No cargue formularios escaneados, rellenos ni en ningún idioma que no sea inglés, francés, alemán y español. Estas clases de formulario no se admiten.
-
+* No cargue formularios escaneados y rellenados. Estas clases de formulario no se admiten.
 * No cargue formularios de origen con espacios en el nombre de archivo. Quite el espacio del nombre del archivo antes de cargar los formularios.
 
 Cuando utilice un formulario XDP para la conversión, realice los siguientes pasos antes de cargar los formularios XPD de origen:
