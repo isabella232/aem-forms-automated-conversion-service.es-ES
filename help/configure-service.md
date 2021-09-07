@@ -3,9 +3,9 @@ title: Configurar el servicio de conversión automatizada de formularios
 description: Liste la instancia de AEM para utilizar el servicio de Automated forms conversion
 role: User, Admin
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 264208305996e98ff2dbccf0e63027b4c757754c
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2684'
 ht-degree: 7%
 
 ---
@@ -72,7 +72,6 @@ Una instancia de AEM contiene funciones básicas de formularios. El servicio de 
 
 >[!NOTE]
 > Asegúrese de realizar las configuraciones obligatorias posteriores a la instalación después de instalar el paquete de complementos.
-
 
 <!-- ### (Optional) Download and install connector package  {#installConnectorPackage}
 
@@ -161,7 +160,7 @@ Un certificado público permite autenticar el perfil en el Adobe I/O.
 
 1. Inicie sesión en la instancia de autor de AEM Forms. Ir a **[!UICONTROL Tools]**> **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Tocar **[!UICONTROL Create]**. Aparece la página **[!UICONTROL Adobe IMS Technical Account Configuration]**.
 
-   ![Página Configuración de cuenta técnica de IMS de Adobe](assets/adobe-ims-technical-account-configuration.png)
+   ![La página Configuración de cuenta técnica de Adobe IMS](assets/adobe-ims-technical-account-configuration.png)
 
 1. Seleccione **[!UICONTROL Automated Forms Conversion Service]** en Cloud Solution.
 
@@ -204,7 +203,7 @@ Para utilizar el servicio de Automated forms conversion, cree un proyecto y aña
 
    ![Especifique el título, la clave de API, el secreto del cliente y la carga útil  ](assets/ims-configuration-details.png)
 
-1. En la página técnica de IMS de Adobe , especifique la clave de API y el secreto del cliente. Utilice los valores especificados en Cuenta de servicio (JWT) de la página de la consola de desarrollador de Adobe.
+1. En la página técnica de Adobe IMS, especifique la clave de API y el secreto del cliente. Utilice los valores especificados en Cuenta de servicio (JWT) de la página de la consola de desarrollador de Adobe.
 
    >[!NOTE]
    >
@@ -241,7 +240,7 @@ Cree una configuración de Cloud Service para conectar la instancia de AEM al se
    | Plantilla | Plantilla predeterminada que se aplicará a los formularios convertidos. Siempre puede especificar una plantilla diferente antes de iniciar la conversión. Una plantilla contiene estructura básica y contenido inicial para un formulario adaptable. Puede elegir una plantilla de las plantillas proporcionadas de forma predeterminada. También puede crear una plantilla personalizada. |
    | Tema | Tema predeterminado que se aplicará a los formularios convertidos. Siempre puede especificar un tema diferente antes de iniciar la conversión.  Puede hacer clic en el icono para elegir un tema que se proporciona de forma predeterminada. También puede crear un tema personalizado. |
    | Fragmentos existentes | Ubicación de los fragmentos existentes, si los hay. |
-   | Meta-modelo personalizado | Ruta del archivo .schema.json del metamodelo personalizado. Puede crear metamodelos independientes para los idiomas español, francés, inglés y alemán. |
+   | Meta-modelo personalizado | Ruta del archivo .schema.json del metamodelo personalizado. Puede crear metamodelos independientes para los idiomas inglés, francés, alemán, español, italiano y portugués. |
 
 1. En la pestaña **[!UICONTROL Advanced]** de la página **[!UICONTROL Create Automated Forms Conversion Configuration]**, especifique el valor para el siguiente campo:
 

@@ -2,10 +2,10 @@
 title: 'Novedades Notas de la versión: Servicio de conversión automatizada de formularios'
 description: Obtenga información sobre las últimas funciones y los errores corregidos para el Servicio de conversión automatizada de formularios
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 19412c37f354fd47b661de114f286147c93c5b9e
+source-git-commit: 833cada8efcc3f0a0e5788c1ab99a95d814e0153
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 74%
+source-wordcount: '421'
+ht-degree: 71%
 
 ---
 
@@ -21,6 +21,10 @@ El Servicio de conversión automatizada de formularios es objeto de mejoras cont
 * Funcionalidad obsoleta
 * Instrucciones especiales
 * Planes de futuros cambios
+
+## 29 de julio de 2021 (AFC-2021.08.0) {#aug-2021}
+
+* Se ha agregado la capacidad de convertir PDF forms en italiano y portugués a un formulario adaptable.
 
 ## 29 de julio de 2021 (AFC-2021.07.2) {#july-2021}
 

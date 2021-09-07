@@ -1,15 +1,15 @@
 ---
 title: Preguntas frecuentes
-seo-title: Preguntas frecuentes
+seo-title: Frequently asked questions
 description: Consultas comunes o preguntas más frecuentes
-seo-description: preguntas más frecuentes sobre el servicio de Automated forms conversion
+seo-description: frequently asked questions for Automated Forms Conversion Service
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1821'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 4%
    <p>El servicio puede convertir PDF forms no interactivos, XDP y PDF forms basados en XFA, y AcroForms en formularios adaptables. El servicio no admite formularios escaneados o rellenados. Para otras limitaciones, consulte el artículo <a href="known-issues.md">problemas conocidos</a>.<br /> </p> 
     <p>Con frecuencia, agregamos compatibilidad con otros tipos de fuentes. Mantenga la sección <a href="introduction.md">formularios PDF admitidos</a> en la lista de control para obtener una actualización regular de las funciones y capacidades recientemente agregadas.</p>
 
-   El servicio solo puede convertir formularios en inglés, francés, alemán y español a formularios adaptables. Puede traducir los formularios adaptables que se generan a otro idioma mediante el [flujo de trabajo de traducción de AEM.](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+   El servicio solo puede convertir formularios en inglés, francés, alemán, español, italiano y portugués a formularios adaptables. Puede traducir los formularios adaptables que se generan a otro idioma mediante el [flujo de trabajo de traducción de AEM.](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **¿Puede el servicio producir un XDP en lugar de una forma adaptativa?**
 

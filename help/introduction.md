@@ -2,9 +2,9 @@
 title: Introducción
 description: Acelere la conversión de impresión de formularios en formularios adaptables
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '703'
 ht-degree: 70%
 
 ---
@@ -33,7 +33,7 @@ El servicio admite formularios PDF no interactivos, formularios creados con Adob
 
 El servicio también admite PDF forms habilitados para Adobe Sign. Si el formulario PDF de origen tiene etiquetas de texto de Adobe Sign, el servicio conserva toda la información relacionada con Adobe Sign durante la conversión y asocia la información del firmante presente en el PDF de origen con los correspondientes campos del formulario adaptable. La función está disponible únicamente para AcroForms.
 
-El servicio puede convertir formularios en inglés, francés, alemán y español a formularios adaptables. También puede traducir los formularios adaptables generados a otro idioma mediante [AEM flujo de trabajo de traducción](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+El servicio puede convertir formularios en inglés, francés, alemán, español, italiano y portugués a formularios adaptables. También puede traducir los formularios adaptables generados a otro idioma mediante [AEM flujo de trabajo de traducción](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
 ## Flujo de trabajo de conversión  {#conversion-workflow}
 
@@ -50,7 +50,7 @@ El servicio de conversión automatizada de formularios se ejecuta en Adobe Cloud
 Tras configurar el entorno de AEM Forms, para convertir los formularios PDF en formularios adaptables, [cargue formularios PDF](convert-existing-forms-to-adaptive-forms.md) en la instancia de AEM e [inicie la conversión](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Antes de cargar los formularios, tenga en cuenta lo siguiente:
 
 * No cargue los formularios que estén protegidos. El servicio no convierte formularios cifrados y protegidos por contraseña.
-* No cargue formularios escaneados, coloreados, rellenos ni en ningún idioma que no sea inglés, francés, alemán y español. Estas clases de formulario no se admiten.
+* No cargue formularios escaneados, coloreados, rellenos ni en ningún idioma que no sea inglés, francés, alemán, español, italiano y portugués. Estas clases de formulario no se admiten.
 * No cargue formularios PDF con espacios en el nombre del archivo.
 * No cargue [carpetas PDF](https://helpx.adobe.com/es/acrobat/using/overview-pdf-portfolios.html). El servicio no convierte un Portfolio PDF a un formulario adaptable.
 * Aplique los cambios sugeridos en formularios PDF que se indican en el artículo [Prácticas recomendadas y consideraciones](styles-and-pattern-considerations-and-best-practices.md).

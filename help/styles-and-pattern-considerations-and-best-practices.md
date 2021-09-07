@@ -1,15 +1,15 @@
 ---
 title: 'Prácticas recomendadas y consideraciones '
-seo-title: 'Prácticas recomendadas y consideraciones '
+seo-title: Best practices and considerations
 description: Prácticas recomendadas y consideraciones del servicio de Automated forms conversion
-seo-description: Lista de estilos y patrones en los PDF forms de origen que el servicio de Automated forms conversion encuentra difícil de identificar
+seo-description: List of styles and patterns in source PDF forms which Automated Forms Conversion service finds difficult to identify
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 9d107d2dfc64fd84d4f734ded5898612ce9a3295
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1247'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ Puede cargar todos los PDF forms a la vez o de forma gradual, según sea necesar
 * No cargue los formularios protegidos. El servicio no convierte formularios protegidos por contraseña y protegidos por contraseña.
 * No cargue los [Portfolio PDF](https://helpx.adobe.com/es/acrobat/using/overview-pdf-portfolios.html). El servicio no convierte un Portfolio PDF a un formulario adaptable.
 * No cargue formularios de origen con espacios en el nombre de archivo. Quite el espacio del nombre del archivo antes de cargar los formularios.
-* No cargue formularios escaneados, rellenos ni en ningún idioma que no sea inglés, francés, alemán y español. Estas clases de formulario no se admiten.
+* No cargue formularios escaneados, rellenos ni en ningún idioma que no sea inglés, francés, alemán, español, italiano y portugués. Estas clases de formulario no se admiten.
 
 Cuando utilice un formulario XDP para la conversión, realice los siguientes pasos antes de cargar los formularios XPD de origen:
 
