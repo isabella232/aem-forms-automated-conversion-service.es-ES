@@ -2,10 +2,10 @@
 title: 'Novedades Notas de la versión: Servicio de conversión automatizada de formularios'
 description: Obtenga información sobre las últimas funciones y los errores corregidos para el Servicio de conversión automatizada de formularios
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 833cada8efcc3f0a0e5788c1ab99a95d814e0153
+source-git-commit: eab71506513605728d8f925ab6e7e9bead7ca6fc
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 71%
+source-wordcount: '451'
+ht-degree: 66%
 
 ---
 
@@ -22,13 +22,17 @@ El Servicio de conversión automatizada de formularios es objeto de mejoras cont
 * Instrucciones especiales
 * Planes de futuros cambios
 
-## 29 de julio de 2021 (AFC-2021.08.0) {#aug-2021}
+## 24 de febrero de 2022 (AFC-2022.02.0) {#feb-2022}
+
+* Capacidad añadida a [convertir automáticamente secciones en fragmentos](convert-existing-forms-to-adaptive-forms.md) para ayudar a mejorar la velocidad de procesamiento de los formularios convertidos y facilitar la carga de formularios grandes en el editor de formularios adaptables.
+
+## 29 de agosto de 2021 (AFC-2021.08.0) {#aug-2021}
 
 * Se ha agregado la capacidad de convertir PDF forms en italiano y portugués a un formulario adaptable.
 
 ## 29 de julio de 2021 (AFC-2021.07.2) {#july-2021}
 
-* Se ha agregado la capacidad de convertir un formulario PDF en francés, alemán y español a un formulario adaptable.
+* Se ha agregado la capacidad de convertir un formulario de PDF en francés, alemán y español a un formulario adaptable.
 
 ## 24 de junio de 2021 (AFC-2021.06.2) {#june-2021}
 
@@ -57,7 +61,6 @@ Ya es posible convertir formularios PDF en color a formularios adaptables.
 ### Mejoras {#jul-2020-improvements}
 
 Mejoras de la conversión automatizada de los campos de texto, formulario y grupo de selección a los correspondientes componentes de formulario adaptable.
-
 
 ## 20 de marzo de 2020 (AFC-2020.03.1) {#mar-2020}
 
