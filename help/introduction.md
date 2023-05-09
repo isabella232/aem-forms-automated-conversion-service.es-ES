@@ -3,9 +3,9 @@ title: Introducción
 description: Acelere la conversión de impresión de formularios en formularios adaptables
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
 source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -16,24 +16,24 @@ El servicio de conversión automática de formularios ayuda a acelerar la digita
 * Reduce los esfuerzos manuales necesarios para convertir la impresión de formularios en formularios adaptables
 * Aplica los correspondientes patrones y validaciones durante la conversión
 * Genera documentos de registro durante la conversión
-* Agrupar campos que se producen con frecuencia en fragmentos de formulario reutilizables
+* Agrupa campos comunes en fragmentos de formulario reutilizables
 * Activa Adobe Analytics durante la conversión
 
-![Es sencillo. Nos proporciona los formularios de origen y nos deja todo. Le proporcionamos formularios adaptables atractivos. Siempre puede ajustar el resultado a su gusto. ](assets/pdf-to-adaptive-form-gitx50.gif)
+![Es sencillo. Facilítenos los formularios de origen y nosotros nos encargamos de todo. Le proporcionaremos formularios adaptables y atractivos. Siempre puede ajustar el resultado a su gusto. ](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## Incorporación {#onboarding}
 
-El servicio está disponible de forma gratuita para AEM 6.4 Forms y AEM 6.5 clientes locales de Forms y clientes empresariales de servicio administrado por Adobe. Póngase en contacto con el equipo de ventas de Adobe o con su representante de Adobe para solicitar acceso al servicio. El servicio también está disponible de forma gratuita y está prehabilitado para los clientes de AEM Forms as a Cloud Service.
+El servicio está disponible de forma gratuita para los clientes a plazo de AEM Forms 6.4 y AEM Forms 6.5 locales y los clientes empresariales de Managed Services de Adobe. Póngase en contacto con el equipo de ventas de Adobe o con su representante de Adobe para solicitar acceso al servicio. El servicio también está disponible de forma gratuita y está prehabilitado para los clientes de AEM Forms as a Cloud Service.
 
 Adobe posibilita el acceso a su organización y otorga los pertinentes privilegios a la persona de su organización designada como administrador. El administrador puede otorgar acceso a los desarrolladores de AEM Forms (usuarios) de su organización para conectarse al servicio. Consulte [Configurar el servicio de conversión automatizada de formularios](configure-service.md) para obtener más información.
 
-## PDF forms e idiomas compatibles {#supported-languages-and-pdf-forms}
+## Idiomas y formularios PDF admitidos {#supported-languages-and-pdf-forms}
 
-El servicio admite formularios PDF no interactivos, formularios creados con Adobe Acrobat conocidos como AcroForms y formularios basados en XFA creados con AEM Forms o Adobe LiveCycle.
+El servicio admite formularios PDF no interactivos, formularios creados con Adobe Acrobat, conocidos como AcroForms, y formularios basados en XFA creados con AEM Forms o Adobe LiveCycle.
 
-El servicio también admite PDF forms habilitados para Adobe Sign. Si el formulario PDF de origen tiene etiquetas de texto de Adobe Sign, el servicio conserva toda la información relacionada con Adobe Sign durante la conversión y asocia la información del firmante presente en el PDF de origen con los correspondientes campos del formulario adaptable. La función está disponible únicamente para AcroForms.
+El servicio también es compatible con formularios PDF, que está habilitado para Adobe Sign. Si el formulario PDF de origen tiene etiquetas de texto de Adobe Sign, el servicio conserva toda la información relacionada con Adobe Sign durante la conversión y asocia la información del firmante presente en el PDF de origen con los correspondientes campos del formulario adaptable. La función está disponible únicamente para AcroForms.
 
-El servicio puede convertir formularios en inglés, francés, alemán, español, italiano y portugués a formularios adaptables. También puede traducir los formularios adaptables generados a otro idioma mediante [AEM flujo de trabajo de traducción](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+El servicio puede convertir formularios en inglés, francés, alemán, español, italiano y portugués a formularios adaptables. Puede traducir los formularios adaptables que se generan a otro idioma mediante el [flujo de trabajo de traducción de AEM](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
 ## Flujo de trabajo de conversión  {#conversion-workflow}
 
@@ -41,7 +41,7 @@ El servicio de conversión automatizada de formularios se ejecuta en Adobe Cloud
 
 ![Flujo de trabajo](assets/conversion-workflow.png)
 
-### 1. Configuración de entorno {#set-up-the-environment}
+### 1. Configuración del entorno {#set-up-the-environment}
 
 El servicio de conversión automatizada de formularios se ejecuta en Adobe Cloud. [Configure la cuenta de Adobe I/O de su organización. Después, conecte la instancia local de AEM Forms](configure-service.md) con el servicio de conversión que se ejecuta en Adobe Cloud.
 
@@ -52,12 +52,12 @@ Tras configurar el entorno de AEM Forms, para convertir los formularios PDF en f
 * No cargue los formularios que estén protegidos. El servicio no convierte formularios cifrados y protegidos por contraseña.
 * No cargue formularios escaneados, coloreados, rellenos ni en ningún idioma que no sea inglés, francés, alemán, español, italiano y portugués. Estas clases de formulario no se admiten.
 * No cargue formularios PDF con espacios en el nombre del archivo.
-* No cargue [carpetas PDF](https://helpx.adobe.com/es/acrobat/using/overview-pdf-portfolios.html). El servicio no convierte un Portfolio PDF a un formulario adaptable.
+* No cargue [Portfolios PDF](https://helpx.adobe.com/es/acrobat/using/overview-pdf-portfolios.html). El servicio no convierte portafolios PDF en formularios adaptables.
 * Aplique los cambios sugeridos en formularios PDF que se indican en el artículo [Prácticas recomendadas y consideraciones](styles-and-pattern-considerations-and-best-practices.md).
 * Lea el artículo [Problemas conocidos](known-issues.md) para prevenir problemas.
 
 ### 3. Revisión de formularios convertidos {#review-converted-forms}
 
-Los formularios del mundo real pueden tener requisitos complejos de captura de datos en términos de diseño de campos, nombres o sugerencias implícitas que la lógica de detección basada en AI/ML puede no capturar con precisión. Tras finalizar la conversión automatizada, puede utilizar el [editor de revisiones y correcciones](review-correct-ui-edited.md) para revisar el formulario convertido, realizar los cambios pertinentes y generar un resultado más en consonancia con las expectativas. Después de realizar los cambios necesarios, envíe el formulario nuevamente para la conversión.
+Los formularios del mundo real pueden tener requisitos complejos de captura de datos en cuanto al diseño de campos, nombres o sugerencias implícitas que la lógica de detección, basada en inteligencia artificial o aprendizaje automático, podría no capturar con precisión. Tras finalizar la conversión automatizada, puede utilizar el [editor de revisiones y correcciones](review-correct-ui-edited.md) para revisar el formulario convertido, realizar los cambios pertinentes y generar un resultado más en consonancia con las expectativas. Después de realizar los cambios necesarios, envíe el formulario nuevamente para la conversión.
 
-El tiempo necesario para la conversión automatizada depende de varios factores, como el tamaño del formulario de entrada, la complejidad del formulario o el préstamo en la cola de procesamiento del servicio. El progreso se notificar regularmente al usuario a través del indicador de estado de la carpeta o el archivo. Cuando se completa la conversión, también se envía una notificación por correo electrónico a la dirección de correo electrónico configurada.
+El tiempo necesario para la conversión automatizada depende de distintos factores, como, por ejemplo, el tamaño del formulario de entrada, la complejidad del formulario o el préstamo en la cola de procesamiento del servicio. El progreso se notificar regularmente al usuario a través del indicador de estado de la carpeta o el archivo. Cuando se completa la conversión, también se envía una notificación por correo electrónico a la dirección de correo electrónico configurada.
