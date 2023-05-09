@@ -1,15 +1,15 @@
 ---
-title: 'Solucionar problemas del servicio de conversión automatizada de formularios '
-seo-title: 'Solucionar problemas del servicio de conversión automatizada de formularios '
-description: 'Problemas comunes del servicio de conversión automatizada de formularios y sus soluciones '
-seo-description: Problemas comunes del servicio de conversión automatizada de formularios y sus soluciones
+title: Solución de problemas del servicio de conversión automatizada de formularios
+seo-title: Troubleshoot Automated Forms Conversion Service (AFCS)
+description: Problemas comunes del servicio de conversión automatizada de formularios y sus soluciones
+seo-description: Common AFCS issues and their solutions
 contentOwner: khsingh
 topic-tags: forms
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
 source-git-commit: 5353a071f8633b36fc73c34c5d7629228659e2ba
-workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 89%
+workflow-type: ht
+source-wordcount: '649'
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ En este documento se proporcionan pasos básicos de solución de problemas para 
 | **Mensaje de error** <br> El número de archivos es más de 15.  <br><br>**Motivo** <br>  La carpeta contiene más de 15 formularios. <br><br>**Solución** <br> Reduzca el número de formularios de una carpeta en 15 o menos. Reduzca el número de páginas de una carpeta a menos de 50. Reduzca el tamaño de la carpeta a menos de 10 MB. No guarde formularios en una subcarpeta. Organice los formularios de origen en un lote de 8 a 15 formularios. | ![No se puede conectar al servicio.](assets/number-of-pages.png) |
 | **Mensaje de error** <br> El formato del archivo de origen no es compatible.  <br><br>**Motivo** <br> La carpeta que contiene los formularios de origen tiene algunos archivos no compatibles. <br><br>**Solución** <br> El servicio solo admite archivos .xdp y .pdf. Elimine archivos con cualquier otra extensión de la carpeta y ejecute la conversión. | ![No se puede conectar al servicio.](assets/unsupported-file-formats.png) |
 | **Mensaje de error** <br> Los formularios escaneados no se admiten.  <br><br>**Motivo** <br> El formulario PDF contiene solo imágenes escaneadas del formulario y no contiene estructura de contenido. <br><br>**Solución** <br> El servicio no admite la conversión de formularios escaneados o una imagen de un formulario a una configuración adaptativa lista para usar. Sin embargo, puede utilizar Adobe Acrobat para convertir la imagen de un formulario a un formulario PDF. Por lo tanto, use el servicio para convertir el formulario PDF a un formulario adaptativo. Utilice siempre una imagen de alta calidad del formulario para la conversión en Acrobat. Mejora la calidad de la conversión. | ![No se puede conectar al servicio.](assets/scanned-forms-error.png) |
-| **Mensaje de error** <br> El formulario PDF cifrado no es compatible.  <br><br>**Motivo** <br> La carpeta contiene formularios PDF cifrados. <br><br>**Solución** <br> El servicio no admite la conversión de un formulario PDF cifrado a un formulario adaptable. Elimine el cifrado, cargue el formulario no cifrado y ejecute la conversión. | ![No se puede conectar al servicio.](assets/secured-pdf-form.png) |
-| **Mensaje de error** <br> No se puede analizar el esquema de JSON del metamodelo.  <br><br>**Motivo** <br> El esquema de JSON suministrado al servicio no tiene un formato correcto, contiene caracteres no válidos o utiliza una sintaxis no válida para asignar componentes.  <br><br>**Solución** <br> Compruebe el formato del archivo JSON. Puede usar cualquier validador de JSON en línea para verificar el formato y la estructura del esquema. Consulte el artículo [Ampliar el metamodelo predeterminado](extending-the-default-meta-model.md) para obtener información sobre la sintaxis de metamodelos. | ![No se puede conectar al servicio.](assets/invalid-meta-model-schema.png) |
-| **Error (solo entornos locales)** <br> La  **[!UICONTROL Source Language]** opción no enumera el idioma correcto de un formulario adaptable. <br><br>**** <br> MotivoLa propiedad jcr:language del formulario adaptable no está correctamente configurada.  <br><br>**** <br> SoluciónAbra la lista CRX-DE, navegue hasta  `/content/forms/af/`, abra el  `jcr:content` nodo y establezca el valor del nodo en el idioma correcto. Para obtener la lista de idiomas compatibles, consulte [Agregar compatibilidad de localización para configuraciones regionales no compatibles](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html#add-localization-support-for-non-supported-locales). | ![No se puede conectar al servicio.](assets/aem-forms-translation-project-language-unavailable.png) |
+| **Mensaje de error** <br> El formulario PDF cifrado no es compatible. <br><br>**Motivo** <br> La carpeta contiene formularios PDF cifrados. <br><br>**Solución** <br> El servicio no admite la conversión de un formulario PDF cifrado a un formulario adaptable. Elimine el cifrado, cargue el formulario no cifrado y ejecute la conversión. | ![No se puede conectar al servicio.](assets/secured-pdf-form.png) |
+| **Mensaje de error** <br> No se puede analizar el esquema de JSON del metamodelo. <br><br>**Motivo** <br> El esquema de JSON suministrado al servicio no tiene un formato correcto, contiene caracteres no válidos o utiliza una sintaxis no válida para asignar componentes.  <br><br>**Solución** <br> Compruebe el formato del archivo JSON. Puede usar cualquier validador de JSON en línea para verificar el formato y la estructura del esquema. Consulte el artículo [Ampliar el metamodelo predeterminado](extending-the-default-meta-model.md) para obtener información sobre la sintaxis de metamodelos. | ![No se puede conectar al servicio.](assets/invalid-meta-model-schema.png) |
+| **Error (solo en entornos locales)** <br> La opción **[!UICONTROL Source Language]** no enumera el idioma correcto del formulario adaptable. <br><br>**Razón** <br> La propiedad jcr:language del formulario adaptable no está correctamente configurada. <br><br>**Resolución** <br> Abra CRX-DE lite, vaya a `/content/forms/af/`, abra el nodo `jcr:content` y establezca el valor del nodo en el idioma correcto. Para obtener la lista de idiomas compatibles, consulte [Agregar soporte de localización para configuraciones regionales no admitidas](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=es#add-localization-support-for-non-supported-locales). | ![No se puede conectar al servicio.](assets/aem-forms-translation-project-language-unavailable.png) |
 
 <!--
 
