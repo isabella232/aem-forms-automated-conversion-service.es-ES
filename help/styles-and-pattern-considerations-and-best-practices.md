@@ -1,102 +1,102 @@
 ---
-title: 'Prácticas recomendadas y consideraciones '
+title: Prácticas recomendadas y consideraciones
 seo-title: Best practices and considerations
-description: Prácticas recomendadas y consideraciones del servicio de Automated forms conversion
+description: Prácticas recomendadas y consideraciones del servicio de conversión automatizada de formularios
 seo-description: List of styles and patterns in source PDF forms which Automated Forms Conversion service finds difficult to identify
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
 source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1247'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # Prácticas recomendadas y patrones complejos conocidos {#Best-practices-and-considerations2}
 
-Este documento proporciona directrices y recomendaciones de las que pueden beneficiarse el administrador de formularios, los autores y los desarrolladores al trabajar con [!DNL Automated Forms Conversion service]. Se analizan las prácticas recomendadas, desde la preparación de formularios de origen hasta la corrección de patrones complejos que requieren un esfuerzo adicional para la conversión automatizada. Estas prácticas recomendadas contribuyen colectivamente al rendimiento general y a la salida de [!DNL Automated Forms Conversion service].
+Este documento proporciona directrices y recomendaciones de las que pueden beneficiarse los administradores, autores y desarrolladores de formularios al trabajar con el [!DNL Automated Forms Conversion service]. Se analizan las prácticas recomendadas, desde la preparación de formularios de origen hasta la corrección de patrones complejos que requieren un esfuerzo adicional para la conversión automatizada. Estas prácticas recomendadas contribuyen colectivamente al rendimiento general y al resultado del [!DNL Automated Forms Conversion service].
 
 ## Prácticas recomendadas
 
-El servicio de conversión convierte los PDF forms disponibles en la instancia de AEM [!DNL Forms] a formularios adaptables. Las prácticas recomendadas que se enumeran a continuación le ayudan a mejorar la velocidad y precisión de conversión. Además, estas prácticas recomendadas le ayudan a ahorrar tiempo invertido en las actividades posteriores a la conversión.
+El servicio de conversión transforma los formularios PDF disponibles en la instancia de [!DNL Forms] de AEM en formularios adaptables. Las prácticas recomendadas que se enumeran a continuación le ayudarán a aumentar la velocidad y la precisión de la conversión. Además, estas prácticas recomendadas también permiten ahorrar tiempo en las actividades posteriores a la conversión.
 
-### Antes de cargar el origen
+### Antes de cargar los formularios de origen
 
-Puede cargar todos los PDF forms a la vez o de forma gradual, según sea necesario. Antes de cargar los formularios, tenga en cuenta lo siguiente:
+Puede cargar todos los formularios PDF a la vez o de forma gradual, según sea necesario. Antes de cargar los formularios, tenga en cuenta lo siguiente:
 
-* Mantenga el número de formularios en una carpeta por debajo de 15 y conserve el número total de páginas en una carpeta por debajo de 50.
-* Mantenga el tamaño de la carpeta por debajo de 10 MB. No guarde formularios en una subcarpeta.
-* Mantenga el número de páginas en un formulario por debajo de 15.
-* Organice los documentos de origen en un lote de 8 a 15 documentos. Mantener los formularios de origen con fragmentos de formulario adaptables comunes en un único lote.
-* No cargue los formularios protegidos. El servicio no convierte formularios protegidos por contraseña y protegidos por contraseña.
-* No cargue los [Portfolio PDF](https://helpx.adobe.com/es/acrobat/using/overview-pdf-portfolios.html). El servicio no convierte un Portfolio PDF a un formulario adaptable.
+* Mantenga el número de formularios de una carpeta menor a 15 y el número total de páginas menor a 50.
+* El tamaño de la carpeta debe ser inferior a 10 MB. No guarde formularios en una subcarpeta.
+* Mantenga el número de páginas del formulario menor a 15.
+* Organice los documentos de origen en un lote de 8 a 15 documentos. Reúna en un solo lote los formularios de origen con fragmentos de formulario adaptable comunes.
+* No cargue formularios protegidos. El servicio no convierte los formularios protegidos con contraseña.
+* No cargue [Portafolios PDF](https://helpx.adobe.com/es/acrobat/using/overview-pdf-portfolios.html). El servicio no convierte portafolios PDF en formularios adaptables.
 * No cargue formularios de origen con espacios en el nombre de archivo. Quite el espacio del nombre del archivo antes de cargar los formularios.
-* No cargue formularios escaneados, rellenos ni en ningún idioma que no sea inglés, francés, alemán, español, italiano y portugués. Estas clases de formulario no se admiten.
+* No cargue formularios escaneados, rellenados ni en ningún idioma que no sea inglés, francés, alemán, español, italiano o portugués. No se admiten estas clases de formulario.
 
-Cuando utilice un formulario XDP para la conversión, realice los siguientes pasos antes de cargar los formularios XPD de origen:
+Cuando utilice un formulario XDP de origen para la conversión, siga estos pasos antes de cargarlo:
 
-* Analice el formulario XDP y corrija problemas visuales. Asegúrese de que el documento de origen utiliza los controles y estructuras deseados. Por ejemplo, el formulario de origen puede tener casillas de verificación en lugar de botones de opción para una sola selección. Cambie las casillas de verificación por botones de opción para crear un formulario adaptable con los componentes deseados.
-* [Agregue enlaces al ](http://www.adobe.com/go/learn_aemforms_designer_65) formulario XDP antes de iniciar la conversión. Cuando los enlaces están disponibles en el formulario XDP de origen, el servicio aplica automáticamente los enlaces a los campos de formulario adaptables correspondientes durante la conversión. Le ahorra el tiempo necesario para aplicar manualmente los enlaces.
-* [Agregue ](https://helpx.adobe.com/sign/using/text-tag.html) etiquetas de Adobe Sign al archivo XDP. El servicio convierte automáticamente las etiquetas de Adobe Sign en los campos de formulario adaptables correspondientes. Forms adaptable admite un número limitado de campos de Adobe Sign. Para obtener la lista completa de los campos admitidos, consulte la documentación [Uso de Adobe Sign en un formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=en) .
-* Convierta tablas complejas en documentos XDP en tablas simples, si es posible. Una tabla con campos de formulario en celdas de tabla, celdas de tamaño desigual, celdas distribuidas en filas o columnas, celdas combinadas, bordes parciales o sin borde visible se considera una tabla compleja. Una tabla con cualquiera de los elementos mencionados anteriormente se considera una tabla compleja.
+* Analice el formulario XDP y corrija los problemas visuales. Asegúrese de que el documento de origen utiliza los controles y estructuras deseados. Por ejemplo, el formulario de origen puede tener casillas de verificación en lugar de botones de opción para una selección única. Cambie las casillas de verificación por botones de opción para crear un formulario adaptable con los componentes deseados.
+* [Agregue enlaces al formulario XDP](http://www.adobe.com/go/learn_aemforms_designer_65_es) antes de iniciar la conversión. Cuando los enlaces están disponibles en el formulario XDP de origen, el servicio los aplica automáticamente a los campos de formulario adaptable correspondientes durante la conversión. Ahorra el tiempo de introducirlos manualmente.
+* [Agregue etiquetas de Adobe Sign](https://helpx.adobe.com/es/sign/using/text-tag.html) al archivo XDP. El servicio convierte automáticamente las etiquetas de Adobe Sign en los campos de formulario adaptable correspondientes. Los formularios adaptables admiten un número limitado de campos de Adobe Sign. Para ver la lista completa de los campos admitidos, consulte la documentación [Uso de Adobe Sign en un formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=es).
+* Convierta las tablas complejas de los documentos XDP en tablas simples, si es posible. Se considera compleja una tabla con campos de formulario en celdas de tabla, celdas de tamaño desigual, celdas separadas por filas o columnas, fusionadas, bordes parciales o sin bordes visibles. Una tabla con cualquiera de los elementos mencionados anteriormente se considera compleja.
 <!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
 
 ### Antes de iniciar la conversión
 
-* Cree plantillas de formulario adaptables. Las plantillas ayudan a especificar una estructura uniforme para los formularios de su organización o departamento.
-* Especifique el encabezado y el pie de página en las plantillas de formulario adaptables. El servicio ignora el encabezado y pie de página de los documentos de origen y utiliza el encabezado y pie de página especificados en la plantilla de formulario adaptable.
-* Cree temas de formulario adaptables. Los temas ayudan a proporcionar una apariencia uniforme a las formas de su organización o departamento.
-* Configure el Modelo de datos de formulario para guardar y recuperar desde un origen de datos. Cree y configure servicios de lectura y escritura para el Modelo de datos de formulario.
-* Cree fragmentos de formulario adaptables y configure el servicio para que utilice sus fragmentos de formulario adaptables.
-* Prepare modelos de flujo de trabajo comunes para los formularios que requieran automatización de procesos empresariales.
-* Configure Adobe Analytics, si es necesario
+* Cree plantillas para el formulario adaptable. Estas especifican una estructura uniforme para los formularios de su organización o departamento.
+* Especifique el encabezado y el pie de página en las plantillas de formulario adaptable. El servicio ignora el encabezado y el pie de página de los documentos de origen y utiliza los especificados en la plantilla de formulario adaptable.
+* Cree temáticas de formulario adaptable. Las temáticas proporcionan una apariencia uniforme a los formularios de su organización o departamento.
+* Configure el modelo de datos de formulario para que puedan guardarse y recuperarse desde una fuente de datos. Cree y configure servicios de lectura y escritura para el modelo de datos de formulario.
+* Cree fragmentos de formulario adaptable y configure el servicio para que utilice sus fragmentos de formulario adaptable.
+* Prepare modelos de flujo de trabajo comunes para los formularios que requieran la automatización de procesos empresariales.
+* Configure Adobe Analytics, si es necesario.
 
 
-## Conocer los patrones complejos
+## Reconocimiento de patrones complejos
 
-AEM [!DNL Forms Automated Conversion service] utiliza inteligencia artificial y algoritmos de aprendizaje automático para comprender el diseño y los campos del formulario de origen. Cada servicio de aprendizaje automático aprende continuamente de los datos de origen y produce una salida mejorada con cada pérdida. Estos servicios aprenden de la experiencia como humanos.
+El [!DNL Forms Automated Conversion service] de AEM utiliza inteligencia artificial y algoritmos de aprendizaje automático para comprender el diseño y los campos del formulario de origen. Todos los servicios de aprendizaje automático se alimentan continuamente de los datos de origen y producen mejores resultados con cada operación. Estos servicios adquieren conocimientos a partir de la experiencia, como las personas.
 
-[!DNL Automated Forms Conversion service] está formado en un gran conjunto de formularios. Identifica fácilmente los campos de un formulario de origen y produce formularios adaptables. Sin embargo, hay algunos campos y estilos en los PDF forms que son fácilmente visibles para el ojo humano pero difíciles de entender para el servicio. El servicio puede asignar diferentes tipos de campos o paneles aplicables a algunos campos o estilos. A continuación se enumeran todos estos patrones de estilo y campo.
+[!DNL Automated Forms Conversion service] está entrenado con un amplio conjunto de formularios. Identifica fácilmente los campos de un formulario de origen y los transforma en adaptables. Sin embargo, hay algunos campos y estilos en los formularios PDF que son fácilmente visibles para las personas, pero difíciles de identificar para el servicio. El servicio puede asignar tipos de campos o paneles diferentes a los aplicables a algunos campos o estilos. A continuación, se enumeran todos estos patrones de estilos y campos.
 
-El servicio empezaría a identificar y asignar los campos o paneles correctos a estos patrones a medida que sigue aprendiendo de los datos de origen. Por el momento, puede utilizar el editor [Revisar y corregir](review-correct-ui-edited.md) para solucionar estos problemas. Antes de empezar a corregir los problemas o a leer más, familiarícese con [los componentes de formulario adaptables](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
+Al comienzo, el servicio identifica y asigna los campos o paneles correctos a estos patrones, a medida que sigue aprendiendo de los datos de origen. Por el momento, puede usar el editor [Revisar y corregir](review-correct-ui-edited.md) para solucionar estos problemas. Antes de comenzar a corregir los problemas o a leer más, familiarícese con los [componentes de formulario adaptable](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 
 ### Patrones generales {#general}
 
 | Patrón | Ejemplo |
 |--- |--- |
-| **** <br>PatternService no convierte los PDF forms rellenos a un formulario adaptable. <br><br>**** <br>SoluciónUtilice formularios adaptables vacíos. | ![Formulario rellenado](assets/best-practice-filled-forms.png) |
-| **** <br>PatternService puede no reconocer el texto y los campos de forma densa. <br><br>**** <br> SoluciónAumente la anchura entre el texto y los campos de un formulario denso antes de iniciar la conversión. |  |
-| **** <br>PatternService no admite formularios escaneados. <br><br>**** <br>SoluciónNo utilice formularios escaneados. | ![Formulario digitalizado](assets/scanned-forms.png) |
-| **** <br>PatternService no extrae imágenes ni texto en imágenes. <br><br>**** <br> SoluciónAgregue manualmente imágenes o texto a formularios convertidos. | ![Imagen con texto Formulario](assets/best-practice-image-with-text.png) |
-| **** <br>Las tablas de patrones con límites y bordes punteados o no claros no se convierten. <br><br>**** <br>SoluciónUtilice tablas con límites y bordes explícitos claros. compatible. | ![Formulario de tabla no transparente](assets/best-practice-table-dotted-non-clear.png) |
-| **** <br> PatrónLos formularios adaptables no admiten texto vertical. Por lo tanto, el servicio no convierte el texto vertical al texto correspondiente de Adaptive Forms. <br><br>**** <br> SoluciónUtilice el editor de formularios adaptables para agregar texto vertical, si es necesario. | ![Formulario de tabla no transparente](assets/vertical-text.png) |
+| **Patrón** <br>El servicio no convierte los formularios PDF rellenados a formularios adaptables. <br><br>**Resolución** <br>Utilice formularios adaptables vacíos. | ![Formulario rellenado](assets/best-practice-filled-forms.png) |
+| **Patrón** <br>El servicio puede no reconocer el texto y los campos de un formulario con mucho contenido. <br><br>**Resolución** <br> Aumente la anchura entre el texto y los campos de un formulario con mucho contenido antes de iniciar la conversión. |  |
+| **Patrón** <br>El servicio no admite formularios escaneados. <br><br>**Resolución** <br>No los utilice. | ![Formulario escaneado](assets/scanned-forms.png) |
+| **Patrón** <br>El servicio no extrae imágenes ni texto en imágenes. <br><br>**Resolución** <br> Agregue manualmente las imágenes o el texto a los formularios convertidos. | ![Formulario con imagen con texto](assets/best-practice-image-with-text.png) |
+| **Patrón** <br>Las tablas con límites y bordes con puntos o que no estén bien delimitados no se pueden convertir. <br><br>**Resolución** <br>Utilice tablas con límites y bordes delimitados y explícitos. y admitidos. | ![Formulario de tabla no delimitada](assets/best-practice-table-dotted-non-clear.png) |
+| **Patrón** <br> Los formularios adaptables no admiten texto vertical por defecto. Por lo tanto, el servicio no convierte el texto vertical en el texto correspondiente de los formularios adaptables. <br><br>**Resolución** <br> Utilice el editor de formularios adaptables para agregar texto vertical, si es necesario. | ![Formulario de tabla no delimitada](assets/vertical-text.png) |
 
 
 
-### Grupo de opciones  {#choice-group}
-
-| Patrón | Resolución |
-|--- |--- |
-| **** <br> Las opciones de grupo PatternChoice con formas que no sean cuadro o círculo no se convierten a los componentes de formulario adaptables correspondientes. <br><br>**** <br> SoluciónCambie las opciones de las formas para que estén en cuadro o en círculo, o utilice el editor Revisar y corregir para identificar las formas. | ![Campos de opciones  ](assets/best-practice-choice-group-options.png) |
-
-### Campos de formulario {#form-fields}
+### Grupo de elección  {#choice-group}
 
 | Patrón | Resolución |
 |--- |--- |
-| **** <br> PatternService no identifica campos sin bordes claros. <br><br>**** <br> SoluciónUtilice el editor de revisiones y correcciones para identificar dichos campos. | ![campos con límites no claros](assets/best-practice-fields-without-clear-borders.png) |
-| **** <br> Puede que PatternService no identifique algunos campos de formulario de grupo de opciones con rótulos en la parte inferior o derecha de un formulario. <br><br>**** <br> SoluciónUtilice el editor de revisiones y correcciones para identificar dichos campos | ![Campos de opciones](assets/best-practice-caption-bottom-right.png) |
-| **** <br> PatternService combina o asigna un tipo incorrecto a algunos campos de formulario que están muy cerca entre sí o que no tienen bordes claros. <br><br>**** <br> SoluciónUtilice el editor de revisiones y correcciones para identificar dichos campos. | ![Campos de opciones](assets/best-practice-placed-very-near.png) |
-| **** <br> PatternService puede no reconocer campos con rótulos lejanos o una línea de puntos entre el rótulo y el campo de entrada. <br><br>**** <br> SoluciónUtilice campos de formulario con límites claros o utilice el editor Revisar y corregir para solucionar estos problemas. | ![Campos alejados o línea de puntos entre campos de rótulo](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
+| **Patrón** <br> Las opciones del grupo de elección con formas distintas de recuadros o círculos no se convierten en los componentes correspondientes al formulario adaptable. <br><br>**Resolución** <br> Cambie las formas de las opciones de elección a recuadros o círculos o utilice el editor Revisar y corregir para identificarlas. | ![Campos de elección ](assets/best-practice-choice-group-options.png) |
+
+### Campos del formulario {#form-fields}
+
+| Patrón | Resolución |
+|--- |--- |
+| **Patrón** <br> El servicio no identifica los campos que no tengan bordes bien delimitados. <br><br>**Resolución** <br> Utilice el editor Revisar y corregir para identificarlos. | ![campos con límites no delimitados](assets/best-practice-fields-without-clear-borders.png) |
+| **Patrón** <br> Es posible que el servicio no identifique algunos campos de formulario de grupo de elección con subtítulos en la parte inferior o derecha de un formulario. <br><br>**Resolución** <br> Utilice el editor Revisar y corregir para identificarlos. | ![Campos de elección](assets/best-practice-caption-bottom-right.png) |
+| **Patrón** <br> El servicio combina o asigna un tipo incorrecto a algunos campos de formulario que están situados muy cerca unos de otros o que no tienen bordes bien definidos. <br><br>**Resolución** <br> Utilice el editor Revisar y corregir para identificarlos. | ![Campos de elección](assets/best-practice-placed-very-near.png) |
+| **Patrón** <br> El servicio puede no reconocer los campos con subtítulos muy alejados o con una línea de puntos entre el subtítulo y el campo de entrada. <br><br>**Resolución** <br> Utilice campos de formulario con límites bien definidos o utilice el editor Revisar y corregir para solucionar estos problemas. | ![Campos muy alejados o con una línea de puntos entre el campo de subtítulo](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
 
 ### Listas {#lists}
 
 | Patrón | Resolución |
 |--- |--- |
-| **** <br>PatrónLas listas que contienen campos de formulario se combinan o no se convierten a los componentes de formulario adaptable correspondientes  <br><br>**** <br>ResoluciónUtilice campos de formulario con límites claros o utilice el editor de revisiones y correcciones para solucionar estos problemas. | ![listas que contienen grupos de opciones](assets/best-practice-lists-containing-form-fields.png) |
-| **** <br>PatternService puede dejar algunas listas anidadas sin identificar  <br><br>**** <br> ResoluciónUtilice el editor de revisiones y correcciones para solucionar estos problemas. | ![listas que contienen grupos de opciones](assets/best-practice-nested-lists.png) |
-| **** <br> PatternService combina algunas listas que contienen grupos de opciones entre sí  <br><br>**** <br> SoluciónUtilice el editor de revisiones y correcciones para solucionar estos problemas. | ![listas que contienen grupos de opciones](assets/best-practice-check-box-in-table-cells.png) |
+| **Patrón** <br>Las listas que contienen campos de formulario se combinan o no se convierten en los componentes de formulario adaptable correspondientes. <br><br>**Resolución** <br>Utilice campos de formulario con límites delimitados o utilice el editor Revisar y corregir para solucionar estos problemas. | ![listas que contienen grupos de elección](assets/best-practice-lists-containing-form-fields.png) |
+| **Patrón** <br>El servicio puede no identificar algunas listas anidadas. <br><br>**Resolución** <br> Utilice el editor Revisar y corregir para solucionar estos problemas. | ![listas que contienen grupos de elección](assets/best-practice-nested-lists.png) |
+| **Patrón** <br> El servicio combina algunas listas que contienen grupos de elección entre sí. <br><br>**Resolución** <br> Utilice el editor Revisar y corregir para solucionar estos problemas. | ![listas que contienen grupos de elección](assets/best-practice-check-box-in-table-cells.png) |
 
 <!--
 Comment Type: draft
