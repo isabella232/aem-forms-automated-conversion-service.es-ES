@@ -11,7 +11,7 @@ breadcrumb-title: Guía de conversión automatizada de Forms
 feature: Adaptive Forms
 role: User
 source-git-commit: 5e1b1c1aa0ac51e23d009e7a85b0e071ff842b04
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '87'
 ht-degree: 100%
 
@@ -23,13 +23,13 @@ ht-degree: 100%
 + [Introducción](introduction.md)
 + [Notas de la versión](release-notes.md)
 + [Prácticas recomendadas y consideraciones](styles-and-pattern-considerations-and-best-practices.md)
-+ [Configure el servicio](configure-service.md)
-+ [Convertir la impresión de formularios en formularios adaptables](convert-existing-forms-to-adaptive-forms.md)
++ [Configuración del servicio](configure-service.md)
++ [Conversión de formularios impresos en formularios adaptables](convert-existing-forms-to-adaptive-forms.md)
 + [Revisar y corregir formularios convertidos](review-correct-ui-edited.md)
 + [Ampliar el metamodelo predeterminado](extending-the-default-meta-model.md)
-+ [Flujos de trabajo recomendados de relleno y envío basados en fuentes de datos para formularios adaptables](prefill-submit-forms.md)
++ [Flujos de trabajo de relleno automático recomendados y envío basados en fuentes de datos para formularios adaptables](prefill-submit-forms.md)
 + [Flujos de trabajo recomendados para permitir la generación de documentos de registros para formularios adaptables](enable-document-of-record-generation.md)
-+ [Integrar el formulario adaptable con la base de datos mediante el flujo de trabajo de AEM](submit-converted-adaptive-form-to-database.md)
++ [Integración del formulario adaptable con la base de datos mediante el flujo de trabajo de AEM](submit-converted-adaptive-form-to-database.md)
 + [Preguntas frecuentes](frequently-asked-questions.md)
 + [Problemas conocidos](known-issues.md)
 + [Solución de problemas](troubleshoot-afcs.md)
