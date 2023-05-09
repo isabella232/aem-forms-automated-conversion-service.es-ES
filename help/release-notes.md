@@ -3,9 +3,9 @@ title: 'Novedades Notas de la versión: Servicio de conversión automatizada de 
 description: Obtenga información sobre las últimas funciones y los errores corregidos para el Servicio de conversión automatizada de formularios
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
 source-git-commit: eab71506513605728d8f925ab6e7e9bead7ca6fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '451'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ El Servicio de conversión automatizada de formularios es objeto de mejoras cont
 
 ## 24 de febrero de 2022 (AFC-2022.02.0) {#feb-2022}
 
-* Capacidad añadida a [convertir automáticamente secciones en fragmentos](convert-existing-forms-to-adaptive-forms.md) para ayudar a mejorar la velocidad de procesamiento de los formularios convertidos y facilitar la carga de formularios grandes en el editor de formularios adaptables.
+* Se agregó la capacidad a [convertir las secciones en fragmentos de forma automática](convert-existing-forms-to-adaptive-forms.md) para mejorar la velocidad de procesamiento de los formularios convertidos y facilitar la carga de formularios adaptables grandes en el editor.
 
 ## 29 de agosto de 2021 (AFC-2021.08.0) {#aug-2021}
 
-* Se ha agregado la capacidad de convertir PDF forms en italiano y portugués a un formulario adaptable.
+* Se agregó la capacidad de convertir formularios PDF adaptables en italiano y portugués.
 
 ## 29 de julio de 2021 (AFC-2021.07.2) {#july-2021}
 
@@ -38,7 +38,7 @@ El Servicio de conversión automatizada de formularios es objeto de mejoras cont
 
 ### Mejoras {#june-2021-improvements}
 
-Se ha mejorado la precisión para detectar automáticamente secciones lógicas en los formularios de origen y convertirlas en los paneles de formulario adaptables correspondientes.
+Se ha mejorado la precisión para detectar secciones lógicas en los formularios de origen de forma automática y convertirlas en los paneles de formularios adaptables correspondientes.
 
 ## 3 de marzo de 2021 (AFC-2021.02.2) {#mar-2021}
 
@@ -50,7 +50,7 @@ Mejoras en la organización del contenido del formulario en campos y grupos de o
 
 ### Mejoras {#feb-2021-improvements}
 
-Mejoras en la organización del contenido del formulario en paneles y la generación de títulos para paneles, al mismo tiempo que se convierte un formulario de origen en un formulario adaptable.
+Mejoras en la organización del contenido del formulario en paneles y generación de títulos para paneles, al mismo tiempo que se convierte un formulario de origen en uno adaptable.
 
 ## 16 de julio de 2020 (AFC-2020.07.2) {#jul-2020}
 
@@ -80,6 +80,6 @@ El servicio ahora es más eficiente en la detección de listas numeradas y con v
 
 **Instalación del paquete del conector del servicio de conversión automatizada de formularios**
 
-Se necesita el paquete del conector 1.1.38 o superior para utilizar las últimas funciones y mejoras de la versión AFC-2020.03.1.
+Se necesita el paquete del conector 1.1.38 o posterior para utilizar las últimas funciones y mejoras de la versión AFC-2020.03.1.
 
 Si ya tiene un entorno de servicio de conversión automatizada de formularios en funcionamiento, para usar las últimas funciones del servicio de conversión, instalar el último paquete de servicios, el último paquete de complemento de AEM Forms y el último paquete del conector en el orden mencionado. Para obtener instrucciones detalladas al respeto, consulte el artículo [Configurar el servicio de conversión automatizada de formularios](configure-service.md).
