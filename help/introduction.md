@@ -3,7 +3,7 @@ title: Introducción
 description: Acelere la conversión de impresión de formularios en formularios adaptables
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
 source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ El servicio de conversión automática de formularios ayuda a acelerar la digita
 
 El servicio está disponible de forma gratuita para los clientes a plazo de AEM Forms 6.4 y AEM Forms 6.5 locales y los clientes empresariales de Managed Services de Adobe. Póngase en contacto con el equipo de ventas de Adobe o con su representante de Adobe para solicitar acceso al servicio. El servicio también está disponible de forma gratuita y está prehabilitado para los clientes de AEM Forms as a Cloud Service.
 
-Adobe posibilita el acceso a su organización y otorga los pertinentes privilegios a la persona de su organización designada como administrador. El administrador puede otorgar acceso a los desarrolladores de AEM Forms (usuarios) de su organización para conectarse al servicio. Consulte [Configurar el servicio de conversión automatizada de formularios](configure-service.md) para obtener más información.
+Adobe posibilita el acceso a su organización y otorga los pertinentes privilegios a las personas de su organización designadas como administradores. El administrador puede otorgar acceso a los desarrolladores de AEM Forms (usuarios) de su organización para conectarse al servicio. Consulte [Configurar el servicio de conversión automatizada de formularios](configure-service.md) para obtener más información.
 
 ## Idiomas y formularios PDF admitidos {#supported-languages-and-pdf-forms}
 

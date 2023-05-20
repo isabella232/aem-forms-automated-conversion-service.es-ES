@@ -3,7 +3,7 @@ title: 'Novedades Notas de la versión: Servicio de conversión automatizada de 
 description: Obtenga información sobre las últimas funciones y los errores corregidos para el Servicio de conversión automatizada de formularios
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
 source-git-commit: eab71506513605728d8f925ab6e7e9bead7ca6fc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 100%
 

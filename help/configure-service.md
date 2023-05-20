@@ -4,7 +4,7 @@ description: Prepare la instancia de AEM para utilizar el servicio de conversió
 role: User, Admin
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
 source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2684'
 ht-degree: 100%
 

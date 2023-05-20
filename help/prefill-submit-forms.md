@@ -10,7 +10,7 @@ discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
 exl-id: 5deef8f5-5098-47c1-b696-b2db59e92931
 source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2437'
 ht-degree: 100%
 
@@ -287,7 +287,7 @@ Siga estos pasos para utilizar el [editor de reglas](https://helpx.adobe.com/es/
 1. Seleccione el **formulario de solicitud de préstamo de ejemplo** en la carpeta **[!UICONTROL output]** y toque **[!UICONTROL Edit]**.
 1. En la pestaña **[!UICONTROL Content]**, pulse el icono configurar:
 
-   ![configurar contenedor de formulario](assets/configure_form_container.png)
+   ![configurar el contenedor de formulario](assets/configure_form_container.png)
 
    En la sección **[!UICONTROL Basic]**, elija **[!UICONTROL Form Data Model Prefill service]** desde la lista desplegable **[!UICONTROL Prefill Service]**.
 

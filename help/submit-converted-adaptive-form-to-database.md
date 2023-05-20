@@ -6,7 +6,7 @@ topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
 source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1504'
 ht-degree: 100%
 
@@ -51,13 +51,13 @@ Realice los siguientes pasos en todas las instancias de autor y publicación par
 1. Vaya a `http://server:port/system/console/depfinder` y busque el paquete com.mysql.jdbc.
 1. En la columna Exportado por, compruebe si el paquete fue exportado por algún otro paquete. Continúe si el paquete no se exporta mediante ningún otro.
 1. Vaya a `http://server:port/system/console/bundles` y haga clic en **[!UICONTROL Install/Update]**.
-1. Haga clic en **[!UICONTROL Choose File]** y busque para seleccionar el archivo mysql-connector-java-5.1.39-bin.jar. También, seleccione las casillas de verificación **[!UICONTROL Start Bundle]** y **[!UICONTROL Refresh Packages]**.
+1. Haga clic en **[!UICONTROL Choose File]** y busque para seleccionar el archivo mysql-connector-java-5.1.39-bin.jar. Seleccione también las casillas de verificación **[!UICONTROL Start Bundle]** y **[!UICONTROL Refresh Packages]**.
 1. Haga clic en **[!UICONTROL Install]** o **[!UICONTROL Update]**. Una vez finalizado, reinicie el servidor.
 1. (Solo Windows) Desactive el cortafuegos de su sistema operativo.
 
 ## Preparación de datos para el modelo de formulario {#prepare-data-for-form-model}
 
-La integración de datos de AEM Forms le permite configurar y conectarse a fuentes de datos separados. Después de generar un formulario adaptable mediante el proceso de conversión, puede definir el modelo de formulario basado en un modelo de datos de formulario, XSD o un esquema JSON. Puede utilizar una base de datos, Microsoft Dynamics o cualquier otro servicio de terceros para crear un modelo de datos de formulario.
+La integración de datos de AEM Forms le permite configurar y conectarse a fuentes de datos diferentes. Después de generar un formulario adaptable mediante el proceso de conversión, puede definir el modelo de formulario basado en un modelo de datos de formulario, XSD o un esquema JSON. Puede utilizar una base de datos, Microsoft Dynamics o cualquier otro servicio de terceros para crear un modelo de datos de formulario.
 
 Este tutorial utiliza la base de datos MySQL como fuente para crear un modelo de datos de formulario. Cree un esquema en la base de datos y agregue la tabla de **contacto** al esquema en función de los campos disponibles en el formulario adaptable.
 

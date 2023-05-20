@@ -9,7 +9,7 @@ contentOwner: khsingh
 discoiquuid: 75f6e6bc-7636-4b40-919c-8b20a6ccbb1f
 exl-id: c24313cd-2b9b-4209-9505-a8e14d8dc530
 source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 100%
 
@@ -131,7 +131,7 @@ Si usa un formulario PDF basado en AcroForm o XFA como formulario de origen para
 
 1. Pulse **[!UICONTROL Save & Close]** para guardar la configuración.
 
-1. [Ejecución de la conversión](../help/convert-existing-forms-to-adaptive-forms.md). Asegúrese de utilizar la configuración de la nube editada en el paso 1 de estas instrucciones.
+1. [Ejecute la conversión](../help/convert-existing-forms-to-adaptive-forms.md). Asegúrese de utilizar la configuración de la nube editada en el paso 1 de estas instrucciones.
 El servicio de conversión asocia automáticamente el AcroForm o el formulario PDF basado en XFA al formulario adaptable convertido como plantilla DoR.
 Puede abrir las propiedades del formulario adaptable para ver la plantilla DoR en la sección **[!UICONTROL Document of Record Template Configuration]** de la pestaña **[!UICONTROL Form Model]**.
 
