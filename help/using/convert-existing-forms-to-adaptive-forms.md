@@ -6,8 +6,9 @@ seo-description: Run the Automated Forms Conversion service to convert PDF forms
 contentOwner: khsingh
 topic-tags: forms
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 444cc37ec6fa2af2d8d2952efd18368a5725e881
-workflow-type: tm+mt
+exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
+source-git-commit: e752ff6fbdbc738b1d80a2621ffc972d6867f1eb
+workflow-type: ht
 source-wordcount: '1612'
 ht-degree: 100%
 

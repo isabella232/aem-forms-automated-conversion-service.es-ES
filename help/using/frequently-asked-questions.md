@@ -9,9 +9,9 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
 source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
-workflow-type: tm+mt
-source-wordcount: '1799'
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: '1770'
+ht-degree: 100%
 
 ---
 
@@ -92,7 +92,7 @@ Los motivos más comunes para que la conversión falle son los siguientes:</p>
    Puede utilizar el metamodelo para asignar los objetos del formulario al componente de formulario adaptable que usted elija y configurar previamente las validaciones, las reglas, los patrones de datos, el texto de ayuda y las propiedades de accesibilidad de los componentes. Todas las propiedades especificadas se aplicarán durante la conversión. Puede utilizar el metamodelo para aplicar propiedades comunes a los campos. Esto puede ayudarle a reducir algunos problemas que se repitan en los formularios.<br/><br/>
 
 1. **¿Cuáles son las opciones para los formularios con datos confidenciales, como la información de identificación personal (PII)?**
-El servicio solo admite formularios vacíos o sin rellenar. No cargue formularios rellenados o con información de identificación personal (PII). Asimismo, elimine de los formularios de origen los datos que se hayan agregado anteriormente, la información de identificación personal (PII), la confidencial y la información sujeta a derechos de propiedad. <br/>
+El servicio solo admite formularios vacíos o sin rellenar. No cargue formularios rellenados o con información de identificación personal (PII). Asimismo, quite de los formularios de origen los datos que se hayan añadido anteriormente, la información de identificación personal (PII), la confidencial y la información sujeta a derechos de propiedad. <br/>
 
 1. **¿Dónde se deben colocar los encabezados y los pies de página?**
    <p>Coloque el encabezado y el pie de página en una plantilla de formularios adaptables. Si el formulario PDF de origen ya tiene un encabezado y pie de página, el servicio los detecta y los reemplaza durante la conversión por los disponibles en la plantilla de formulario adaptable. Si algún encabezado o pie de página adicional están incluidos en el formulario adaptable, puede usar la opción <a href="review-correct-ui-edited.md">Revisar y corregir</a> para corregir o eliminar dicho encabezado o pie de página.</p> <br />
@@ -106,7 +106,7 @@ El error mencionado se produce cuando la delegación de arranque no está config
    <p> </p>
 
    1. Detenga la instancia de AEM. Navegue hasta la carpeta `[AEM installation directory]\crx-quickstart\conf\`. Abra el archivo sling.properties para editarlo. Si usa `[AEM installation directory]\crx-quickstart\bin\start.bat` para iniciar una instancia de AEM, edite el archivo sling.properties ubicado en `[AEM_root]\crx-quickstart\`.
-   1. Agregue las siguientes propiedades al archivo sling.properties:<br/> `sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*`<br />  `sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*`<br /> `sling.bootdelegation.xerces=org.apache.xerces.*`
+   1. Añada las siguientes propiedades al archivo sling.properties:<br/> `sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*`<br />  `sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*`<br /> `sling.bootdelegation.xerces=org.apache.xerces.*`
    1. Guarde y cierre el archivo. <br/>
    1. Inicie la instancia de AEM nuevamente.<br/>
    <br/>

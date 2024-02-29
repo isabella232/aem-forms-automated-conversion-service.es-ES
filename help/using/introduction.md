@@ -1,5 +1,5 @@
 ---
-title: Introducción al servicio de automated forms conversion
+title: Introducción al servicio de conversión automatizada de formularios
 description: Acelere la conversión de impresión de formularios en formularios adaptables
 solution: Experience Manager Forms
 feature: Adaptive Forms, Foundation Components
@@ -9,9 +9,9 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
 source-git-commit: 919886cda2ec50ddb9b403cbb0e92fec2821c10e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
